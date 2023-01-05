@@ -3373,6 +3373,117 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
     margin-left: 1vw;
 }
 
+
+
+
+/* ******************************************************************************************* */
+/* New changes Starts here */
+/* Changed "chatImage" from id -> class */
+.chatImage {
+    position: relative;
+    bottom: 40px;
+}
+
+/* Changed "cvImage" from id -> class */
+.cvImage {
+    position: relative;
+    bottom: 40px;
+    right: 20px;
+}
+
+/* Changed "socialMediaImage" from id -> class */
+.socialMediaImage {
+    position: relative;
+    bottom: 30px;
+    left: 3px;
+    max-width: 120vw;
+    height: 36vh;
+}
+
+/* Changed "facebookImg" from id -> class */
+.facebookImg {
+    position: absolute;
+    margin: 89px 0 0 38px;
+}
+
+/* Changed "twiterImg" from id -> class */
+.twiterImg {
+    position: absolute;
+    margin: 27px 0 0 202px;
+}
+
+/* Changed "clientRevImage" from id -> class */
+.clientRevImage {
+    position: relative;
+    bottom: 40px;
+    right: 45px;
+}
+
+/* Changed "careImg" from id -> class */
+.careImg {
+    height: 70vh;
+}
+
+/* Changed "navLinks" from id -> class */
+a.navLinks {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #7746ff;
+    font-family: "Montserrat", sans-serif;
+}
+
+a.navLinks:hover {
+    background-color: white;
+    border-bottom: 4px solid rgba(125, 81, 245, 0.5);
+
+    padding: 0;
+    border-left: none;
+    margin: 0 0.96vw;
+}
+
+a.navLinks.active {
+    padding: 0;
+    border-left: none;
+    margin: 0 0.9vw;
+}
+
+/* Changed "loginLink" from id -> class */
+a.loginLink {
+    border: 1px solid #7746ff;
+    border-radius: 6px;
+    width: 130px;
+    height: 40px;
+    margin-top: 12px;
+    text-align: center;
+    line-height: 33px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #7746ff;
+    font-family: "Montserrat", sans-serif;
+}
+
+a.loginLink:hover {
+    background: #7746ff;
+    color: #ffffff;
+    border-left: #7746ff;
+}
+
+/* Commented off this line of code, It's not needed again. */
+/* #navLinks {
+    border-left: none;
+    padding: 0;
+    margin-right: 2vw;
+    padding-bottom: 3vh;
+} */
+
+/* Changed sidenav background-color */
+.sidenav {
+    background-color: #7746FF;
+}
+
+
+
+
 /* Media Query on Medium Device */
 @media screen and (max-width: 992px) and (min-width: 640px) {
     .circlDiv2 {
@@ -4001,6 +4112,80 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
         background: #1e1e1e;
         border-radius: 6px;
     }
+
+
+
+    /* ******************************************************************************************* */
+    /* New changes Starts here */
+    /* Changed "chatImage" from id -> class */
+    .chatImage {
+        width: 30vw;
+        position: relative;
+        bottom: 5vh;
+    }
+
+    /* Changed "cvImage" from id -> class */
+    .cvImage {
+        width: 28vw;
+        position: relative;
+        bottom: 5vh;
+    }
+
+    /* Changed "socialMediaImage" from id -> class */
+    .socialMediaImage {
+        position: relative;
+        bottom: 20px;
+        left: 3px;
+        width: 80vw;
+        height: 29vh;
+    }
+
+    /* Changed "facebookImg" from id -> class */
+    .facebookImg {
+        width: 8vw;
+        margin: 64px 0 0 33px;
+    }
+
+    /* Changed "twiterImg" from id -> class */
+    .twiterImg {
+        width: 8vw;
+        margin: 20px 0 0 155px;
+    }
+
+    /* Changed "clientRevImage" from id -> class */
+    .clientRevImage {
+        width: 28vw;
+        position: relative;
+        bottom: 3vh;
+    }
+
+    /* Commented off this line of code, It's not needed again. */
+    /* .careImg {
+        height: 80vh;
+    } */
+
+
+    /* Changed mobile sidenav list icon from id -> class and it's styling */
+    .material-icons.sideNavIcon {
+        font-size: 3.5rem;
+        color: #7746FF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+        width: 6vw;
+        height: 6.5vh;
+        line-height: 52px;
+    }
+
+    /* Id for mobile sidenav list icon not needed again, it's been changed to class */
+    /* #sideNavIcon {
+        font-size: 3.5rem;
+        color: #7746ff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+        width: 6vw;
+        height: 6.5vh;
+        line-height: 52px;
+    } */
 }
 
 /* Media Query on small device */
@@ -4821,4 +5006,121 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
         background: #1e1e1e;
         border-radius: 6px;
     }
+
+
+    /* ******************************************************************************************* */
+    /* New changes Starts here */
+    /* Changed "chatImage" from id -> class */
+    .chatImage {
+        width: 38vw;
+        position: relative;
+        bottom: 3vh;
+    }
+
+    /* Changed "cvImage" from id -> class */
+    .cvImage {
+        width: 38vw;
+        position: relative;
+        bottom: 3vh;
+    }
+
+    /* Changed "socialMediaImage" from id -> class */
+    .socialMediaImage {
+        position: relative;
+        bottom: 20px;
+        left: 3px;
+        max-width: 55vw;
+        height: 20vh;
+    }
+
+    /* Changed "facebookImg" from id -> class */
+    .facebookImg {
+        width: 12vw;
+        position: absolute;
+        margin: 36px 0 0 25px;
+    }
+
+    /* Changed "twiterImg" from id -> class */
+    .twiterImg {
+        width: 12vw;
+        position: absolute;
+        margin: 12px 0 0 110px;
+    }
+
+    /* Changed "clientRevImage" from id -> class */
+    .clientRevImage {
+        width: 40vw;
+        position: relative;
+        bottom: 3vh;
+    }
+
+    /* Commented off this line of code, It's not needed again. */
+    /* .careImg {
+        height: 50vh;
+        width: 93vw;
+    } */
+
+    /* Centered this text properly */
+    .circleDivtxt {
+        /* width: 400px; */
+        font-weight: 600;
+        font-size: 1rem;
+        color: #000000;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    /* Centered template "GET STARTED" button properly */
+    .tempPageBtn {
+        width: 198px;
+        height: 40px;
+        background: #7746ff;
+        border-radius: 6px;
+        font-family: "Montserrat", sans-serif;
+        margin-left: 23vw;
+    }
+
+    /* Centered Client sidenav profile image */
+    .mobileNavProImg {
+        margin: 0 auto 4vh auto;
+    }
+
+    /* Changed and centered the look of client sidenav */
+    /* Client sidenav page icons */
+    .material-icons.dashLeftBarIcons {
+        font-size: 2rem;
+        /* color: #D9D9D9; */
+        text-align: center;
+        margin-left: 0;
+    }
+
+    /* Client sidenav page title */
+    .dashLeftBarTitle {
+        margin-top: -3.5vh;
+        margin-bottom: 1vh;
+        color: #D9D9D9;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+
+    /* Changed mobile sidenav list icon from id -> class and it's styling */
+    .material-icons.sideNavIcon {
+        font-size: 3.5rem;
+        color: #7746FF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+        width: 13vw;
+        height: 6.5vh;
+    }
+
+    /* Id for mobile sidenav list icon not needed again, it's been changed to class */
+    /* #sideNavIcon {
+        font-size: 3.5rem;
+        color: #7746ff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+        width: 13vw;
+        height: 6.5vh;
+    } */
 }

@@ -190,7 +190,7 @@
         components: {
             SidenavComponent,
             MobileNavComponent,
-            InnerFooterComponent
+            InnerFooterComponent,
         },
         data() {
             return {
