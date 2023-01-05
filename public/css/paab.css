@@ -1722,13 +1722,7 @@ a.active {
     width: 93%;
     margin: 0 auto;
 }
-#webAddCircleIcon {
-    /* color: #7746FF; */
-    /* font-size: 2rem; */
-    /* position: absolute;
-    right: 7vw;
-    top: 15vh; */
-}
+
 #webRightDiv {
     padding: 5vh 2vw;
 }
@@ -3480,6 +3474,15 @@ a.loginLink:hover {
 .sidenav {
     background-color: #7746FF;
 }
+
+/* Commented off this line of code, It's not needed again. */
+/* #webAddCircleIcon {
+    color: #7746FF;
+    font-size: 2rem;
+    position: absolute;
+    right: 7vw;
+    top: 15vh;
+} */
 
 
 

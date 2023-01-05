@@ -119,8 +119,8 @@ Route::prefix('admin')->middleware(['auth', 'can:run_admin_ops'])->group(functio
     Route::get('/dashboard', function () {
         return view('admin.dashboard');
     });
-    Route::get('/messages', function () {
-        return view('admin.messages');
+    Route::get('/mail', function () {
+        return view('admin.mail');
     });
     Route::get('/settings', function () {
         return view('admin.settings');
@@ -128,8 +128,8 @@ Route::prefix('admin')->middleware(['auth', 'can:run_admin_ops'])->group(functio
     Route::get('/template', function () {
         return view('admin.template');
     });
-    Route::get('/singlemsg', function () {
-        return view('admin.singlemsg');
+    Route::get('/singlemail', function () {
+        return view('admin.singlemail');
     });
 });
 

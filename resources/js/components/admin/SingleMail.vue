@@ -11,7 +11,7 @@
             <div class="col s12 m10 l10" id="singleMailRightDiv">
                 <div class="clientSendmailContainDiv">
                     <div class="clientSendMailBackLinkDiv">
-                        <a href="/admin/messages" class="clientSendmailArrowBackLink">
+                        <a href="/admin/mail" class="clientSendmailArrowBackLink">
                             <i class="material-icons" id="clientSendmailArrowBackIcon">arrow_back</i>
                             <span class="clientSendmailBackTxt">Back</span>
                         </a>

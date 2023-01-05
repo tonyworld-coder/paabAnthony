@@ -21253,10 +21253,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/Messages.vue?vue&type=script&lang=js":
-/*!********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/Messages.vue?vue&type=script&lang=js ***!
-  \********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/Mail.vue?vue&type=script&lang=js":
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/Mail.vue?vue&type=script&lang=js ***!
+  \****************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -21281,8 +21281,8 @@ __webpack_require__.r(__webpack_exports__);
   },
   mounted: function mounted() {},
   methods: {
-    showSingleMesg: function showSingleMesg() {
-      window.location.href = "/admin/singlemsg";
+    showSingleMail: function showSingleMail() {
+      window.location.href = "/admin/singlemail";
     }
   }
 });
@@ -21321,10 +21321,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/SingleMsg.vue?vue&type=script&lang=js":
-/*!*********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/SingleMsg.vue?vue&type=script&lang=js ***!
-  \*********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/SingleMail.vue?vue&type=script&lang=js":
+/*!**********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/SingleMail.vue?vue&type=script&lang=js ***!
+  \**********************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -26036,10 +26036,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/Messages.vue?vue&type=template&id=3221c537":
-/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/Messages.vue?vue&type=template&id=3221c537 ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/Mail.vue?vue&type=template&id=13603da2":
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/Mail.vue?vue&type=template&id=13603da2 ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -26070,7 +26070,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "mailBlackDiv",
     id: "mailScrollDiv",
     onClick: _cache[0] || (_cache[0] = function ($event) {
-      return $options.showSingleMesg();
+      return $options.showSingleMail();
     })
   }, _hoisted_5), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Mail Black div "), _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Mail Black div "), _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Mail Black div "), _hoisted_8])])]);
 }
@@ -26105,10 +26105,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/SingleMsg.vue?vue&type=template&id=08a2373e":
-/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/SingleMsg.vue?vue&type=template&id=08a2373e ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/SingleMail.vue?vue&type=template&id=5a2733ca":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/SingleMail.vue?vue&type=template&id=5a2733ca ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -26122,7 +26122,7 @@ var _hoisted_1 = {
   "class": "row",
   id: "dashRowDiv"
 };
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col s12 m10 l10\" id=\"singleMailRightDiv\"><div class=\"clientSendmailContainDiv\"><div class=\"clientSendMailBackLinkDiv\"><a href=\"/admin/messages\" class=\"clientSendmailArrowBackLink\"><i class=\"material-icons\" id=\"clientSendmailArrowBackIcon\">arrow_back</i><span class=\"clientSendmailBackTxt\">Back</span></a></div><div class=\"clientModalDiv\"><div class=\"row\" id=\"clientSendmailRowDiv\"><div class=\"col l1\"><div class=\"cardImgDiv\"><i class=\"material-icons\" id=\"cardImg\">person</i></div></div><div class=\"col l10\"><a href=\"#\" class=\"clientSendemailTitle\">info@paab.com</a><p class=\"clientSendemailTxt\"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p><p class=\"clientSendemailTxt1\"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. </p><p class=\"clientSendemailTxt2\"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. </p></div><div class=\"col l1\"><span class=\"clientSendmailTimeSent\"> now </span></div></div></div></div></div>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col s12 m10 l10\" id=\"singleMailRightDiv\"><div class=\"clientSendmailContainDiv\"><div class=\"clientSendMailBackLinkDiv\"><a href=\"/admin/mail\" class=\"clientSendmailArrowBackLink\"><i class=\"material-icons\" id=\"clientSendmailArrowBackIcon\">arrow_back</i><span class=\"clientSendmailBackTxt\">Back</span></a></div><div class=\"clientModalDiv\"><div class=\"row\" id=\"clientSendmailRowDiv\"><div class=\"col l1\"><div class=\"cardImgDiv\"><i class=\"material-icons\" id=\"cardImg\">person</i></div></div><div class=\"col l10\"><a href=\"#\" class=\"clientSendemailTitle\">info@paab.com</a><p class=\"clientSendemailTxt\"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p><p class=\"clientSendemailTxt1\"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. </p><p class=\"clientSendemailTxt2\"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&#39;t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. </p></div><div class=\"col l1\"><span class=\"clientSendmailTimeSent\"> now </span></div></div></div></div></div>", 1);
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_mobile_nav_component = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("mobile-nav-component");
   var _component_side_nav_component = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("side-nav-component");
@@ -31567,9 +31567,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_admin_Dashboard__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/admin/Dashboard */ "./resources/js/components/admin/Dashboard.vue");
 /* harmony import */ var _components_admin_Client__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/admin/Client */ "./resources/js/components/admin/Client.vue");
 /* harmony import */ var _components_admin_Template__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/admin/Template */ "./resources/js/components/admin/Template.vue");
-/* harmony import */ var _components_admin_Messages__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/admin/Messages */ "./resources/js/components/admin/Messages.vue");
+/* harmony import */ var _components_admin_Mail__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/admin/Mail */ "./resources/js/components/admin/Mail.vue");
 /* harmony import */ var _components_admin_Settings__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/admin/Settings */ "./resources/js/components/admin/Settings.vue");
-/* harmony import */ var _components_admin_SingleMsg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/admin/SingleMsg */ "./resources/js/components/admin/SingleMsg.vue");
+/* harmony import */ var _components_admin_SingleMail__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/admin/SingleMail */ "./resources/js/components/admin/SingleMail.vue");
 /* harmony import */ var _components_super_Dashboard__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/super/Dashboard */ "./resources/js/components/super/Dashboard.vue");
 /* harmony import */ var _components_super_AdminsComponent__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/super/AdminsComponent */ "./resources/js/components/super/AdminsComponent.vue");
 /* harmony import */ var _components_templates_Physicians_MainTemplateComponent__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/templates/Physicians/MainTemplateComponent */ "./resources/js/components/templates/Physicians/MainTemplateComponent.vue");
@@ -31634,14 +31634,14 @@ app.component('client-mail-component', _components_client_MailComponent_vue__WEB
 app.component('client-settings-component', _components_client_SettingsComponent_vue__WEBPACK_IMPORTED_MODULE_10__["default"]);
 app.component('client-support-component', _components_client_SupportComponent_vue__WEBPACK_IMPORTED_MODULE_11__["default"]);
 app.component('client-singlemail-component', _components_client_SinglemailComponent_vue__WEBPACK_IMPORTED_MODULE_12__["default"]);
-app.component('admin-component', _components_admin_Dashboard__WEBPACK_IMPORTED_MODULE_14__["default"]);
+app.component("admin-component", _components_admin_Dashboard__WEBPACK_IMPORTED_MODULE_14__["default"]);
 app.component('admins-component', _components_super_AdminsComponent__WEBPACK_IMPORTED_MODULE_21__["default"]);
 app.component('sadmin-component', _components_super_Dashboard__WEBPACK_IMPORTED_MODULE_20__["default"]);
 app.component("admin-client-component", _components_admin_Client__WEBPACK_IMPORTED_MODULE_15__["default"]);
 app.component("admin-template-component", _components_admin_Template__WEBPACK_IMPORTED_MODULE_16__["default"]);
-app.component("admin-messages-component", _components_admin_Messages__WEBPACK_IMPORTED_MODULE_17__["default"]);
+app.component("admin-messages-component", _components_admin_Mail__WEBPACK_IMPORTED_MODULE_17__["default"]);
 app.component("admin-settings-component", _components_admin_Settings__WEBPACK_IMPORTED_MODULE_18__["default"]);
-app.component("admin-singlemsg-component", _components_admin_SingleMsg__WEBPACK_IMPORTED_MODULE_19__["default"]);
+app.component("admin-singlemail-component", _components_admin_SingleMail__WEBPACK_IMPORTED_MODULE_19__["default"]);
 app.component('physician-website-component', _components_templates_Physicians_MainTemplateComponent__WEBPACK_IMPORTED_MODULE_22__["default"]);
 app.component('website-settings', _components_templates_Physicians_Settings_SettingsComponent__WEBPACK_IMPORTED_MODULE_23__["default"]);
 
@@ -86022,10 +86022,10 @@ if (false) {}
 
 /***/ }),
 
-/***/ "./resources/js/components/admin/Messages.vue":
-/*!****************************************************!*\
-  !*** ./resources/js/components/admin/Messages.vue ***!
-  \****************************************************/
+/***/ "./resources/js/components/admin/Mail.vue":
+/*!************************************************!*\
+  !*** ./resources/js/components/admin/Mail.vue ***!
+  \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -86033,15 +86033,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Messages_vue_vue_type_template_id_3221c537__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Messages.vue?vue&type=template&id=3221c537 */ "./resources/js/components/admin/Messages.vue?vue&type=template&id=3221c537");
-/* harmony import */ var _Messages_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Messages.vue?vue&type=script&lang=js */ "./resources/js/components/admin/Messages.vue?vue&type=script&lang=js");
+/* harmony import */ var _Mail_vue_vue_type_template_id_13603da2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Mail.vue?vue&type=template&id=13603da2 */ "./resources/js/components/admin/Mail.vue?vue&type=template&id=13603da2");
+/* harmony import */ var _Mail_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Mail.vue?vue&type=script&lang=js */ "./resources/js/components/admin/Mail.vue?vue&type=script&lang=js");
 /* harmony import */ var C_laragon_www_paab_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_laragon_www_paab_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Messages_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Messages_vue_vue_type_template_id_3221c537__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/admin/Messages.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_laragon_www_paab_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Mail_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Mail_vue_vue_type_template_id_13603da2__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/admin/Mail.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -86078,10 +86078,10 @@ if (false) {}
 
 /***/ }),
 
-/***/ "./resources/js/components/admin/SingleMsg.vue":
-/*!*****************************************************!*\
-  !*** ./resources/js/components/admin/SingleMsg.vue ***!
-  \*****************************************************/
+/***/ "./resources/js/components/admin/SingleMail.vue":
+/*!******************************************************!*\
+  !*** ./resources/js/components/admin/SingleMail.vue ***!
+  \******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -86089,15 +86089,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _SingleMsg_vue_vue_type_template_id_08a2373e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SingleMsg.vue?vue&type=template&id=08a2373e */ "./resources/js/components/admin/SingleMsg.vue?vue&type=template&id=08a2373e");
-/* harmony import */ var _SingleMsg_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SingleMsg.vue?vue&type=script&lang=js */ "./resources/js/components/admin/SingleMsg.vue?vue&type=script&lang=js");
+/* harmony import */ var _SingleMail_vue_vue_type_template_id_5a2733ca__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SingleMail.vue?vue&type=template&id=5a2733ca */ "./resources/js/components/admin/SingleMail.vue?vue&type=template&id=5a2733ca");
+/* harmony import */ var _SingleMail_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SingleMail.vue?vue&type=script&lang=js */ "./resources/js/components/admin/SingleMail.vue?vue&type=script&lang=js");
 /* harmony import */ var C_laragon_www_paab_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_laragon_www_paab_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_SingleMsg_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_SingleMsg_vue_vue_type_template_id_08a2373e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/admin/SingleMsg.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_laragon_www_paab_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_SingleMail_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_SingleMail_vue_vue_type_template_id_5a2733ca__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/admin/SingleMail.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -87463,18 +87463,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/admin/Messages.vue?vue&type=script&lang=js":
-/*!****************************************************************************!*\
-  !*** ./resources/js/components/admin/Messages.vue?vue&type=script&lang=js ***!
-  \****************************************************************************/
+/***/ "./resources/js/components/admin/Mail.vue?vue&type=script&lang=js":
+/*!************************************************************************!*\
+  !*** ./resources/js/components/admin/Mail.vue?vue&type=script&lang=js ***!
+  \************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Messages_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Mail_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Messages_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Messages.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/Messages.vue?vue&type=script&lang=js");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Mail_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Mail.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/Mail.vue?vue&type=script&lang=js");
  
 
 /***/ }),
@@ -87495,18 +87495,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/admin/SingleMsg.vue?vue&type=script&lang=js":
-/*!*****************************************************************************!*\
-  !*** ./resources/js/components/admin/SingleMsg.vue?vue&type=script&lang=js ***!
-  \*****************************************************************************/
+/***/ "./resources/js/components/admin/SingleMail.vue?vue&type=script&lang=js":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/admin/SingleMail.vue?vue&type=script&lang=js ***!
+  \******************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_SingleMsg_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_SingleMail_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_SingleMsg_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./SingleMsg.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/SingleMsg.vue?vue&type=script&lang=js");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_SingleMail_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./SingleMail.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/SingleMail.vue?vue&type=script&lang=js");
  
 
 /***/ }),
@@ -88279,18 +88279,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/admin/Messages.vue?vue&type=template&id=3221c537":
-/*!**********************************************************************************!*\
-  !*** ./resources/js/components/admin/Messages.vue?vue&type=template&id=3221c537 ***!
-  \**********************************************************************************/
+/***/ "./resources/js/components/admin/Mail.vue?vue&type=template&id=13603da2":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/admin/Mail.vue?vue&type=template&id=13603da2 ***!
+  \******************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Messages_vue_vue_type_template_id_3221c537__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Mail_vue_vue_type_template_id_13603da2__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Messages_vue_vue_type_template_id_3221c537__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Messages.vue?vue&type=template&id=3221c537 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/Messages.vue?vue&type=template&id=3221c537");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Mail_vue_vue_type_template_id_13603da2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Mail.vue?vue&type=template&id=13603da2 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/Mail.vue?vue&type=template&id=13603da2");
 
 
 /***/ }),
@@ -88311,18 +88311,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/admin/SingleMsg.vue?vue&type=template&id=08a2373e":
-/*!***********************************************************************************!*\
-  !*** ./resources/js/components/admin/SingleMsg.vue?vue&type=template&id=08a2373e ***!
-  \***********************************************************************************/
+/***/ "./resources/js/components/admin/SingleMail.vue?vue&type=template&id=5a2733ca":
+/*!************************************************************************************!*\
+  !*** ./resources/js/components/admin/SingleMail.vue?vue&type=template&id=5a2733ca ***!
+  \************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_SingleMsg_vue_vue_type_template_id_08a2373e__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_SingleMail_vue_vue_type_template_id_5a2733ca__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_SingleMsg_vue_vue_type_template_id_08a2373e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./SingleMsg.vue?vue&type=template&id=08a2373e */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/SingleMsg.vue?vue&type=template&id=08a2373e");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_SingleMail_vue_vue_type_template_id_5a2733ca__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./SingleMail.vue?vue&type=template&id=5a2733ca */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/admin/SingleMail.vue?vue&type=template&id=5a2733ca");
 
 
 /***/ }),

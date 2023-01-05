@@ -27,7 +27,7 @@
                 </div>
 
                 <!-- Mail Black div -->
-                <div class="mailBlackDiv" id="mailScrollDiv" @click="showSingleMesg()">
+                <div class="mailBlackDiv" id="mailScrollDiv" @click="showSingleMail()">
                     <div class="webBlackDiv1">
                         <div class="row" id="mailInnerDiv">
                             <div class="col s2 m2 l1">
@@ -163,8 +163,8 @@ export default {
     },
     mounted() { },
     methods: {
-        showSingleMesg() {
-            window.location.href = "/admin/singlemsg";
+        showSingleMail() {
+            window.location.href = "/admin/singlemail";
         }
     }
 }
