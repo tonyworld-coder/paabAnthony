@@ -75,7 +75,7 @@ app.component("admin-settings-component", AdminSettings);
 app.component("admin-singlemail-component", AdminSingleMail);
 
 app.component('physician-website-component', PhysicianWebsiteComponent);
-app.component('website-settings', SettingsComponent);
+app.component('physician-website-settings', SettingsComponent);
 
 
 /**
