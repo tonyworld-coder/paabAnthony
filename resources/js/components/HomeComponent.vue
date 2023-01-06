@@ -251,7 +251,7 @@
 
                     <div class="col l3 offset-l3 cvImgDiv hide-on-large-only">
                         <div class="cvImgInnerDivSm">
-                            <img :src="'./media/img/cv.png'" alt="cvFile.png" id="cvImage">
+                            <img :src="'./media/img/cv.png'" alt="cvFile.png" class="cvImage">
                         </div>
                     </div>
 
@@ -269,7 +269,7 @@
 
                     <div class="col l3 offset-l3 cvImgDiv hide-on-med-and-down">
                         <div class="cvImgInnerDiv">
-                            <img :src="'./media/img/cv.png'" alt="cvFile.png" id="cvImage">
+                            <img :src="'./media/img/cv.png'" alt="cvFile.png" class="cvImage">
                         </div>
                     </div>
                 </div>
@@ -280,9 +280,9 @@
                 <div class="row socialMediaInnerDiv">
                     <div class="col l6 socialMediaImgDiv">
                         <div class="socialMediaImgInnerDiv">
-                            <img :src="'./media/img/socialMedia.png'" alt="csocialMediaPhone.png" id="socialMediaImage">
-                            <img :src="'./media/img/facebookImg.png'" alt="facebookImg.png" id="facebookImg">
-                            <img :src="'./media/img/twiterImg.png'" alt="twiterImg.png" id="twiterImg">
+                            <img :src="'./media/img/socialMedia.png'" alt="csocialMediaPhone.png" class="socialMediaImage">
+                            <img :src="'./media/img/facebookImg.png'" alt="facebookImg.png" class="facebookImg">
+                            <img :src="'./media/img/twiterImg.png'" alt="twiterImg.png" class="twiterImg">
                         </div>
                     </div>
 
@@ -306,7 +306,7 @@
 
                     <div class="col l3 offset-l3 clientRevImgDiv hide-on-large-only">
                         <div class="clientRevImgInnerDiv">
-                            <img :src="'./media/img/clientRevImg.png'" alt="clientRevImg.png" id="clientRevImage">
+                            <img :src="'./media/img/clientRevImg.png'" alt="clientRevImg.png" class="clientRevImage">
                         </div>
                     </div>
 
@@ -324,7 +324,7 @@
 
                     <div class="col l3 offset-l3 clientRevImgDiv hide-on-med-and-down">
                         <div class="clientRevImgInnerDiv">
-                            <img :src="'./media/img/clientRevImg.png'" alt="clientRevImg.png" id="clientRevImage">
+                            <img :src="'./media/img/clientRevImg.png'" alt="clientRevImg.png" class="clientRevImage">
                         </div>
                     </div>
 
@@ -358,7 +358,7 @@
         <div class="section scrollspy cusSupportDiv" id="support">
             <div class="row cusSupportInnerDiv">
                 <div class="col s12 m12 l7 cusSupportImgDiv hide-on-med-and-down">
-                    <img :src="'./media/img/CARE.png'" alt="CARE.png" id="careImg">
+                    <img :src="'./media/img/CARE.png'" alt="CARE.png" class="careImg">
                 </div>
         
                 <div class="col s12 m12 l5 cusSupportFormDiv">

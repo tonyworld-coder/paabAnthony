@@ -164,7 +164,7 @@ body {
     padding-top: 0;
     padding-bottom: 0;
 }
-#navLinks {
+/* #navLinks {
     font-weight: 600;
     font-size: 1.1rem;
     color: #7746ff;
@@ -190,7 +190,7 @@ body {
 #loginLink:hover {
     background: #7746ff;
     color: #ffffff;
-}
+} */
 #banner {
     background-image: url("../media/img/bannerCircle.png");
     height: 100vh;
@@ -423,11 +423,6 @@ body {
     background: rgba(119, 70, 255, 0.5);
     border-radius: 50%;
 }
-#cvImage {
-    position: relative;
-    bottom: 40px;
-    right: 20px;
-}
 .cvTitle {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -476,21 +471,6 @@ body {
     line-height: 24px;
     letter-spacing: -0.015em;
     margin: 0;
-}
-#socialMediaImage {
-    position: relative;
-    bottom: 30px;
-    left: 3px;
-    max-width: 120vw;
-    height: 36vh;
-}
-#facebookImg {
-    position: absolute;
-    margin: 89px 0 0 38px;
-}
-#twiterImg {
-    position: absolute;
-    margin: 27px 0 0 202px;
 }
 .clientRevInnerDiv {
     width: 70%;
@@ -3330,6 +3310,98 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
 }
 
 
+/* ************************************************************************************************ */
+/* Changed "cvImage" id to class */
+/* Changed "navLinks" from id -> class */
+a.navLinks {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #7746ff;
+    font-family: "Montserrat", sans-serif;
+}
+
+a.navLinks:hover {
+    background-color: white;
+    border-bottom: 4px solid rgba(125, 81, 245, 0.5);
+
+    padding: 0;
+    border-left: none;
+    margin: 0 0.96vw;
+}
+
+a.navLinks.active {
+    padding: 0;
+    border-left: none;
+    margin: 0 0.9vw;
+}
+
+/* Changed "loginLink" from id -> class */
+a.loginLink {
+    border: 1px solid #7746ff;
+    border-radius: 6px;
+    width: 130px;
+    height: 40px;
+    margin-top: 12px;
+    text-align: center;
+    line-height: 33px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #7746ff;
+    font-family: "Montserrat", sans-serif;
+}
+
+a.loginLink:hover {
+    background: #7746ff;
+    color: #ffffff;
+    border-left: #7746ff;
+}
+
+.chatImage {
+    position: relative;
+    bottom: 40px;
+}
+
+/* Changed "cvImage" from id -> class */
+.cvImage {
+    position: relative;
+    bottom: 40px;
+    right: 20px;
+}
+
+/* Changed "socialMediaImage" from id -> class */
+.socialMediaImage {
+    position: relative;
+    bottom: 30px;
+    left: 3px;
+    max-width: 120vw;
+    height: 36vh;
+}
+
+/* Changed "facebookImg" from id -> class */
+.facebookImg {
+    position: absolute;
+    margin: 89px 0 0 38px;
+}
+
+/* Changed "twiterImg" from id -> class */
+.twiterImg {
+    position: absolute;
+    margin: 27px 0 0 202px;
+}
+
+/* Changed "clientRevImage" from id -> class */
+.clientRevImage {
+    position: relative;
+    bottom: 40px;
+    right: 45px;
+}
+
+/* Changed "careImg" from id -> class */
+.careImg {
+    height: 70vh;
+}
+
+
 
 
 /* Media Query on Medium Device */
@@ -3352,11 +3424,11 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
     #sideNav {
         z-index: 100;
     }
-    #sideNavImgDiv {
+    /* #sideNavImgDiv {
         height: 25vh;
-    }
-    #sideNavLinkMgTp {
-        /* margin-top: 27vh; */
+    } */
+    /* #sideNavLinkMgTp {
+        margin-top: 27vh;
         margin-top: 2vh;
     }
     #navLinks {
@@ -3367,7 +3439,7 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
         margin-left: 3vw;
     }
     #loginLink {
-        /* border: 1px solid #7746FF; */
+        border: 1px solid #7746FF;
         border-radius: 6px;
         width: 130px;
         height: 40px;
@@ -3379,7 +3451,7 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
         color: #7746ff;
         background-color: #ffffff;
         margin-left: 20px;
-    }
+    } */
     .circlDiv1 {
         width: 0vw;
         height: 0vh;
@@ -3598,9 +3670,6 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
         height: 53px;
         margin: 10vh auto 0 auto;
     }
-    #careImg {
-        height: 80vh;
-    }
     .footerInnerDiv {
         width: 100%;
         margin: 15vh auto 0 auto;
@@ -3614,14 +3683,6 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
         letter-spacing: -0.015em;
         color: #ffffff;
         text-align: center;
-    }
-    #facebookImg {
-        width: 8vw;
-        margin: 64px 0 0 33px;
-    }
-    #twiterImg {
-        width: 8vw;
-        margin: 20px 0 0 155px;
     }
     .footerGridDivs {
         margin-right: 10vw;
@@ -3704,11 +3765,6 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
         width: 80%;
         margin-top: 15vh;
     }
-    #chatImage {
-        width: 30vw;
-        position: relative;
-        bottom: 5vh;
-    }
     .cvImgInnerDivSm {
         width: 200px;
         height: 200px;
@@ -3717,11 +3773,6 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
         margin-top: 0vh;
         margin-left: 50vw;
     }
-    #cvImage {
-        width: 28vw;
-        position: relative;
-        bottom: 5vh;
-    }
     .cvWriteUpDiv {
         position: relative;
         left: 5vw;
@@ -3729,18 +3780,6 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
     .socialMediaInnerDiv {
         width: 80%;
         margin-top: 2vh;
-    }
-    #socialMediaImage {
-        position: relative;
-        bottom: 20px;
-        left: 3px;
-        width: 80vw;
-        height: 29vh;
-    }
-    #clientRevImage {
-        width: 28vw;
-        position: relative;
-        bottom: 3vh;
     }
     .ellipseLarge {
         width: 70px;
@@ -3960,6 +3999,78 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
         background: #1e1e1e;
         border-radius: 6px;
     }
+
+    /* ******************************************************************************************* */
+    /* New changes Starts here */
+    .sideNavLinkMgTp {
+        /* margin-top: 27vh; */
+        margin-top: 2vh;
+    }
+
+    a.navLinks {
+        font-weight: 600;
+        font-size: 1.3125rem;
+        color: #ffffff;
+        letter-spacing: 0.5px;
+        margin-left: 3vw;
+    }
+
+    a.loginLink {
+        /* border: 1px solid #7746FF; */
+        border-radius: 6px;
+        width: 130px;
+        height: 40px;
+        margin-top: 12px;
+        text-align: center;
+        line-height: 33px;
+        font-weight: 600;
+        font-size: 1.25rem;
+        color: #7746ff;
+        background-color: #ffffff;
+        margin-left: 20px;
+    }
+    
+    /* Changed "chatImage" from id -> class */
+    .chatImage {
+        width: 30vw;
+        position: relative;
+        bottom: 5vh;
+    }
+
+    /* Changed "cvImage" from id -> class */
+    .cvImage {
+        width: 28vw;
+        position: relative;
+        bottom: 5vh;
+    }
+
+    /* Changed "socialMediaImage" from id -> class */
+    .socialMediaImage {
+        position: relative;
+        bottom: 20px;
+        left: 3px;
+        width: 80vw;
+        height: 29vh;
+    }
+
+    /* Changed "facebookImg" from id -> class */
+    .facebookImg {
+        width: 8vw;
+        margin: 64px 0 0 33px;
+    }
+
+    /* Changed "twiterImg" from id -> class */
+    .twiterImg {
+        width: 8vw;
+        margin: 20px 0 0 155px;
+    }
+
+    /* Changed "clientRevImage" from id -> class */
+    .clientRevImage {
+        width: 28vw;
+        position: relative;
+        bottom: 3vh;
+    }
 }
 
 /* Media Query on small device */
@@ -4031,7 +4142,7 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
         margin-left: 14vw;
         font-family: "Montserrat", sans-serif;
     }
-    #navLinks {
+    /* #navLinks {
         font-weight: 600;
         font-size: 1.3125rem;
         color: #ffffff;
@@ -4039,11 +4150,11 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
         margin-left: 3vw;
     }
     #sideNavLinkMgTp {
-        /* margin-top: 27vh; */
+        margin-top: 27vh;
         margin-top: 2vh;
     }
     #loginLink {
-        /* border: 1px solid #7746FF; */
+        border: 1px solid #7746FF;
         border-radius: 6px;
         width: 130px;
         height: 40px;
@@ -4055,10 +4166,10 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
         color: #7746ff;
         background-color: #ffffff;
         margin-left: 20px;
-    }
-    #sideNavImgDiv {
+    } */
+    /* #sideNavImgDiv {
         height: 25vh;
-    }
+    } */
     .portraitImgContainDiv {
         margin-right: 2vw;
     }
@@ -4170,11 +4281,6 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
         margin-top: 0vh;
         margin-left: 57vw;
     }
-    #cvImage {
-        width: 38vw;
-        position: relative;
-        bottom: 3vh;
-    }
     .socialMediaInnerDiv {
         width: 95%;
         margin-top: 16vh;
@@ -4186,23 +4292,6 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
         background: rgba(211, 240, 251, 0.5);
         border-radius: 50%;
         margin-left: 0vw;
-    }
-    #socialMediaImage {
-        position: relative;
-        bottom: 20px;
-        left: 3px;
-        max-width: 55vw;
-        height: 20vh;
-    }
-    #facebookImg {
-        width: 12vw;
-        position: absolute;
-        margin: 36px 0 0 25px;
-    }
-    #twiterImg {
-        width: 12vw;
-        position: absolute;
-        margin: 12px 0 0 110px;
     }
     .socialMediaTitle {
         font-family: "Montserrat", sans-serif;
@@ -4781,4 +4870,104 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
         border-radius: 6px;
     }
 
+    /* Centered template "GET STARTED" button properly */
+    .tempPageBtn {
+        width: 198px;
+        height: 40px;
+        background: #7746ff;
+        border-radius: 6px;
+        font-family: "Montserrat", sans-serif;
+        margin-left: 23vw;
+    }
+
+    /* Centered this text properly */
+    .circleDivtxt {
+        /* width: 400px; */
+        font-weight: 600;
+        font-size: 1rem;
+        color: #000000;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+
+    /* New changes Starts here */
+    /* Changed "chatImage" from id -> class */
+    .chatImage {
+        width: 38vw;
+        position: relative;
+        bottom: 3vh;
+    }
+
+    /* Changed "cvImage" from id -> class */
+    .cvImage {
+        width: 38vw;
+        position: relative;
+        bottom: 3vh;
+    }
+
+    /* Changed "socialMediaImage" from id -> class */
+    .socialMediaImage {
+        position: relative;
+        bottom: 20px;
+        left: 3px;
+        max-width: 55vw;
+        height: 20vh;
+    }
+
+    /* Changed "facebookImg" from id -> class */
+    .facebookImg {
+        width: 12vw;
+        position: absolute;
+        margin: 36px 0 0 25px;
+    }
+
+    /* Changed "twiterImg" from id -> class */
+    .twiterImg {
+        width: 12vw;
+        position: absolute;
+        margin: 12px 0 0 110px;
+    }
+
+    /* Changed "clientRevImage" from id -> class */
+    .clientRevImage {
+        width: 40vw;
+        position: relative;
+        bottom: 3vh;
+    }
+
+    /* Commented off this line of code, It's not needed again. */
+    /* .careImg {
+        height: 50vh;
+        width: 93vw;
+    } */
+
+    a.navLinks {
+        font-weight: 600;
+        font-size: 1.3125rem;
+        color: #FFFFFF;
+        letter-spacing: 0.5px;
+        margin-left: 3vw;
+    }
+
+    .sideNavLinkMgTp {
+        /* margin-top: 27vh; */
+        margin-top: 2vh;
+    }
+
+    a.loginLink {
+        /* border: 1px solid #7746FF; */
+        border-radius: 6px;
+        width: 130px;
+        height: 40px;
+        margin-top: 12px;
+        text-align: center;
+        line-height: 33px;
+        font-weight: 600;
+        font-size: 1.25rem;
+        color: #7746ff;
+        background-color: #ffffff;
+        margin-left: 20px;
+    }
 }
