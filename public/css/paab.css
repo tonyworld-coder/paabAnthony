@@ -2573,12 +2573,7 @@ div .col .s9 input.clientCreatePortInput1 {
     justify-content: center;
     align-items: center;
 }
-.editWebModalDiv {
-    position: absolute;
-    left: 25vw;
-    top: 3vh;
-    width: 67%;
-}
+
 .editWebLink {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -3063,14 +3058,7 @@ textarea::placeholder {
     color: #ffffff;
     width: 8vw;
 }
-#editWebWlcTxt {
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.9rem;
-    line-height: 37px;
-    color: #7746ff;
-}
+
 #genUploadFavIcon {
     position: relative;
     top: 0.5vh;
@@ -3216,36 +3204,10 @@ textarea::placeholder {
     position: absolute;
     top: 14.8vh;
 }
-.editWebSidenavProImgDiv {
-    background: #d9d9d9;
-    width: 69px;
-    height: 69px;
-    border-radius: 100px;
-    margin: 7vh auto 0 auto;
-}
+
 .editWebSidenavDomainNameDiv {
     text-align: center;
     margin-top: 1vh;
-}
-.editWebSidenavDomainNameLink {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #ffffff;
-}
-.editWebSidenavTempIcon {
-    font-size: 16px;
-    height: 1vh;
-    color: #ffffff;
-    position: relative;
-    top: 0.5vh;
-    left: 0.3vw;
-}
-.editWebSidenavImg {
-    width: 16vw;
-    margin: 9vh 0 0 4vw;
 }
 
 /* Logout Modal */
@@ -3484,6 +3446,101 @@ a.loginLink:hover {
     top: 15vh;
 } */
 
+/* Commented off this line of code, It's not needed again. */
+/* Made some changes on editWebModalDiv */
+/* .editWebModalDiv {
+    position: absolute;
+    left: 25vw;
+    top: 5vh;
+    
+    width: 70%;
+    margin: 0 auto;
+} */
+
+/* Made some changes on editWebSidenavImg */
+.editWebSidenavImg {
+    width: 10vw;
+    margin: 3vh 0 0 0;
+}
+
+
+/* Made some changes on editWebiIllustrateMainDiv */
+.editWebiIllustrateMainDiv {
+    display: flex;
+}
+
+/* Made some changes on editWebiIllustrateDiv */
+.editWebiIllustrateDiv {
+    margin-left: auto;
+}
+
+/* Made some changes on editWebWlcTxt */
+.editWebWlcTxt {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.9rem;
+    line-height: 37px;
+    color: #7746ff;
+    margin-top: 6vh;
+}
+
+/* Added EditWebNavbar */
+.editWebNavbar {
+    background-color: #7746ff;
+}
+
+/* Added and styled editWebNavbarLogo */
+.editWebNavbarLogo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+/* Made some changes on editWebSidenavProImgDiv */
+.editWebSidenavProImgDiv {
+    background: #d9d9d9;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    margin: 1.5vh 0 0 0;
+}
+
+/* Made some changes on editWebSidenavDomainNameLink */
+.editWebSidenavDomainNameLink {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 73px;
+    color: #ffffff;
+    display: flex;
+}
+
+/* Added some changes on editWebSidenavDomainNameLink hover */
+nav ul .editWebSidenavDomainNameLink:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: #e0e0e0;
+}
+
+/* Made some changes on editWebSidenavTempIcon */
+.editWebSidenavTempIcon {
+    font-size: 16px;
+    height: 1vh;
+    /* color: #ffffff; */
+    position: relative;
+    top: 0.5vh;
+    left: 0.3vw;
+}
+
+/* Added editWebIllustrativeImg for edit website settings */
+.editWebIllustrativeImg {
+    margin-top: 9vh;
+}
+
+/* Added editWebIllustrativeImg1 for edit website settings */
+.editWebIllustrativeImg1 {
+    margin-top: 5vh;
+}
 
 
 

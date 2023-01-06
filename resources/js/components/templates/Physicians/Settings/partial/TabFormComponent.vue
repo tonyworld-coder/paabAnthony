@@ -1,7 +1,15 @@
 <template>
     <div>
-        <div class="editWebModalDiv">
-            <p id="editWebWlcTxt">Setup your website</p>
+        <div class="container">
+            <div class="editWebiIllustrateMainDiv">
+                <div>
+                    <p class="editWebWlcTxt">Setup your website</p>
+                </div>
+                <div class="editWebiIllustrateDiv">
+                    <img src="/media/img/settings.png" alt="settings.png" class="editWebSidenavImg" />
+                </div>
+            </div>
+            
             <div class="editWebNav">
                 <div class="editInnerWebNav">
                     <ul id="editWebUl">

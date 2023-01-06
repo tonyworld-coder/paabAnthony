@@ -70,56 +70,43 @@
                         </p>
                     </div>
 
-                    <div>
-                        <p class="genTitle1">Provide your full name</p>
-
-                        <p class="genTxt">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry.
-                        </p>
-
-                        <div class="input-field">
-                            <input
-                                type="text"
-                                v-model="bio.lastname"
-                                placeholder="Last Name"
-                                id="bioInput"
-                            />
-                        </div>
-
-                        <div class="input-field">
-                            <input
-                                type="text"
-                                v-model="bio.firstname"
-                                placeholder="First Name"
-                                id="bioInput1"
-                            />
-                        </div>
-
-                        <!-- <div>
+                    <div class="row">
+                        <div class="col s6">
+                            <p class="genTitle1">Provide your full name</p>
+                        
+                            <p class="genTxt">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.
+                            </p>
+                        
+                            <div class="input-field">
+                                <input type="text" v-model="bio.lastname" placeholder="Last Name" id="bioInput" />
+                            </div>
+                        
+                            <div class="input-field">
+                                <input type="text" v-model="bio.firstname" placeholder="First Name" id="bioInput1" />
+                            </div>
+                        
+                            <!-- <div>
                                 <button type="button" class="btn" id="genModalBtn">
                                     save
                                 </button>
                             </div> -->
+                        </div>
 
-                        <div class="genBottomBtnDiv">
-                            <a
-                                href="#"
-                                class="goBackBtn"
-                                @click="bioGoBackBtn()"
-                                >GO BACK</a
-                            >
-
-                            <button
-                                type="button"
-                                class="btn right"
-                                id="genNextBtn"
-                                @click="bioNextBtn()"
-                            >
-                                NEXT STEP
-                            </button>
+                        <div class="col s6">
+                            <img src="/media/img/editWebsiteSettings/fullname.png" alt="fullname.png" class="editWebIllustrativeImg">
                         </div>
                     </div>
+
+                    <div class="genBottomBtnDiv">
+                        <a href="#" class="goBackBtn" @click="bioGoBackBtn()">GO BACK</a>
+                    
+                        <button type="button" class="btn right" id="genNextBtn" @click="bioNextBtn()">
+                            NEXT STEP
+                        </button>
+                    </div>
+                    
                 </div>
             </div>
 
@@ -193,52 +180,44 @@
                         </p>
                     </div>
 
-                    <div>
-                        <p class="genTitle1">About You</p>
-
-                        <p class="genTxt">
-                            Readers only looks at vital info about you, so make
-                            it catchy. Not more than (614) and not less than
-                            (600) characters.
-                        </p>
-
-                        <div class="input-field">
-                            <div class="w-custom">
-                                <textarea
-                                    v-model="bio.about"
-                                    id="bioDescribeInput"
-                                    class="materialize-textarea"
-                                    placeholder="Me"
-                                    maxlength="614"
-                                >
-                                </textarea>
-                                <p class="right m-0 " :class="{redColor: aboutCount <= 599, successColor: aboutCount >= 614}">{{aboutCount}}/614</p>
+                    <div class="row">
+                        <div class="col s6">
+                            <p class="genTitle1">About You</p>
+                        
+                            <p class="genTxt">
+                                Readers only looks at vital info about you, so make
+                                it catchy. Not more than (614) and not less than
+                                (600) characters.
+                            </p>
+                        
+                            <div class="input-field">
+                                <div class="w-custom">
+                                    <textarea v-model="bio.about" id="bioDescribeInput" class="materialize-textarea" placeholder="Me"
+                                        maxlength="614">
+                                                        </textarea>
+                                    <p class="right m-0 " :class="{redColor: aboutCount <= 599, successColor: aboutCount >= 614}">
+                                        {{aboutCount}}/614</p>
+                                </div>
                             </div>
-                        </div>
-
-                        <!-- <div>
+                        
+                            <!-- <div>
                                 <button type="button" class="btn" id="genModalBtn">
                                     save
                                 </button>
                             </div> -->
-
-                        <div class="genBottomBtnDiv">
-                            <a
-                                href="#"
-                                class="goBackBtn"
-                                @click="bioGoBackBtn1()"
-                                >GO BACK</a
-                            >
-
-                            <button
-                                type="button"
-                                class="btn right"
-                                id="genNextBtn"
-                                @click="bioNextBtn1()"
-                            >
-                                NEXT STEP
-                            </button>
                         </div>
+
+                        <div class="col s6">
+                            <img src="/media/img/editWebsiteSettings/fullnameDescription.png" alt="fullnameDescription.png" class="editWebIllustrativeImg">
+                        </div>
+                    </div>
+                    
+                    <div class="genBottomBtnDiv">
+                        <a href="#" class="goBackBtn" @click="bioGoBackBtn1()">GO BACK</a>
+                    
+                        <button type="button" class="btn right" id="genNextBtn" @click="bioNextBtn1()">
+                            NEXT STEP
+                        </button>
                     </div>
                 </div>
             </div>
@@ -313,80 +292,53 @@
                         </p>
                     </div>
 
-                    <div>
-                        <p class="genTitle1">Upload a clear picture of you</p>
-
-                        <p class="genTxt">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry.
-                        </p>
-
-                        <div
-                            class="file-field input-field"
-                            id="genUploadFavIconDiv"
-                            v-if="bio.photo == null"
-                        >
-                            <input
-                                type="file"
-                                @change="photoUpload"
-                                accept=".jpg, .png"
-                            />
-                            <div class="file-path-wrapper">
-                                <input
-                                    class="file-path validate"
-                                    type="text"
-                                    id="genInput1"
-                                    placeholder="Image must be .jpg/.png and not greater than 1MB(500x500)"
-                                />
-                                <i class="material-icons" id="genUploadFavIcon"
-                                    >file_upload</i
-                                >
+                    <div class="row">
+                        <div class="col s7">
+                            <p class="genTitle1">Upload a clear picture of you</p>
+                        
+                            <p class="genTxt">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.
+                            </p>
+                        
+                            <div class="file-field input-field" id="genUploadFavIconDiv" v-if="bio.photo == null">
+                                <input type="file" @change="photoUpload" accept=".jpg, .png" />
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" id="genInput1"
+                                        placeholder="Image must be .jpg/.png and not greater than 1MB(500x500)" />
+                                    <i class="material-icons" id="genUploadFavIcon">file_upload</i>
+                                </div>
                             </div>
-                        </div>
-                        <div v-else class="flex no-space-between">
-                            <img
-                                width="100"
-                                height="100"
-                                class="responsive-img"
-                                :src="
+                            <div v-else class="flex no-space-between">
+                                <img width="100" height="100" class="responsive-img" :src="
                                     typeof bio.photo == 'string'
                                         ? 'tenancy/assets/' + bio.photo
                                         : uploaded
-                                "
-                            />
-                            <a
-                                class="
+                                " />
+                                <a class="
                                     waves-effect waves-light
                                     btn-small btn
                                     red
-                                "
-                                @click="deleteImg"
-                                >Change</a
-                            >
+                                " @click="deleteImg">Change</a>
+                            </div>
+                            <!-- <div>
+                                <button type="button" class="btn" id="genModalBtn">
+                                    Upload
+                                </button>
+                            </div> -->
                         </div>
-                        <!-- <div>
-                                    <button type="button" class="btn" id="genModalBtn">
-                                        Upload
-                                    </button>
-                                </div> -->
 
-                        <div class="genBottomBtnDiv">
-                            <a
-                                href="#"
-                                class="goBackBtn"
-                                @click="bioGoBackBtn2()"
-                                >GO BACK</a
-                            >
-
-                            <button
-                                type="button"
-                                class="btn right"
-                                id="genNextBtn"
-                                @click="bioNextBtn2()"
-                            >
-                                NEXT STEP
-                            </button>
+                        <div class="col s5">
+                            <img src="/media/img/editWebsiteSettings/fullnameProImg.png" alt="fullnameProImg.png" class="editWebIllustrativeImg" width="420" height="300">
                         </div>
+                    </div>
+                    
+                    <div class="genBottomBtnDiv">
+                        <a href="#" class="goBackBtn" @click="bioGoBackBtn2()">GO BACK</a>
+                    
+                        <button type="button" class="btn right" id="genNextBtn" @click="bioNextBtn2()">
+                            NEXT STEP
+                        </button>
                     </div>
                 </div>
             </div>
@@ -461,91 +413,57 @@
                         </p>
                     </div>
 
-                    <div>
-                        <p class="genTitle1">Upload your curriculum Vitae</p>
-
-                        <p class="genTxt">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry.
-                        </p>
-
-                        <div
-                            class="file-field input-field"
-                            id="genUploadFavIconDiv"
-                            v-if="bio.CV == null"
-                        >
-                            <input
-                                type="file"
-                                @change="CVUpload"
-                                accept="application/msword, application/vnd.ms-powerpoint,application/pdf,"
-                            />
-                            <div class="file-path-wrapper">
-                                <input
-                                    class="file-path validate"
-                                    type="text"
-                                    id="genInput1"
-                                    placeholder="File must not be more than 2MB"
-                                />
-                                <i class="material-icons" id="genUploadFavIcon"
-                                    >file_upload</i
-                                >
-                            </div>
-                        </div>
-                        <div v-else class="flex no-space-between">
-                            <p>
-                                {{
-                                    uploadedfile != null ? uploadedfile : bio.CV
-                                }}
+                    <div class="row">
+                        <div class="col s7">
+                            <p class="genTitle1">Upload your curriculum Vitae</p>
+                        
+                            <p class="genTxt">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.
                             </p>
-                            <a
-                                class="
+                        
+                            <div class="file-field input-field" id="genUploadFavIconDiv" v-if="bio.CV == null">
+                                <input type="file" @change="CVUpload"
+                                    accept="application/msword, application/vnd.ms-powerpoint,application/pdf," />
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" id="genInput1" placeholder="File must not be more than 2MB" />
+                                    <i class="material-icons" id="genUploadFavIcon">file_upload</i>
+                                </div>
+                            </div>
+                            <div v-else class="flex no-space-between">
+                                <p>
+                                    {{
+                                    uploadedfile != null ? uploadedfile : bio.CV
+                                    }}
+                                </p>
+                                <a class="
                                     waves-effect waves-light
                                     btn-small btn
                                     red
-                                "
-                                @click="deleteCV"
-                                >Change</a
-                            >
+                                " @click="deleteCV">Change</a>
+                            </div>
+                        
+                            <div>
+                                <button type="button" class="btn" id="genModalBtn" @click.prevent="bioSave" v-if="saved == null">
+                                    Save
+                                </button>
+                                <button type="button" class="btn" id="genModalBtn" @click.prevent="bioUpdate" v-else>
+                                    Update
+                                </button>
+                            </div>
                         </div>
 
-                        <div>
-                            <button
-                                type="button"
-                                class="btn"
-                                id="genModalBtn"
-                                @click.prevent="bioSave"
-                                v-if="saved == null"
-                            >
-                                Save
-                            </button>
-                            <button
-                                type="button"
-                                class="btn"
-                                id="genModalBtn"
-                                @click.prevent="bioUpdate"
-                                v-else
-                            >
-                                Update
-                            </button>
+                        <div class="col s5">
+                            <img src="/media/img/editWebsiteSettings/fullnameCv.png" alt="fullnameCv.png" class="editWebIllustrativeImg" width="420" height="300">
                         </div>
-
-                        <div class="genBottomBtnDiv">
-                            <a
-                                href="#"
-                                class="goBackBtn"
-                                @click="bioGoBackBtn3()"
-                                >GO BACK</a
-                            >
-
-                            <button
-                                type="button"
-                                class="btn right"
-                                id="genNextBtn"
-                                @click="servicesLink()"
-                            >
-                                NEXT STEP
-                            </button>
-                        </div>
+                    </div>
+                    
+                    <div class="genBottomBtnDiv">
+                        <a href="#" class="goBackBtn" @click="bioGoBackBtn3()">GO BACK</a>
+                    
+                        <button type="button" class="btn right" id="genNextBtn" @click="servicesLink()">
+                            NEXT STEP
+                        </button>
                     </div>
                 </div>
             </div>

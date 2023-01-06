@@ -1,6 +1,27 @@
 <template>
     <div>
-        <div class="editWebSidenavDiv">
+        <nav class="editWebNavbar">
+            <div class="nav-wrapper container">
+                <a href="/" class="brand-logo editWebNavbarLogo">Paab</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a href="#!" class="editWebSidenavDomainNameLink">
+                            Dashboard
+                            <i class="material-icons editWebSidenavTempIcon">dashboard</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="editWebSidenavDomainNameLink" @click="openNew">
+                            <span>{{ host }}</span>
+                        
+                            <i class="material-icons editWebSidenavTempIcon">open_in_new</i>
+                        </a>
+                    </li>
+                    <li><a href="#" class="editWebSidenavProImgDiv"></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- <div class="editWebSidenavDiv">
             <div class="editWebSidenavProImgDiv"></div>
 
             <div class="editWebSidenavDomainNameDiv">
@@ -43,7 +64,7 @@
                     class="editWebSidenavImg"
                 />
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
 <script>

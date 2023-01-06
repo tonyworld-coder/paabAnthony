@@ -3,6 +3,7 @@
         <div class="loader" v-if="initialCheck"></div>
         <div v-show="!initialCheck">
             <SideNavComponent @openPromotionals="openPromotionals" />
+            <br>
             <TabForm
                 :user="userDets"
                 :bio="bio"
