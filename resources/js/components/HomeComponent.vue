@@ -59,8 +59,8 @@
         <div class="hide-on-med-and-up">
             <p class="circleDivTitle">SHOWCASE YOUR PROFESSION WITH PaaB</p>
             <p class="circleDivtxt">
-                It is a long established fact that a reader will be
-                distracted by the readable content of a page.
+                Our professional wish is that you STAND OUT in your career, 
+                from medical practitioners, lawyers, engineers etc.
             </p>
         
             <div class="circleBtnDiv">
@@ -111,13 +111,23 @@
                     
                 </div>
             
-                <p class="portfolioTxt">
-                    It is a long established fact that a reader will be distracted by the readable
-                    content of a page when looking at its layout. The point of using Lorem Ipsum is
-                    that it has a more-or-less normal distribution of letters, as opposed to using
-                    'Content here, content here', making it look like readable English. Many desktop
-                    publishing packages and web page editors now use 
-                </p>
+                <div>
+                    <p class="portfolioTxt">
+                        Select from our variety of ground breaking templates , designer fonts and eye catching colors that speaks to your
+                        style
+                        and professional taste.
+                    </p>
+                    
+                    <P class="portfolioTxt">
+                        Explore with our add ons- whether it is linking your social media platforms , scheduling an
+                        appointment and displaying client reviews.
+                    </P>
+                    
+                    <P class="portfolioTxt">
+                        Let your words travel faster by linking all your social media accounts to
+                        retain and grow your audience.
+                    </P>
+                </div>
             </div>
             
         </div>
@@ -133,8 +143,8 @@
                     <div class="">
                         <p class="circleDivTitle">SHOWCASE YOUR PROFESSION WITH PaaB</p>
                         <p class="circleDivtxt">
-                            It is a long established fact that a reader will be 
-                            distracted by the readable content of a page.
+                            Our professional wish is that you STAND OUT in your career,
+                            from medical practitioners, lawyers, engineers etc.
                         </p>
                         
                         <a href="/templates" class="btn circleDivBtn">
@@ -195,16 +205,23 @@
                 
             </div>
             
-            <p class="portfolioTxt">
-                It is a long established fact that a reader will be distracted by the readable 
-                content of a page when looking at its layout. The point of using Lorem Ipsum is 
-                that it has a more-or-less normal distribution of letters, as opposed to using 
-                'Content here, content here', making it look like readable English. Many desktop 
-                publishing packages and web page editors now use Lorem Ipsum as their 
-                default model text, and a search for 'lorem ipsum' will uncover many web 
-                sites still in their infancy. Various versions have evolved over the years, 
-                sometimes by accident, sometimes on purpose (injected humour and the like).
-            </p>
+            <div>
+                <p class="portfolioTxt">
+                    Select from our variety of ground breaking templates , designer fonts and eye catching colors that speaks to your
+                    style
+                    and professional taste.
+                </p>
+                
+                <P class="portfolioTxt">
+                    Explore with our add ons- whether it is linking your social media platforms , scheduling an
+                    appointment and displaying client reviews.
+                </P>
+                
+                <P class="portfolioTxt">
+                    Let your words travel faster by linking all your social media accounts to
+                    retain and grow your audience.
+                </P>
+            </div>
         </div>
 
         <!-- features Section -->
@@ -214,10 +231,10 @@
                     <p class="moreThanLandTitle">MORE THAN JUST A LANDING PAGE</p>
 
                     <p class="moreThanLandTxt"> 
-                        It is a long established fact that a reader will be distracted by the readable 
-                        content of a page when looking at its layout. The point of using Lorem Ipsum is 
-                        that it has a more-or-less normal distribution of letters, as opposed to using 
-                        'Content here, content here.
+                        PAAB is offering you the opportunity to show your targeted audience who you are and what you can offer. We want to be a
+                        part of your success story by bringing your ideas to life with seamless efforts.
+                        <br><br>
+                        Discover thousands of customized , mobile responsive templates to convert visitors to potential clients.
                     </p>
                 </div>
             </div>
@@ -236,10 +253,9 @@
                             LIVE CHAT
                         </p>
                         <p class="liveChatTxt">
-                            It is a long established fact that a reader will be distracted by the 
-                            readable content of a page when looking at its layout. The point of using 
-                            Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
-                            as opposed to using 'Content here, content here.
+                            Creating that unique digital portfolio requires the right platform and an expert support team right behind you. As you
+                            progress in finding your digital identity, we are here every step of the way. Our 24/7 helpdesk is here to guide you as
+                            you make those important steps.
                         </p>
                     </div>
                 </div>
@@ -260,10 +276,7 @@
                             CURRICULUM VITAE
                         </p>
                         <p class="cvTxt">
-                            It is a long established fact that a reader will be distracted by the 
-                            readable content of a page when looking at its layout. The point of using 
-                            Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
-                            as opposed to using 'Content here, content here.
+                            Get noticed quickly by potential clients and customers.
                         </p>
                     </div>
 
@@ -291,10 +304,8 @@
                             SOCIAL MEDIA POST
                         </p>
                         <p class="socialMediaTxt">
-                            It is a long established fact that a reader will be distracted by the 
-                            readable content of a page when looking at its layout. The point of using 
-                            Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
-                            as opposed to using 'Content here, content here.
+                            An amazing opportunity for people to see the social part that makes you 
+                            awesome by linking your social media platforms.
                         </p>
                     </div>
                 </div>
@@ -315,10 +326,8 @@
                             CLIENT REVIEW
                         </p>
                         <p class="clientRevTxt">
-                            It is a long established fact that a reader will be distracted by the 
-                            readable content of a page when looking at its layout. The point of using 
-                            Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
-                            as opposed to using 'Content here, content here.
+                            Appraisals , Reviews and Constructive Criticism on display, 
+                            to encourage word of mouth marketing and potential clients.
                         </p>
                     </div>
 
@@ -339,10 +348,9 @@
                             TEMPLATES FIT JUST FOR YOU
                         </p>
                         <p class="templatesRowTxt">
-                            It is a long established fact that a reader will be distracted by the 
-                            readable content of a page when looking at its layout. The point of using 
-                            Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
-                            as opposed to using 'Content here, content here.
+                            We are giving you the freedom to select from our multiple customized 
+                            templates designed to meet your personal and professional taste. 
+                            Our templates are seamless with drag and drop settings.
                         </p>
                     </div>
 
