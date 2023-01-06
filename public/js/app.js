@@ -23807,6 +23807,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _partial_TabFormComponent_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./partial/TabFormComponent.vue */ "./resources/js/components/templates/Physicians/Settings/partial/TabFormComponent.vue");
 /* harmony import */ var _TenantLoginComponent_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./TenantLoginComponent.vue */ "./resources/js/components/templates/Physicians/Settings/TenantLoginComponent.vue");
 /* harmony import */ var _partial_PromotionalsComponent_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./partial/PromotionalsComponent.vue */ "./resources/js/components/templates/Physicians/Settings/partial/PromotionalsComponent.vue");
+/* harmony import */ var _partials_InnerFooterComponent_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../partials/InnerFooterComponent.vue */ "./resources/js/components/partials/InnerFooterComponent.vue");
+
 
 
 
@@ -23824,7 +23826,8 @@ var general = "/api/general";
     TabForm: _partial_TabFormComponent_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
     SideNavComponent: _partial_SideNavComponent_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
     TenantLoginComponent: _TenantLoginComponent_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
-    PromotionalsComponent: _partial_PromotionalsComponent_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
+    PromotionalsComponent: _partial_PromotionalsComponent_vue__WEBPACK_IMPORTED_MODULE_4__["default"],
+    InnerFooterComponent: _partials_InnerFooterComponent_vue__WEBPACK_IMPORTED_MODULE_5__["default"]
   },
   props: {
     user: String
@@ -29482,6 +29485,7 @@ var _hoisted_5 = {
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_SideNavComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("SideNavComponent");
   var _component_TabForm = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("TabForm");
+  var _component_InnerFooterComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("InnerFooterComponent");
   var _component_PromotionalsComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("PromotionalsComponent");
   var _component_TenantLoginComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("TenantLoginComponent");
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [$data.initialCheck ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_SideNavComponent, {
@@ -29494,7 +29498,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     contact: $data.contact,
     social: $data.social,
     general: $data.general
-  }, null, 8 /* PROPS */, ["user", "bio", "services", "achievement", "contact", "social", "general"]), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, !$data.promoView]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_PromotionalsComponent, {
+  }, null, 8 /* PROPS */, ["user", "bio", "services", "achievement", "contact", "social", "general"]), [[vue__WEBPACK_IMPORTED_MODULE_0__.vShow, !$data.promoView]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_InnerFooterComponent), (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_PromotionalsComponent, {
     onClose: _cache[0] || (_cache[0] = function ($event) {
       return $data.promoView = false;
     })

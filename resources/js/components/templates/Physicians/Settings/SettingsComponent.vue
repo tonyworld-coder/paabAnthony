@@ -14,6 +14,8 @@
                 :general="general"
                 v-show="!promoView"
             />
+
+            <InnerFooterComponent />
             <PromotionalsComponent
                 @close="promoView = false"
                 v-show="promoView"
@@ -34,6 +36,8 @@
     import TenantLoginComponent from "./TenantLoginComponent.vue";
     import PromotionalsComponent from "./partial/PromotionalsComponent.vue";
 
+import InnerFooterComponent from "../../../partials/InnerFooterComponent.vue";
+
     let bio = "/api/bio";
     let service = "/api/service";
     let achievement = "/api/achievement";
@@ -48,6 +52,8 @@
             SideNavComponent,
             TenantLoginComponent,
             PromotionalsComponent,
+
+            InnerFooterComponent,
         },
         props: {
             user: String,
