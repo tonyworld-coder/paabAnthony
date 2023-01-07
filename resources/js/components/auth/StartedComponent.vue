@@ -8,8 +8,8 @@
                         Start your journey <br />with us...
                     </p>
                     <p class="wlcNoteTxt">
-                        It is a long established fact that a reader will be
-                        distracted by the readable content.
+                        Let us ensure that your email address is active and accurate , that is the only way we can reach you effectively.
+
                     </p>
                     <p class="wlcNoteFooterTxt">
                         &copy; PaaB. {{ getYear() }}. We support your brand!
@@ -30,8 +30,8 @@
                         Start your journey <br />with us...
                     </p>
                     <p class="wlcNoteTxt">
-                        It is a long established fact that a reader will be
-                        distracted by the readable content.
+                        “ Good things come to those who wait”.
+                        <span class="getStartedOtpSpan right">Nathan Sykes</span>
                     </p>
                     <p class="wlcNoteFooterTxt">
                         &copy; PaaB. {{ getYear() }}. We support your brand!
@@ -52,8 +52,10 @@
                         Start your journey <br />with us...
                     </p>
                     <p class="wlcNoteTxt">
-                        It is a long established fact that a reader will be
-                        distracted by the readable content.
+                        PAAB is the easiest and quickest way to build your brand presence. 
+                        At your fingertips, take your professional career to
+                        the next level by building an outstanding online portfolio to showcase your career and promote yourself.
+
                     </p>
                     <p class="wlcNoteFooterTxt">
                         &copy; PaaB. {{ getYear() }}. We support your brand!

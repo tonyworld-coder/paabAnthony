@@ -17,8 +17,9 @@
                         </div>
                     
                         <p class="genTxt">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry.
+                            It is important you display all the services you offer, 
+                            it is the best way to promote yourself as a brand..
+
                         </p>
                         <form enctype="multipart/form-data" @submit.prevent="serviceSave">
                             <div v-for="(service, index) in services" :key="index">

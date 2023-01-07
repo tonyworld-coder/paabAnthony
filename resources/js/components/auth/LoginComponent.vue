@@ -6,8 +6,9 @@
                     <a href="/" class="wlcNoteLogo">PaaB</a>
                     <p class="wlcNoteTitle">WELCOME BACK CHIEF!</p>
                     <p class="wlcNoteTxt">
-                        It is a long established fact that a reader will be
-                        distracted by the readable content.
+                        The World is still listening , it is time to tell your brand story with our professional , 
+                        powerful and easy to use portfolio builder for your career.
+
                     </p>
                     <p class="wlcNoteFooterTxt">
                         © Photo, Inc. 2019. We love our users!

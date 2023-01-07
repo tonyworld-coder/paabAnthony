@@ -3401,6 +3401,11 @@ a.loginLink:hover {
     height: 70vh;
 }
 
+/* Added getStartedOtpSpan in the otp section in getStarted component */
+.getStartedOtpSpan {
+    margin-right: 4.5vw;
+}
+
 
 
 

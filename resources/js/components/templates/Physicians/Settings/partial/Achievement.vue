@@ -7,8 +7,10 @@
                         <p class="genTitle1">Add your achievement</p>
                     
                         <p class="genTxt">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry.
+                            At PAAB, we acknowledge that every goal you achieve is deserving due to your skills, 
+                            hardwork and dedication. Let the
+                            world see and celebrate your winnings.
+                            
                         </p>
                     
                         <form @submit.prevent="saveAchievement">

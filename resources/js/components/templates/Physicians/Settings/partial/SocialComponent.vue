@@ -6,8 +6,9 @@
                     <p class="genTitle1">Link your social media platform</p>
 
                     <p class="genTxt">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
+                        Linking your social media accounts to your website will improve your brand’s online presence and ranking in search
+                        results, helping your clients find you easily.
+
                     </p>
 
                     <form @submit.prevent="saveSocial">

@@ -47,8 +47,8 @@
                         <p class="genTitle1">Put in your title details</p>
                     
                         <p class="genTxt">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry.
+                            We would like to address you appropriately in the work space, 
+                            Kindly provide your designated title.
                         </p>
                     
                         <div class="input-field">
@@ -120,8 +120,9 @@
                         <p class="genTitle1">Upload a favicon</p>
                     
                         <p class="genTxt">
-                            Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry.
+                            We know in the world of branding , IMAGE is important . 
+                            Let us put a face behind the brand.
+
                         </p>
                     
                         <div class="file-field input-field" id="genUploadFavIconDiv" v-if="general.favicon == null">

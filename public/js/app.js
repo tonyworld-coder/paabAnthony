@@ -26486,7 +26486,7 @@ __webpack_require__.r(__webpack_exports__);
 var _hoisted_1 = {
   "class": "row authContainDiv"
 };
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col s12 m12 l6 loginContainer hide-on-med-and-down\"><div class=\"wlcNoteDiv\"><a href=\"/\" class=\"wlcNoteLogo\">PaaB</a><p class=\"wlcNoteTitle\">WELCOME BACK CHIEF!</p><p class=\"wlcNoteTxt\"> It is a long established fact that a reader will be distracted by the readable content. </p><p class=\"wlcNoteFooterTxt\"> © Photo, Inc. 2019. We love our users! </p></div></div>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col s12 m12 l6 loginContainer hide-on-med-and-down\"><div class=\"wlcNoteDiv\"><a href=\"/\" class=\"wlcNoteLogo\">PaaB</a><p class=\"wlcNoteTitle\">WELCOME BACK CHIEF!</p><p class=\"wlcNoteTxt\"> The World is still listening , it is time to tell your brand story with our professional , powerful and easy to use portfolio builder for your career. </p><p class=\"wlcNoteFooterTxt\"> © Photo, Inc. 2019. We love our users! </p></div></div>", 1);
 var _hoisted_3 = {
   "class": "col s12 m12 l6 loginContainer"
 };
@@ -26641,7 +26641,7 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Start your journey "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("with us... ")], -1 /* HOISTED */);
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "wlcNoteTxt"
-}, " It is a long established fact that a reader will be distracted by the readable content. ", -1 /* HOISTED */);
+}, " Life does not give you a reset button but with PAAB, we do *winks* ", -1 /* HOISTED */);
 var _hoisted_7 = {
   "class": "wlcNoteFooterTxt"
 };
@@ -26667,7 +26667,9 @@ var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Start your journey "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("with us... ")], -1 /* HOISTED */);
 var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "wlcNoteTxt"
-}, " It is a long established fact that a reader will be distracted by the readable content. ", -1 /* HOISTED */);
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" “ Good things come to those who wait”. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "right"
+}, "Nathan Sykes")], -1 /* HOISTED */);
 var _hoisted_15 = {
   "class": "wlcNoteFooterTxt"
 };
@@ -26693,7 +26695,7 @@ var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Start your journey "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("with us... ")], -1 /* HOISTED */);
 var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "wlcNoteTxt"
-}, " It is a long established fact that a reader will be distracted by the readable content. ", -1 /* HOISTED */);
+}, " The first step to stand out is by creating something unique and extraordinary ", -1 /* HOISTED */);
 var _hoisted_23 = {
   "class": "wlcNoteFooterTxt"
 };
@@ -26805,7 +26807,7 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Start your journey "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("with us... ")], -1 /* HOISTED */);
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "wlcNoteTxt"
-}, " It is a long established fact that a reader will be distracted by the readable content. ", -1 /* HOISTED */);
+}, " Let us ensure that your email address is active and accurate , that is the only way we can reach you effectively. ", -1 /* HOISTED */);
 var _hoisted_7 = {
   "class": "wlcNoteFooterTxt"
 };
@@ -26831,7 +26833,9 @@ var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Start your journey "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("with us... ")], -1 /* HOISTED */);
 var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "wlcNoteTxt"
-}, " It is a long established fact that a reader will be distracted by the readable content. ", -1 /* HOISTED */);
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" “ Good things come to those who wait”. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "getStartedOtpSpan right"
+}, "Nathan Sykes")], -1 /* HOISTED */);
 var _hoisted_15 = {
   "class": "wlcNoteFooterTxt"
 };
@@ -26857,7 +26861,7 @@ var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Start your journey "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("with us... ")], -1 /* HOISTED */);
 var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "wlcNoteTxt"
-}, " It is a long established fact that a reader will be distracted by the readable content. ", -1 /* HOISTED */);
+}, " PAAB is the easiest and quickest way to build your brand presence. At your fingertips, take your professional career to the next level by building an outstanding online portfolio to showcase your career and promote yourself. ", -1 /* HOISTED */);
 var _hoisted_23 = {
   "class": "wlcNoteFooterTxt"
 };
@@ -29676,7 +29680,7 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 }, "Add your achievement", -1 /* HOISTED */);
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "genTxt"
-}, " Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", -1 /* HOISTED */);
+}, " At PAAB, we acknowledge that every goal you achieve is deserving due to your skills, hardwork and dedication. Let the world see and celebrate your winnings. ", -1 /* HOISTED */);
 var _hoisted_7 = {
   key: 0,
   "class": "file-field input-field",
@@ -29901,7 +29905,7 @@ var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, "Provide your full name", -1 /* HOISTED */);
 var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "genTxt"
-}, " Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", -1 /* HOISTED */);
+}, " Now we have your title and full name, we can address you appropriately. ", -1 /* HOISTED */);
 var _hoisted_16 = {
   "class": "input-field"
 };
@@ -29975,7 +29979,7 @@ var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, "About You", -1 /* HOISTED */);
 var _hoisted_34 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "genTxt"
-}, " Readers only looks at vital info about you, so make it catchy. Not more than (614) and not less than (600) characters. ", -1 /* HOISTED */);
+}, " Your potential clients would love to know what makes you unique, give a brief introduction about yourself (GET CREATIVE) ", -1 /* HOISTED */);
 var _hoisted_35 = {
   "class": "input-field"
 };
@@ -30049,7 +30053,7 @@ var _hoisted_52 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, "Upload a clear picture of you", -1 /* HOISTED */);
 var _hoisted_53 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "genTxt"
-}, " Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", -1 /* HOISTED */);
+}, " You know a picture tells a thousand words, we want your picture to do some talking. ", -1 /* HOISTED */);
 var _hoisted_54 = {
   key: 0,
   "class": "file-field input-field",
@@ -30140,7 +30144,7 @@ var _hoisted_73 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, "Upload your curriculum Vitae", -1 /* HOISTED */);
 var _hoisted_74 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "genTxt"
-}, " Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", -1 /* HOISTED */);
+}, " Making a good impression is important in today's competitive job market. It is time to highlight all of your relevant professional and academic experience. ", -1 /* HOISTED */);
 var _hoisted_75 = {
   key: 0,
   "class": "file-field input-field",
@@ -30410,7 +30414,7 @@ var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 }, "Put in your contact details", -1 /* HOISTED */);
 var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "genTxt"
-}, " Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", -1 /* HOISTED */);
+}, " A great and easy way for letting your clients reach you directly. Give them that lasting impression that you are always there for them. ", -1 /* HOISTED */);
 var _hoisted_5 = {
   "class": "input-field"
 };
@@ -30532,7 +30536,7 @@ var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, "Put in your title details", -1 /* HOISTED */);
 var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "genTxt"
-}, " Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", -1 /* HOISTED */);
+}, " We would like to address you appropriately in the work space, Kindly provide your designated title. ", -1 /* HOISTED */);
 var _hoisted_12 = {
   "class": "input-field"
 };
@@ -30584,7 +30588,7 @@ var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, "Upload a favicon", -1 /* HOISTED */);
 var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "genTxt"
-}, " Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", -1 /* HOISTED */);
+}, " We know in the world of branding , IMAGE is important . Let us put a face behind the brand. ", -1 /* HOISTED */);
 var _hoisted_26 = {
   key: 0,
   "class": "file-field input-field",
@@ -30975,7 +30979,7 @@ var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 }, "Add your services", -1 /* HOISTED */);
 var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "genTxt"
-}, " Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", -1 /* HOISTED */);
+}, " It is important you display all the services you offer, it is the best way to promote yourself as a brand.. ", -1 /* HOISTED */);
 var _hoisted_8 = {
   "class": "row"
 };
@@ -31154,7 +31158,7 @@ var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 }, "Link your social media platform", -1 /* HOISTED */);
 var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "genTxt"
-}, " Lorem Ipsum is simply dummy text of the printing and typesetting industry. ", -1 /* HOISTED */);
+}, " Linking your social media accounts to your website will improve your brand’s online presence and ranking in search results, helping your clients find you easily. ", -1 /* HOISTED */);
 var _hoisted_5 = {
   "class": "input-field"
 };

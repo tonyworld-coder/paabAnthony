@@ -75,8 +75,7 @@
                             <p class="genTitle1">Provide your full name</p>
                         
                             <p class="genTxt">
-                                Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry.
+                                Now we have your title and full name, we can address you appropriately.
                             </p>
                         
                             <div class="input-field">
@@ -185,9 +184,9 @@
                             <p class="genTitle1">About You</p>
                         
                             <p class="genTxt">
-                                Readers only looks at vital info about you, so make
-                                it catchy. Not more than (614) and not less than
-                                (600) characters.
+                                Your potential clients would love to know what makes you unique, 
+                                give a brief introduction about yourself (GET CREATIVE)
+
                             </p>
                         
                             <div class="input-field">
@@ -297,8 +296,8 @@
                             <p class="genTitle1">Upload a clear picture of you</p>
                         
                             <p class="genTxt">
-                                Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry.
+                                You know a picture tells a thousand words, 
+                                we want your picture to do some talking.
                             </p>
                         
                             <div class="file-field input-field" id="genUploadFavIconDiv" v-if="bio.photo == null">
@@ -418,8 +417,9 @@
                             <p class="genTitle1">Upload your curriculum Vitae</p>
                         
                             <p class="genTxt">
-                                Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry.
+                                Making a good impression is important in today's competitive job market. 
+                                It is time to highlight all of your relevant
+                                professional and academic experience.
                             </p>
                         
                             <div class="file-field input-field" id="genUploadFavIconDiv" v-if="bio.CV == null">

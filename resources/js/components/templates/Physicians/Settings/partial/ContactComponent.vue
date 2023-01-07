@@ -6,8 +6,9 @@
                     <p class="genTitle1">Put in your contact details</p>
 
                     <p class="genTxt">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
+                        A great and easy way for letting your clients reach you directly. 
+                        Give them that lasting impression that you are always
+                        there for them.
                     </p>
 
                     <form @submit.prevent="saveContact">
