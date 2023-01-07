@@ -8,7 +8,7 @@
 
             <div class="col s12 m10 l10">
                 <div class="dashRightDiv">
-                    <div id="dashRightImgDiv">
+                    <div id="adminDashRightImgDiv">
                     </div>
 
                     <div class="row" id="dashWlcNoteRowDiv">
