@@ -1,5 +1,24 @@
 <template>
     <div>
+        <!-- Signup Help Modal Structure -->
+        <div id="helpModal1" class="modal">
+            <div class="modal-content">
+                <p>
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat helpModalCloseBtn">Go Back</a>
+                </p>
+                <h5 class="helpModalTitle">How to sign up</h5>
+                <div class="helpModalTxts">
+                    <p>Create your portfolio with these easy steps:</p>
+                    <p>1. Enter your professional name and title e.g Dr Bayo Akerele.</p>
+                    <p>2. Enter your email and mobile number.</p>
+                    <p>3. Select your gender, country, state and city.</p>
+                    <p>4. Create a Strong password e.g. Qwerty123@</p>
+                    <p>5. Tap Sign Up</p>
+                    <p>6. To finish creating your account, you need to confirm your email or phone number.</p>
+                </div>
+            </div>
+        </div>
+
         <div class="row authContainDiv" v-if="verifiedEmail == 1">
             <div class="col s12 m12 l6 welcomeContainer hide-on-med-and-down">
                 <div class="wlcNoteDiv">
@@ -65,7 +84,13 @@
 
             <div class="col s12 m12 l6 regContainer">
                 <div class="authRightDiv">
-                    <p class="authTitle">SIGN UP</p>
+                    <p class="authTitle">
+                        SIGN UP
+                        <!-- Signup Help Modal Trigger -->
+                        <a class="modal-trigger" href="#helpModal1">
+                            <i class="material-icons helpIcon right">help</i>
+                        </a>
+                    </p>
                     <p class="authTxt">
                         It is a long established fact that a reader will be diIt
                         is a long

@@ -18,11 +18,38 @@
 
             <div class="col s12 m12 l6 loginContainer">
                 <div class="authRightDiv">
-                    <p class="authTitle">LOGIN</p>
+                    <p class="authTitle">
+                        LOGIN
+                        <!-- Login Help Modal Trigger -->
+                        <a class="modal-trigger" href="#helpModal">
+                            <i class="material-icons helpIcon right">help</i>
+                        </a>
+                    </p>
                     <p class="authTxt">
                         It is a long established fact that a reader will be diIt
                         is a long
                     </p>
+
+                    <!-- Login Help Modal Structure -->
+                    <div id="helpModal" class="modal">
+                        <div class="modal-content">
+                            <p>
+                                <a href="#!" class="modal-close waves-effect waves-green btn-flat helpModalCloseBtn">Go Back</a>
+                            </p>
+                            <h5 class="helpModalTitle">How to login</h5>
+                            <p class="helpModalTxts">
+                                Saving you the stress of long logins, you can access your 
+                                profile by linking any of your social media accounts like
+                                Facebook, Instagram and Twitter.
+                            </p>
+
+                            <p class="helpModalTxts">
+                                Presenting your best work is the final step in your workflow. 
+                                Join the world of leading professionals . Share your
+                                professional brand with the world.
+                            </p>
+                        </div>
+                    </div>
 
                     <form id="loginForm">
                         <div class="row rm_mg">
