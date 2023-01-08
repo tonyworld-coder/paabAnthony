@@ -9,6 +9,18 @@
             <div class="col s12 m10 l10">
                 <div class="dashRightDiv">
                     <div id="adminDashRightImgDiv">
+                        <div class="dashRightImgInnerDiv">
+                            <div class="dashRightImgTxtDiv">
+                                <p class="dashRightImgTitle">
+                                    Manage your client’s portfolio
+                                </p>
+                                <p class="dashRightImgTxt">
+                                    Say hello to the next level platform that gives you infinite 
+                                    freedom to create, design and manage your personal brand
+                                    exactly the way you want.
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="row" id="dashWlcNoteRowDiv">

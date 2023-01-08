@@ -25734,7 +25734,7 @@ var _hoisted_5 = /*#__PURE__*/_withScopeId(function () {
     "class": "webBlackTitle"
   }, " Your Clients - Websites "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
     "class": "webBlackTxt"
-  }, " Lets start and automate your process so you can reclaim time and focus on your goals. ")], -1 /* HOISTED */);
+  }, " Now is the time to create something exceptional with no limits. ")], -1 /* HOISTED */);
 });
 var _hoisted_6 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
@@ -25951,9 +25951,7 @@ var _hoisted_2 = {
 var _hoisted_3 = {
   "class": "dashRightDiv"
 };
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  id: "adminDashRightImgDiv"
-}, null, -1 /* HOISTED */);
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div id=\"adminDashRightImgDiv\"><div class=\"dashRightImgInnerDiv\"><div class=\"dashRightImgTxtDiv\"><p class=\"dashRightImgTitle\"> Manage your client’s portfolio </p><p class=\"dashRightImgTxt\"> Say hello to the next level platform that gives you infinite freedom to create, design and manage your personal brand exactly the way you want. </p></div></div></div>", 1);
 var _hoisted_5 = {
   "class": "row",
   id: "dashWlcNoteRowDiv"
@@ -27232,9 +27230,7 @@ var _hoisted_2 = {
 var _hoisted_3 = {
   "class": "dashRightDiv"
 };
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  id: "dashRightImgDiv"
-}, null, -1 /* HOISTED */);
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div id=\"dashRightImgDiv\"><div class=\"dashRightImgInnerDiv\"><div class=\"dashRightImgTxtDiv\"><p class=\"dashRightImgTitle\"> Skyrocket your portfolio </p><p class=\"dashRightImgTxt\"> We are ready to go on this journey with you as you take your personal brand and reputation in your hands. </p></div></div></div>", 1);
 var _hoisted_5 = {
   "class": "row",
   id: "dashWlcNoteRowDiv"
