@@ -130,7 +130,10 @@
                                     <p class="cardTitle">MY MAIL</p>
                                 </div>
                                 <div class="cardContent">
-                                    <div class="row" id="myMailDiv">
+                                    <div class="row" v-if="mail.length < 1">
+                                        <p class="white-text center-align noVertMargin">No Mail.</p>
+                                    </div>
+                                    <div class="row" id="myMailDiv" v-else>
                                         <div class="col s10 m10 l10">
                                             <div class="cardImgMainDiv">
                                                 <div class="cardImgDiv">
@@ -226,6 +229,7 @@
                 templates: [],
                 user: {},
                 view: 0,
+                mail: []
             };
         },
         mounted() {
@@ -313,6 +317,14 @@
             setView(num) {
                 this.view = num;
             },
+
+            checkMailExist() {
+                axios.post('/api/checkMailExist', { email: this.user.email }).then(res => {
+                    console.log(res);
+                }).catch(err => {
+                    console.log(err)
+                })
+            }
         },
         props: ["_token"],
     };

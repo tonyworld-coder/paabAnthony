@@ -21164,7 +21164,8 @@ __webpack_require__.r(__webpack_exports__);
       },
       templates: [],
       user: {},
-      view: 0
+      view: 0,
+      mail: []
     };
   },
   mounted: function mounted() {
@@ -21246,6 +21247,15 @@ __webpack_require__.r(__webpack_exports__);
     },
     setView: function setView(num) {
       this.view = num;
+    },
+    checkMailExist: function checkMailExist() {
+      axios.post('/api/checkMailExist', {
+        email: this.user.email
+      }).then(function (res) {
+        console.log(res);
+      })["catch"](function (err) {
+        console.log(err);
+      });
     }
   },
   props: ["_token"]
@@ -26066,7 +26076,35 @@ var _hoisted_37 = {
 var _hoisted_38 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "material-icons right"
 }, "add", -1 /* HOISTED */);
-var _hoisted_39 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col s12 m6 l6\"><div class=\"cardDiv\"><div class=\"cardHeader\"><p class=\"cardTitle\">MY MAIL</p></div><div class=\"cardContent\"><div class=\"row\" id=\"myMailDiv\"><div class=\"col s10 m10 l10\"><div class=\"cardImgMainDiv\"><div class=\"cardImgDiv\"><i class=\"material-icons\" id=\"cardImg\">person</i></div><a href=\"#\" class=\"cardProName\">info@paab.com</a></div></div><div class=\"col s2 m2 l2\"><p class=\"dashTimeAgo\">2m</p></div><div class=\"col s10 offset-s2\"><p class=\"mailCardTxt\"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book, Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s,.... </p></div></div></div></div></div>", 1);
+var _hoisted_39 = {
+  "class": "col s12 m6 l6"
+};
+var _hoisted_40 = {
+  "class": "cardDiv"
+};
+var _hoisted_41 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "cardHeader"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "cardTitle"
+}, "MY MAIL")], -1 /* HOISTED */);
+var _hoisted_42 = {
+  "class": "cardContent"
+};
+var _hoisted_43 = {
+  key: 0,
+  "class": "row"
+};
+var _hoisted_44 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "white-text center-align noVertMargin"
+}, "No Mail.", -1 /* HOISTED */);
+var _hoisted_45 = [_hoisted_44];
+var _hoisted_46 = {
+  key: 1,
+  "class": "row",
+  id: "myMailDiv"
+};
+var _hoisted_47 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col s10 m10 l10\"><div class=\"cardImgMainDiv\"><div class=\"cardImgDiv\"><i class=\"material-icons\" id=\"cardImg\">person</i></div><a href=\"#\" class=\"cardProName\">info@paab.com</a></div></div><div class=\"col s2 m2 l2\"><p class=\"dashTimeAgo\">2m</p></div><div class=\"col s10 offset-s2\"><p class=\"mailCardTxt\"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book, Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s,.... </p></div>", 3);
+var _hoisted_50 = [_hoisted_47];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_mobile_nav_component = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("mobile-nav-component");
   var _component_sidenav_component = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("sidenav-component");
@@ -26083,7 +26121,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $options.navigateToClientsWebPages && $options.navigateToClientsWebPages.apply($options, arguments);
     }),
     "class": "waves-effect primary waves-light btn-small"
-  }, [_hoisted_38, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Create website")])])])])])]), _hoisted_39]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Template Stuff ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <InnerFooterComponent /> ")])])]);
+  }, [_hoisted_38, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Create website")])])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_39, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_40, [_hoisted_41, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_42, [$data.mail.length < 1 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_43, _hoisted_45)) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_46, _hoisted_50))])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Template Stuff ")]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <InnerFooterComponent /> ")])])]);
 }
 
 /***/ }),
