@@ -1,3 +1,17 @@
+:root {
+    --primary: #46166B;
+    --secondary: #46166B;
+    --black: #000000;
+    --white: #ffffff;
+
+    --component: rgba(0, 0, 0, 0.5);
+}
+
+/* Changed sidenav background-color */
+.sidenav {
+    background-color: var(--primary);
+}
+
 /* Commented off this line of code, It's not needed again. */
 /* #navLinks {
     border-left: none;
@@ -5,13 +19,6 @@
     margin-right: 2vw;
     padding-bottom: 3vh;
 } */
-
-/* Changed sidenav background-color */
-.sidenav {
-    background-color: #7746FF;
-}
-
-
 
 
 /* Media Query for Medium Devices */
@@ -21,7 +28,7 @@
     /* Changed mobile sidenav list icon from id -> class and it's styling */
     .material-icons.sideNavIcon {
         font-size: 3.5rem;
-        color: #7746FF;
+        color: var(--primary);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 50%;
         width: 6vw;
@@ -71,7 +78,7 @@
     /* Changed mobile sidenav list icon from id -> class and it's styling */
     .material-icons.sideNavIcon {
         font-size: 3.5rem;
-        color: #7746FF;
+        color: var(--primary);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 50%;
         width: 13vw;

@@ -1,3 +1,13 @@
+:root {
+    --primary: #46166B;
+    --secondary: #46166B;
+    --black: #000000;
+    --white: #ffffff;
+
+    --component: rgba(0, 0, 0, 0.5);
+}
+
+
 /* ******************************************************************************************* */
 /* New changes Starts here */
 
@@ -44,13 +54,13 @@
     font-weight: 700;
     font-size: 1.9rem;
     line-height: 37px;
-    color: #7746ff;
+    color: var(--primary);
     margin-top: 6vh;
 }
 
 /* Added EditWebNavbar */
 .editWebNavbar {
-    background-color: #7746ff;
+    background-color: var(--primary);
 }
 
 /* Added and styled editWebNavbarLogo */
@@ -58,7 +68,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: 1.5rem;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 /* Made some changes on editWebSidenavProImgDiv */
@@ -76,7 +86,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 73px;
-    color: #ffffff;
+    color: var(--white);
     display: flex;
 }
 

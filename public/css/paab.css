@@ -1,8 +1,10 @@
 :root {
-    --primary: #7746ff;
-    --secondary: #7746ff;
+    --primary: #46166B;
+    --secondary: #46166B;
     --black: #000000;
     --white: #ffffff;
+
+    --component: rgba(0, 0, 0, 0.5);
 }
 ::-webkit-scrollbar {
     width: 5px;
@@ -215,14 +217,14 @@ body {
     width: 410px;
     font-size: 2.75rem;
     font-weight: 700;
-    color: white;
+    color: var(--white);
     font-family: "Montserrat", sans-serif;
 }
 .circleDivtxt {
     width: 400px;
     font-weight: 400;
     font-size: 1rem;
-    color: white;
+    color: var(--white);
     font-family: "Poppins", sans-serif;
 }
 .circleDivBtn {
@@ -262,7 +264,7 @@ body {
 .portraitImgCircleDiv {
     width: 109px;
     height: 109px;
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 50%;
 }
 #portrait3 {
@@ -288,7 +290,7 @@ body {
 .portraitImgCircleRightDiv {
     width: 73px;
     height: 73px;
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 50%;
     position: relative;
     top: 70px;
@@ -302,7 +304,7 @@ body {
     margin-right: 1vw;
 }
 .portfolioDiv {
-    background: #7746ff;
+    background: var(--primary);
     box-shadow: 0px 9px 5px rgba(0, 0, 0, 0.25);
     /* margin-top: 17.5vh; */
     z-index: 100;
@@ -327,7 +329,7 @@ body {
 .ellipseLarge {
     width: 92.27px;
     height: 94px;
-    background: #6938f2;
+    background: var(--component);
     border-radius: 50%;
     position: absolute;
     right: 300px;
@@ -336,7 +338,7 @@ body {
 .ellipseSmall {
     width: 46.13px;
     height: 47px;
-    background: #6938f2;
+    background: var(--component);
     border-radius: 50%;
     position: absolute;
     right: 273px;
@@ -366,7 +368,7 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: -0.015em;
-    color: #7746ff;
+    color: var(--primary);
     font-family: "Montserrat", sans-serif;
 }
 .moreThanLandTxt {
@@ -397,7 +399,7 @@ body {
     font-size: 2rem;
     line-height: 39px;
     letter-spacing: -0.015em;
-    color: #7746ff;
+    color: var(--primary);
     margin-bottom: 13px;
 }
 .liveChatTxt {
@@ -430,7 +432,7 @@ body {
     font-size: 2rem;
     line-height: 39px;
     letter-spacing: -0.015em;
-    color: #7746ff;
+    color: var(--primary);
     margin-bottom: 13px;
 }
 .cvTxt {
@@ -460,7 +462,7 @@ body {
     font-size: 2rem;
     line-height: 39px;
     letter-spacing: -0.015em;
-    color: #7746ff;
+    color: var(--primary);
     margin-bottom: 13px;
 }
 .socialMediaTxt {
@@ -484,7 +486,7 @@ body {
     font-size: 2rem;
     line-height: 39px;
     letter-spacing: -0.015em;
-    color: #7746ff;
+    color: var(--primary);
     margin-bottom: 13px;
 }
 .clientRevTxt,
@@ -533,7 +535,7 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: -0.015em;
-    color: #7746ff;
+    color: var(--primary);
     margin-bottom: 0;
 }
 .templatesTxt {
@@ -552,7 +554,7 @@ body {
     margin: 10vh auto 0 6vw;
 }
 .cusSupportDiv {
-    background: #7746ff;
+    background: var(--primary);
     box-shadow: 0px 9px 5px rgba(0, 0, 0, 0.25);
     border-radius: 0px 100px 0px 0px;
     /* margin-top: 20vh; */
@@ -566,7 +568,7 @@ body {
     font-size: 2rem;
     line-height: 36px;
     letter-spacing: -0.015em;
-    color: #ffffff;
+    color: var(--white);
 }
 .cusSupportInnerDiv {
     width: 85%;
@@ -576,13 +578,13 @@ body {
 #lName,
 #email {
     height: 40px;
-    background: #ffffff;
+    background: var(--white);
     padding-left: 7px;
     width: 99%;
 }
 #textarea1 {
     height: 20vh;
-    background: #ffffff;
+    background: var(--white);
     padding-left: 7px;
 }
 #btnForm {
@@ -630,7 +632,7 @@ body {
     line-height: 24px;
     letter-spacing: -0.015em;
     text-decoration-line: underline;
-    color: #7746ff;
+    color: var(--primary);
 }
 .locTxt {
     font-family: "Montserrat", sans-serif;
@@ -640,11 +642,11 @@ body {
     line-height: 24px;
     letter-spacing: -0.015em;
     text-decoration-line: underline;
-    color: #7746ff;
+    color: var(--primary);
     text-decoration: none;
 }
 .socialMedIcons {
-    color: #7746ff;
+    color: var(--primary);
     font-size: 25px;
     margin-right: 15px;
 }
@@ -680,7 +682,7 @@ body {
 }
 .wlcNoteDiv {
     width: 434px;
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 50px;
     padding: 5vh 2vw;
 }
@@ -691,7 +693,7 @@ body {
     font-size: 1.5rem;
     line-height: 24px;
     letter-spacing: -0.015em;
-    color: #ffffff;
+    color: var(--white);
 }
 p.wlcNoteLogo {
     margin-top: 0;
@@ -702,7 +704,7 @@ p.wlcNoteLogo {
     font-weight: 700;
     font-size: 2.5rem;
     letter-spacing: -0.015em;
-    color: #ffffff;
+    color: var(--white);
 }
 .wlcNoteTxt {
     font-family: "Poppins", sans-serif;
@@ -733,7 +735,7 @@ p.wlcNoteFooterTxt {
     font-size: 2.5rem;
     line-height: 35px;
     letter-spacing: -0.015em;
-    color: #7746ff;
+    color: var(--primary);
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -746,7 +748,7 @@ p.wlcNoteFooterTxt {
     color: #1e1e1e;
 }
 #user {
-    border: 1px solid #7746ff;
+    border: 1px solid var(--primary);
     border-radius: 100px;
     /* text-align: center; */
 }
@@ -757,14 +759,14 @@ p.wlcNoteFooterTxt {
     padding-left: 1vw;
 }
 #password {
-    border: 1px solid #7746ff;
+    border: 1px solid var(--primary);
     border-radius: 100px;
     padding-left: 1vw;
 }
 #loginBtn {
     font-family: "Montserrat", sans-serif;
     text-transform: capitalize;
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 6px;
     /* margin-left: 1vw; */
     width: 98%;
@@ -809,7 +811,7 @@ p.wlcNoteFooterTxt {
     font-size: 15px;
     letter-spacing: -0.015em;
     text-decoration-line: underline;
-    color: #7746ff;
+    color: var(--primary);
 }
 
 /* Sign up page section */
@@ -826,13 +828,13 @@ p.wlcNoteFooterTxt {
 #signCpass,
 #signupProfession,
 #signupZipcode {
-    border: 1px solid #7746ff;
+    border: 1px solid var(--primary);
     border-radius: 100px;
     padding-left: 9px;
     letter-spacing: -0.015em;
 }
 #signupBtn {
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 6px;
     font-family: "Montserrat", sans-serif;
     text-transform: capitalize;
@@ -860,10 +862,10 @@ p.wlcNoteFooterTxt {
     align-items: center;
     text-align: center;
     letter-spacing: -0.015em;
-    color: #ffffff;
+    color: var(--white);
 }
 .otpSocialMedIcon {
-    color: #7746ff;
+    color: var(--primary);
     line-height: 40px;
 }
 .proEmailMsg {
@@ -885,7 +887,7 @@ p.wlcNoteFooterTxt {
 #proBtn {
     font-family: "Montserrat", sans-serif;
     text-transform: capitalize;
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 10px;
     /* margin-left: 1vw; */
     width: 98%;
@@ -930,9 +932,9 @@ p.wlcNoteFooterTxt {
     color: #000000;
 }
 .domainNameSugBtn {
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 6px;
-    color: white;
+    color: var(--white);
     font-family: "Montserrat", sans-serif;
     height: 4.8vh;
     width: 7vw;
@@ -960,7 +962,7 @@ p.wlcNoteFooterTxt {
     line-height: 24px;
     text-align: center;
     letter-spacing: -0.015em;
-    color: #7746ff;
+    color: var(--primary);
     margin: 5vh 0 2vh 0;
 }
 .errorTxt {
@@ -1000,7 +1002,7 @@ p.wlcNoteFooterTxt {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    color: #ffffff;
+    color: var(--white);
     text-align: center;
     margin-top: 4vh;
 }
@@ -1011,7 +1013,7 @@ p.wlcNoteFooterTxt {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    color: #ffffff;
+    color: var(--white);
     text-align: center;
     margin-bottom: 3vh;
     margin-top: 5vh;
@@ -1045,7 +1047,7 @@ p.wlcNoteFooterTxt {
     padding-bottom: 3vh;
 }
 a.active {
-    border-bottom: 4px solid #7746ff;
+    border-bottom: 4px solid var(--primary);
     padding: 0;
 }
 .tempContainInnerDiv {
@@ -1057,7 +1059,7 @@ a.active {
     margin-left: auto;
 }
 #tempLogo {
-    color: #7746ff;
+    color: var(--primary);
 }
 .tempPageTitle {
     font-family: "Montserrat", sans-serif;
@@ -1065,7 +1067,7 @@ a.active {
     font-weight: 700;
     font-size: 2.75rem;
     line-height: 54px;
-    color: #7746ff;
+    color: var(--primary);
 }
 .tempPageTxt {
     font-family: "Poppins", sans-serif;
@@ -1079,13 +1081,13 @@ a.active {
 .tempPageBtn {
     width: 198px;
     height: 40px;
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 6px;
     font-family: "Montserrat", sans-serif;
 }
 .tempPageBtn:hover {
-    color: #7746ff;
-    background: #ffffff;
+    color: var(--primary);
+    background: var(--white);
 }
 .tempPageLeftDiv {
     margin-top: 15vh;
@@ -1110,17 +1112,17 @@ a.active {
     width: 80%;
 }
 #tempPageImgBtn {
-    border: 2px solid #7746ff;
+    border: 2px solid var(--primary);
     border-radius: 6px;
     width: 198px;
     height: 40px;
-    background-color: #ffffff;
-    color: #7746ff;
+    background-color: var(--white);
+    color: var(--primary);
     font-family: "Montserrat", sans-serif;
 }
 #tempPageImgBtn:hover {
-    background-color: #7746ff;
-    color: #ffffff;
+    background-color: var(--primary);
+    color: var(--white);
 }
 /* .tempPageImgDiv {
     background: rgb(245, 243, 243);
@@ -1165,7 +1167,7 @@ a.active {
 }
 
 #fixedArrowUpIcon {
-    color: #7746ff;
+    color: var(--primary);
     font-size: 2rem;
 }
 
@@ -1180,7 +1182,7 @@ a.active {
     width: 0.5vw;
     height: 1vh;
     border-radius: 50px;
-    background-color: #7746ff;
+    background-color: var(--primary);
     margin-left: 0.75vw;
     margin-bottom: 0.5vh;
 }
@@ -1226,7 +1228,7 @@ a.active {
 #otpEmailBtn {
     font-family: "Montserrat", sans-serif;
     text-transform: capitalize;
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 10px;
     width: 37%;
     height: 6vh;
@@ -1248,7 +1250,7 @@ a.active {
 
 /* Dashboard Section */
 .dashLeftBar {
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 3px;
     height: 100vh;
     padding-top: 4vh;
@@ -1332,7 +1334,7 @@ a.active {
     font-weight: 700;
     font-size: 3.125rem;
     /* line-height: 61px; */
-    color: #FFFFFF;
+    color: var(--white);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin: 0;
 }
@@ -1343,7 +1345,7 @@ a.active {
     font-weight: 400;
     font-size: 1rem;
     /* line-height: 24px; */
-    color: #ffffff;
+    color: var(--white);
     margin: 0;
     width: 87%;
 }
@@ -1366,7 +1368,7 @@ a.active {
     font-style: normal;
     font-weight: 500;
     font-size: 2.5rem;
-    color: #7746ff;
+    color: var(--primary);
     margin: 2vh 0 0 0;
 }
 
@@ -1375,7 +1377,7 @@ a.active {
     font-style: normal;
     font-weight: 500;
     font-size: 1.1rem;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .dashWlcNoteTxt {
@@ -1395,7 +1397,7 @@ a.active {
 }
 
 .dashTimeDiv {
-    background: #7746ff;
+    background: var(--primary);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     height: 12.25rem;
@@ -1476,7 +1478,7 @@ a.active {
 }
 
 .cardHeader {
-    background: #7746ff;
+    background: var(--primary);
     box-shadow: 0px 4px 4px rgba(119, 70, 255, 0.3);
     border-radius: 10px 10px 0px 0px;
 }
@@ -1495,7 +1497,7 @@ a.active {
     font-style: normal;
     font-weight: 700;
     font-size: 1.25rem;
-    color: #ffffff;
+    color: var(--white);
     padding: 5px 0 5px 30px;
     margin: 0;
 }
@@ -1528,7 +1530,7 @@ a.active {
 
 .cardProName,
 .domainname {
-    color: #7746ff;
+    color: var(--primary);
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -1540,7 +1542,7 @@ a.active {
     font-weight: 500;*/
     font-size: 1.25rem;
     line-height: 30px;
-    /* color: #7746FF; */
+    /* color: var(--primary); */
     margin-left: 1vw;
 }
 .cardProName {
@@ -1566,7 +1568,7 @@ a.active {
 }
 
 #dashAddIconBtn {
-    color: #7746ff;
+    color: var(--primary);
     position: relative;
     left: 0.7vw;
     cursor: pointer;
@@ -1578,7 +1580,7 @@ a.active {
     font-weight: 500;
     font-size: 0.875rem;
     line-height: 21px;
-    color: #ffffff;
+    color: var(--white);
     margin-left: 2vw;
 }
 
@@ -1602,7 +1604,7 @@ a.active {
 
 #dashSidenavIconBtn {
     font-size: 3rem;
-    color: #7746ff;
+    color: var(--primary);
 }
 
 .userTempMainDiv {
@@ -1628,13 +1630,13 @@ a.active {
     font-weight: 600;
     font-size: 0.75rem;
     text-align: center;
-    color: #7746ff;
+    color: var(--primary);
     margin: 0;
 }
 
 .clientCreatePortBtn {
     width: 10em;
-    background-color: #7746ff;
+    background-color: var(--primary);
 }
 
 .clientCreatePortBtnDiv {
@@ -1644,7 +1646,7 @@ a.active {
 
 
 .selectedUserTempDiv .userTempTitle {
-    color: white;
+    color: var(--white);
 }
 
 
@@ -1652,7 +1654,7 @@ a.active {
 .tempImgDiv {
     width: 60px;
     height: 60px;
-    background: #fff;
+    background: var(--white);
     border-radius: 50%;
     margin: auto;
     display: flex;
@@ -1685,7 +1687,7 @@ a.active {
     font-style: normal;
     font-weight: 600;
     font-size: 1.875rem;
-    color: #7746ff;
+    color: var(--primary);
     margin: 0 0 3vh 0;
     /* margin: 0; */
 }
@@ -1780,7 +1782,7 @@ p.websiteTemplateName {
     font-style: normal;
     font-weight: 900;
     font-size: 1.125rem;
-    color: #7746ff;
+    color: var(--primary);
     margin: 1vh 0 0 0;
 }
 .webWhiteTitle {
@@ -1788,7 +1790,7 @@ p.websiteTemplateName {
     font-weight: 900;
     font-style: normal;
     font-size: 1.25rem;
-    color: #7746ff;
+    color: var(--primary);
     margin: 0;
 }
 .webWhiteTxt {
@@ -1800,7 +1802,7 @@ p.websiteTemplateName {
 }
 #webWhiteIcon {
     font-size: 1.5rem;
-    color: #7746ff;
+    color: var(--primary);
 }
 .webHr {
     margin: 0;
@@ -1824,7 +1826,7 @@ p.websiteTemplateName {
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
-    color: #7746ff;
+    color: var(--primary);
 }
 .mailP {
     font-family: "Poppins", sans-serif;
@@ -1840,7 +1842,7 @@ p.websiteTemplateName {
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
-    color: #ffffff;
+    color: var(--white);
 }
 #mailInnerDiv {
     /* margin-top: 3vh; */
@@ -1849,7 +1851,7 @@ p.websiteTemplateName {
 .mailBlueDiv {
     width: 95%;
     height: 196px;
-    background: #7746ff;
+    background: var(--primary);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     margin: 5vh auto 6vh auto;
@@ -1882,7 +1884,7 @@ p.websiteTemplateName {
 .settingsFormDiv {
     width: 40vw;
     /* height: 86vh; */
-    background: #ffffff;
+    background: var(--white);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #settingsForm {
@@ -1895,7 +1897,7 @@ p.websiteTemplateName {
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 30px;
-    color: #7746ff;
+    color: var(--primary);
     margin: 0 1vw 0 0;
     position: relative;
     bottom: 3vh;
@@ -1931,7 +1933,7 @@ p.websiteTemplateName {
     right: 1.2vw;
 }
 #setProEditIcon {
-    color: #ffffff;
+    color: var(--white);
     font-size: 1.3rem;
     margin: 0.3vh 0 0 0.1vw;
 }
@@ -1940,7 +1942,7 @@ p.websiteTemplateName {
     margin: 0 auto 6vh auto;
 }
 #setFormBtn {
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 6px;
     font-family: "Montserrat", sans-serif;
     text-transform: capitalize;
@@ -1960,7 +1962,7 @@ p.websiteTemplateName {
     font-style: normal;
     font-weight: 600;
     font-size: 1.875rem;
-    color: #7746ff;
+    color: var(--primary);
     margin: 6vh 0 0 0;
 }
 .webBlackDiv1 {
@@ -1973,7 +1975,7 @@ p.websiteTemplateName {
     font-weight: 600;
     font-size: 1.875rem;
     line-height: 50px;
-    color: #7746ff;
+    color: var(--primary);
 }
 .supportTxt {
     font-family: "Poppins", sans-serif;
@@ -1993,7 +1995,7 @@ div .row .supportDiv {
     font-weight: 600;
     font-size: 1.125rem;
     line-height: 22px;
-    color: #7746ff;
+    color: var(--primary);
     margin-top: 0;
 }
 .supportTxt1 {
@@ -2008,7 +2010,7 @@ div .row .supportDiv {
     margin-bottom: 5vh;
 }
 .supportGetInTouchDiv {
-    background: #ffffff;
+    background: var(--white);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 94%;
     margin: 1vh auto 4vh auto;
@@ -2019,7 +2021,7 @@ div .row .supportDiv {
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 30px;
-    color: #7746ff;
+    color: var(--primary);
     margin: 0;
 }
 .supportGetInTouchTxt {
@@ -2032,7 +2034,7 @@ div .row .supportDiv {
     margin: 0;
 }
 #supportGetInTouchBtn {
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 6px;
     margin-top: 2vh;
 }
@@ -2084,7 +2086,7 @@ div .row .supportGetInTouchRowDiv {
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 30px;
-    color: #7746ff;
+    color: var(--primary);
 }
 .clientSendemailTxt,
 .clientSendemailTxt1 {
@@ -2102,7 +2104,7 @@ div .row .supportGetInTouchRowDiv {
     font-weight: 700;
     font-size: 0.97rem;
     line-height: 21px;
-    color: #7746ff;
+    color: var(--primary);
     margin-top: 5vh;
 }
 .clientSendmailTimeSent {
@@ -2111,7 +2113,7 @@ div .row .supportGetInTouchRowDiv {
     font-weight: 700;
     font-size: 0.875rem;
     line-height: 21px;
-    color: #ffffff;
+    color: var(--white);
 }
 #clientSendmailRowDiv {
     width: 95%;
@@ -2150,7 +2152,7 @@ div .row .supportGetInTouchRowDiv {
     font-size: 1.25rem;
     line-height: 24px;
     letter-spacing: -0.015em;
-    color: #ffffff;
+    color: var(--white);
     margin-right: 2vw;
 }
 .setWebTitleData,
@@ -2163,7 +2165,7 @@ div .row .supportGetInTouchRowDiv {
     font-size: 1.125rem;
     line-height: 22px;
     letter-spacing: -0.015em;
-    color: #7746ff;
+    color: var(--primary);
 }
 #setWebBtn {
     background: #d9d9d9;
@@ -2178,7 +2180,7 @@ div .row .supportGetInTouchRowDiv {
     margin-bottom: 2vh;
 }
 #setWebBtn1 {
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 6px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -2186,7 +2188,7 @@ div .row .supportGetInTouchRowDiv {
     font-size: 0.938rem;
     line-height: 18px;
     letter-spacing: -0.015em;
-    color: #ffffff;
+    color: var(--white);
 }
 #setWebBtnDiv {
     margin-top: 12vh;
@@ -2198,14 +2200,14 @@ div .row .supportGetInTouchRowDiv {
     align-items: center;
     text-align: center;
     letter-spacing: -0.015em;
-    color: #ffffff;
+    color: var(--white);
     padding: 0px 10px;
     margin-left: 1vw;
 }
 
 /* Client Support Modal */
 .clientModalSupportDiv {
-    background: #7746ff;
+    background: var(--primary);
     box-shadow: 0px 9px 5px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     padding-top: 2vh;
@@ -2220,14 +2222,14 @@ div .row .supportGetInTouchRowDiv {
     margin: 0 auto;
 }
 #clientCusSupportCancelBtn {
-    color: #ffffff;
+    color: var(--white);
     margin: 4vh 0 0 2vw;
     cursor: pointer;
 }
 
 /* Reset Password */
 #resetEmail {
-    border: 1px solid #7746ff;
+    border: 1px solid var(--primary);
     border-radius: 100px;
     padding-left: 2vw;
     width: 96.9%;
@@ -2235,14 +2237,14 @@ div .row .supportGetInTouchRowDiv {
 
 /* Create new password Section */
 #createPass {
-    border: 1px solid #7746ff;
+    border: 1px solid var(--primary);
     border-radius: 100px;
     padding-left: 2vw;
     width: 96.9%;
     margin-bottom: 0;
 }
 #confirmCreatePass {
-    border: 1px solid #7746ff;
+    border: 1px solid var(--primary);
     border-radius: 100px;
     padding-left: 2vw;
     width: 96.9%;
@@ -2263,7 +2265,7 @@ div .row .supportGetInTouchRowDiv {
 .createPasswordLoginLink {
     text-decoration: underline;
     margin-left: 0.5vw;
-    color: #7746ff;
+    color: var(--primary);
 }
 #confirmCreatePassColDiv {
     margin-top: 0;
@@ -2328,7 +2330,7 @@ div .row .supportGetInTouchRowDiv {
         0 3px 1px -2px rgb(1 80 21 / 12%), 0 1px 5px 0 rgb(1 80 21 / 20%);
 }
 .clientCreatePortModalDiv {
-    background: #ffffff;
+    background: var(--white);
     border-radius: 10px;
     /* width: 95%; */
     /* margin: 5vh auto 0 auto; */
@@ -2386,7 +2388,7 @@ div .col .s9 input.clientCreatePortInput1 {
     width: 80%;
 }
 #clientCreatePortBtn {
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 6px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -2394,7 +2396,7 @@ div .col .s9 input.clientCreatePortInput1 {
     font-size: 0.938rem;
     line-height: 18px;
     letter-spacing: -0.015em;
-    color: #ffffff;
+    color: var(--white);
     margin: 0 0 11vh 28vw;
     width: 12vw;
 }
@@ -2405,7 +2407,7 @@ div .col .s9 input.clientCreatePortInput1 {
 }
 #clientCreatePortCancelIconBtn {
     /* margin: 2vw 0 0 5vh; */
-    color: #7746ff;
+    color: var(--primary);
     cursor: pointer;
 }
 #clientCreatePortCancelDiv {
@@ -2453,7 +2455,7 @@ div .col .s9 input.clientCreatePortInput1 {
     margin: 7vh auto 0 auto;
 }
 #configWebBtn {
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 6px;
     margin-top: 2.5vh;
     height: 5vh;
@@ -2474,7 +2476,7 @@ div .col .s9 input.clientCreatePortInput1 {
     font-size: 16px;
     line-height: 20px;
     letter-spacing: -0.015em;
-    color: #000000;
+    color: var(--black);
 }
 .configDelDiv {
     display: flex;
@@ -2516,7 +2518,7 @@ div .col .s9 input.clientCreatePortInput1 {
     font-style: normal;
     font-weight: 600;
     font-size: 1.875rem;
-    color: #7746ff;
+    color: var(--primary);
     margin: 6vh 0 1vh 0;
     /* margin: 0; */
 }
@@ -2525,13 +2527,13 @@ div .col .s9 input.clientCreatePortInput1 {
     font-style: normal;
     font-weight: 600;
     font-size: 1.875rem;
-    color: #7746ff;
+    color: var(--primary);
     margin: 6vh 0 0 0;
 }
 
 /* Setup Website Modal */
 .editWebNav {
-    background-color: #7746ff;
+    background-color: var(--primary);
     /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
     /* height: 9vh; */
     margin-bottom: 2vh;
@@ -2560,14 +2562,14 @@ div .col .s9 input.clientCreatePortInput1 {
     font-weight: 500;
     font-size: 1.1rem;
     line-height: 20px;
-    color: #ffffff;
+    color: var(--white);
     display: flex;
 }
 .editWebLi:not(:last-child) {
     margin-right: 4.3vw;
 }
 .editWebModalExitBtn {
-    background: #ffffff;
+    background: var(--white);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     padding: 0.5vh 1.2vw;
@@ -2576,7 +2578,7 @@ div .col .s9 input.clientCreatePortInput1 {
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 30px;
-    color: #7746ff;
+    color: var(--primary);
 }
 .editGenModal {
     background-color: #f4f4f4;
@@ -2584,7 +2586,7 @@ div .col .s9 input.clientCreatePortInput1 {
     padding-bottom: 12vh;
 }
 /* #editWebGenModelInput {
-    border: 1px solid #7746FF;
+    border: 1px solid var(--primary);
     border-radius: 100px;
     padding-left: 2vw;
     width: 97%;
@@ -2605,7 +2607,7 @@ div .col .s9 input.clientCreatePortInput1 {
     margin: 1.5vh 0 0 0;
 }
 #editWebGenBtn {
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 6px;
     margin: 3vh 0 12vh 0;
     font-family: "Montserrat", sans-serif;
@@ -2620,7 +2622,7 @@ div .col .s9 input.clientCreatePortInput1 {
 }
 .logoContainDiv {
     padding: 0 100px 0 100px;
-    background-color: #ffffff;
+    background-color: var(--white);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -2659,10 +2661,10 @@ div .col .s12 input.clientCreatePortInput1 {
     font-size: 0.938rem;
     line-height: 24px;
     letter-spacing: -0.015em;
-    color: #7746ff;
+    color: var(--primary);
 }
 #logoModalUpIcon {
-    color: #7746ff;
+    color: var(--primary);
     font-size: 1.8rem;
     position: relative;
     top: 1vh;
@@ -2676,7 +2678,7 @@ div .col .s12 input.clientCreatePortInput1 {
     border: 1px solid rgba(119, 70, 255, 0.3);
 }
 #logModalBtn {
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 6px;
     margin: 7vh 0 3vh 0;
     font-family: "Montserrat", sans-serif;
@@ -2702,7 +2704,7 @@ textarea::placeholder {
     color: rgba(0, 0, 0, 0.5);
 }
 #bioAboutInput {
-    border: 1px solid #7746ff;
+    border: 1px solid var(--primary);
     border-radius: 100px;
     padding-left: 2vw;
     height: 4.5vh;
@@ -2743,7 +2745,7 @@ textarea::placeholder {
     margin: 0 0 0 0;
 }
 #bioIcon {
-    color: #7746ff;
+    color: var(--primary);
     font-size: 1.8rem;
     position: relative;
     top: 1vh;
@@ -2755,7 +2757,7 @@ textarea::placeholder {
     font-size: 0.938rem;
     line-height: 24px;
     letter-spacing: -0.015em;
-    color: #7746ff;
+    color: var(--primary);
     margin-left: 0.6vw;
 }
 #bioUpIconColDiv {
@@ -2766,14 +2768,14 @@ textarea::placeholder {
 #bioCvInput,
 #bioCvInput1,
 #bioCvInput2 {
-    border: 1px solid #7746ff;
+    border: 1px solid var(--primary);
     border-radius: 100px;
     padding-left: 2vw;
     height: 4.5vh;
     width: 95%;
 }
 #bioCvInput3 {
-    border: 1px solid #7746ff;
+    border: 1px solid var(--primary);
     border-radius: 100px;
     padding-left: 2vw;
     height: 4.5vh;
@@ -2791,21 +2793,21 @@ textarea::placeholder {
     left: 3vw;
 }
 #bioAddBtn {
-    color: #7746ff;
+    color: var(--primary);
 }
 .bioSelectOpt {
-    border: 1px solid #7746ff;
+    border: 1px solid var(--primary);
     border-radius: 100px;
     height: 4.5vh;
 }
 .bioSelectOpt1 {
-    border: 1px solid #7746ff;
+    border: 1px solid var(--primary);
     border-radius: 100px;
     height: 4.5vh;
     margin-top: 2.3vh;
 }
 #bioModalBtn {
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 6px;
     margin: 1vh 0 4vh 0;
     font-family: "Montserrat", sans-serif;
@@ -2813,7 +2815,7 @@ textarea::placeholder {
     font-weight: 500;
 }
 #contactModalSubBtn {
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 6px;
     margin: 3vh 0 3vh 0;
     font-family: "Montserrat", sans-serif;
@@ -2821,7 +2823,7 @@ textarea::placeholder {
     font-weight: 500;
 }
 #socialsModalSubBtn {
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 6px;
     margin: 8vh 0 6vh 0;
     font-family: "Montserrat", sans-serif;
@@ -2844,7 +2846,7 @@ textarea::placeholder {
     margin: 1.5vh 0 0 1vw;
 }
 #reviewModalBtn {
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 6px;
     margin: 5vh 0 2vh 0;
     font-family: "Montserrat", sans-serif;
@@ -2893,7 +2895,7 @@ textarea::placeholder {
 
 #sFName {
     height: 40px;
-    background: #ffffff;
+    background: var(--white);
     padding-left: 7px;
     width: 109%;
     /* margin-right: 7vw; */
@@ -2901,7 +2903,7 @@ textarea::placeholder {
 
 #sLName {
     height: 40px;
-    background: #ffffff;
+    background: var(--white);
     padding-left: 7px;
     width: 109%;
     margin-left: 1.1vw;
@@ -2909,7 +2911,7 @@ textarea::placeholder {
 
 #sEmail {
     height: 40px;
-    background: #ffffff;
+    background: var(--white);
     padding-left: 7px;
     width: 109%;
 }
@@ -2917,7 +2919,7 @@ textarea::placeholder {
 #sTextarea1 {
     width: 111%;
     height: 13vh;
-    background: #ffffff;
+    background: var(--white);
     padding-left: 7px;
 }
 
@@ -2935,7 +2937,7 @@ textarea::placeholder {
     width: 10px;
     height: 10px;
     background: red;
-    color: #ffffff;
+    color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2948,8 +2950,8 @@ textarea::placeholder {
     font-weight: 700;
     font-size: 1.1rem;
     line-height: 20px;
-    color: #7746ff;
-    background-color: #ffffff;
+    color: var(--primary);
+    background-color: var(--white);
     padding: 0.1vh 0.4vw;
     border-radius: 50%;
     margin-right: 0.2vw;
@@ -2967,11 +2969,11 @@ textarea::placeholder {
     color: rgba(0, 0, 0, 0.5);
     margin-right: 4vw;
     width: 22vw;
-    border-bottom: 2px solid #7746ff;
+    border-bottom: 2px solid var(--primary);
     padding: 0 0 1vh 1.5vw;
 }
 .activeTab {
-    border-bottom: 4px solid #7746ff;
+    border-bottom: 4px solid var(--primary);
 }
 .genTitle1 {
     font-family: "Montserrat", sans-serif;
@@ -2979,7 +2981,7 @@ textarea::placeholder {
     font-weight: lighter;
     font-size: 1.5rem;
     line-height: 29px;
-    color: #7746ff;
+    color: var(--primary);
     margin-top: 7vh;
 }
 .genTxt {
@@ -2992,14 +2994,14 @@ textarea::placeholder {
     width: 30vw;
 }
 #genInput {
-    border: 1px solid #7746ff;
+    border: 1px solid var(--primary);
     border-radius: 10px;
     padding-left: 1vw;
     width: 463px;
     height: 40px;
 }
 #genInput1 {
-    border: 1px solid #7746ff;
+    border: 1px solid var(--primary);
     border-radius: 10px;
     padding-left: 1vw;
     width: 463px;
@@ -3008,7 +3010,7 @@ textarea::placeholder {
 #genModalBtn {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 6px;
     width: 8vw;
 }
@@ -3027,7 +3029,7 @@ textarea::placeholder {
 }
 
 #genNextBtn {
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 6px;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -3035,7 +3037,7 @@ textarea::placeholder {
     font-size: 0.938rem;
     line-height: 18px;
     letter-spacing: -0.015em;
-    color: #ffffff;
+    color: var(--white);
     width: 8vw;
 }
 
@@ -3043,7 +3045,7 @@ textarea::placeholder {
     position: relative;
     top: 0.5vh;
     right: 2vw;
-    color: #7746ff;
+    color: var(--primary);
 }
 #genUploadFavIconDiv {
     position: relative;
@@ -3053,18 +3055,18 @@ textarea::placeholder {
 #genTitleCheck,
 #genTitleCheck1,
 #genTitleCheck2 {
-    color: #7746ff;
+    color: var(--primary);
 }
 #bioInput,
 #bioInput1 {
-    border: 1px solid #7746ff;
+    border: 1px solid var(--primary);
     border-radius: 10px;
     padding-left: 1vw;
     width: 463px;
     height: 40px;
 }
 #bioSelectInput {
-    border: 1px solid #7746ff;
+    border: 1px solid var(--primary);
     border-radius: 10px;
     padding-left: 1vw;
     width: 483px;
@@ -3072,7 +3074,7 @@ textarea::placeholder {
     background-color: #f4f4f4;
 }
 #bioDescribeInput {
-    border: 1px solid #7746ff;
+    border: 1px solid var(--primary);
     border-radius: 10px;
     padding-left: 1vw;
     width: 483px;
@@ -3085,7 +3087,7 @@ textarea::placeholder {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
     margin-bottom: 1vh;
     margin-top: 1vh;
 }
@@ -3105,7 +3107,7 @@ textarea::placeholder {
 .achieveInnerProgressBar {
     width: 26px;
     height: 12px;
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 10px;
 }
 #socialInput,
@@ -3119,7 +3121,7 @@ textarea::placeholder {
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.5);
 
-    border: 1px solid #7746ff;
+    border: 1px solid var(--primary);
     border-radius: 10px;
     padding-left: 1vw;
     width: 463px;
@@ -3148,14 +3150,14 @@ textarea::placeholder {
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.5);
 
-    border: 1px solid #7746ff;
+    border: 1px solid var(--primary);
     border-radius: 10px;
     padding-left: 1vw;
     width: 463px;
     height: 40px;
 }
 .editSocialMedIcons {
-    color: #7746ff;
+    color: var(--primary);
     font-size: 25px;
     position: relative;
     right: 2vw;
@@ -3170,7 +3172,7 @@ textarea::placeholder {
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
-    color: #7746ff;
+    color: var(--primary);
     position: relative;
     left: 0.5vw;
     bottom: 0.4vh;
@@ -3179,7 +3181,7 @@ textarea::placeholder {
 .editWebSidenavDiv {
     width: 23.5vw;
     /* height: 40vh;  */
-    background: #7746ff;
+    background: var(--primary);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: absolute;
     top: 14.8vh;
@@ -3205,7 +3207,7 @@ textarea::placeholder {
 }
 
 table.adminAddClientTable tbody tr.adminAddClientTr {
-    border: 1px solid #7746ff;
+    border: 1px solid var(--primary);
     border-radius: 10px;
     margin-bottom: 2vh;
     padding-bottom: 2vh;
@@ -3219,7 +3221,7 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
 }
 
 .adminAddClientViewBtn {
-    background: #7746ff;
+    background: var(--primary);
     border-radius: 6px;
     font-family: "Montserrat", sans-serif;
     width: 7vw;
@@ -3258,7 +3260,7 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
 }
 
 .adminClientPaginationRightIcon {
-    color: #000000;
+    color: var(--black);
     cursor: pointer;
 }
 
@@ -3279,7 +3281,7 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
     box-sizing: border-box;
     width: 266px;
     height: 41px;
-    border: 1px solid #000000;
+    border: 1px solid var(--black);
     border-radius: 10px;
     padding: 0 0.7vw;
 }
@@ -3297,7 +3299,7 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
-    color: #000000;
+    color: var(--black);
 }
 
 .adminClientSearchInputIcons {
@@ -3305,6 +3307,7 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
     top: 1vh;
 }
 
+/* Changed homepage "PREVIEW TEMPLATE" button color */
 .adminClientSearchInputIconsDiv {
     margin-left: 1vw;
 }
@@ -3316,7 +3319,7 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
 a.navLinks {
     font-weight: 600;
     font-size: 1.1rem;
-    color: #7746ff;
+    color: var(--primary);
     font-family: "Montserrat", sans-serif;
 }
 
@@ -3337,7 +3340,7 @@ a.navLinks.active {
 
 /* Changed "loginLink" from id -> class */
 a.loginLink {
-    border: 1px solid #7746ff;
+    border: 1px solid var(--primary);
     border-radius: 6px;
     width: 130px;
     height: 40px;
@@ -3346,14 +3349,14 @@ a.loginLink {
     line-height: 33px;
     font-weight: 600;
     font-size: 1rem;
-    color: #7746ff;
+    color: var(--primary);
     font-family: "Montserrat", sans-serif;
 }
 
 a.loginLink:hover {
-    background: #7746ff;
-    color: #ffffff;
-    border-left: #7746ff;
+    background: var(--primary);
+    color: var(--white);
+    border-left: var(--primary);
 }
 
 .chatImage {
@@ -3420,6 +3423,7 @@ a.loginLink:hover {
 /* Help Icon */
 .helpIcon {
     cursor: pointer;
+    color: var(--primary);
 }
 
 /* Help Title */
@@ -3428,7 +3432,7 @@ a.loginLink:hover {
     font-weight: 500;
     font-size: 30px;
     line-height: 37px;
-    color: #7746FF;
+    color: var(--primary);
 }
 
 /* Help Texts */
@@ -3437,7 +3441,7 @@ a.loginLink:hover {
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    color: #000000;
+    color: var(--black);
 }
 
 /* Help Close Button */
@@ -3446,9 +3450,18 @@ a.loginLink:hover {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
 }
 
+/* Changed homepage "PREVIEW TEMPLATE" button color */
+a.btn.circleDivBtn {
+    background-color: var(--component);
+}
+
+/* Changed templatePage "GET STARTED" button color */
+a.btn.tempPageBtn {
+    background: var(--primary);
+}
 
 
 
@@ -3457,7 +3470,7 @@ a.loginLink:hover {
     .circlDiv2 {
         width: 40vw;
         height: 107.9vh;
-        background-color: #7746ff;
+        background-color: var(--primary);
         border-radius: 0;
         /* border-top-left-radius: 0;
         border-bottom-left-radius: 0; */
@@ -3487,7 +3500,7 @@ a.loginLink:hover {
         margin-left: 3vw;
     }
     #loginLink {
-        border: 1px solid #7746FF;
+        border: 1px solid var(--primary);
         border-radius: 6px;
         width: 130px;
         height: 40px;
@@ -3496,8 +3509,8 @@ a.loginLink:hover {
         line-height: 33px;
         font-weight: 600;
         font-size: 1.25rem;
-        color: #7746ff;
-        background-color: #ffffff;
+        color: var(--primary);
+        background-color: var(--white);
         margin-left: 20px;
     } */
     .circlDiv1 {
@@ -3536,11 +3549,11 @@ a.loginLink:hover {
         width: 410px;
         font-size: 2.6rem;
         font-weight: 700;
-        color: #7746ff;
+        color: var(--primary);
         font-family: "Montserrat", sans-serif;
     }
     .portfolioDiv {
-        background: #7746ff;
+        background: var(--primary);
         box-shadow: 0px 9px 5px rgba(0, 0, 0, 0.25);
         margin-top: 5vh;
         z-index: 100;
@@ -3556,7 +3569,7 @@ a.loginLink:hover {
         text-align: center;
         letter-spacing: -0.01em;
         line-height: 48px;
-        color: #ffffff;
+        color: var(--white);
         font-family: "Montserrat", sans-serif;
     }
     .portfolioTxt {
@@ -3570,7 +3583,7 @@ a.loginLink:hover {
         text-align: center;
         justify-content: center;
         letter-spacing: -0.015em;
-        color: #ffffff;
+        color: var(--white);
     }
     .moreThanLandTxt {
         width: 60%;
@@ -3597,7 +3610,7 @@ a.loginLink:hover {
         font-size: 2rem;
         line-height: 39px;
         letter-spacing: -0.015em;
-        color: #7746ff;
+        color: var(--primary);
         margin-bottom: 10px;
         text-align: left;
     }
@@ -3623,7 +3636,7 @@ a.loginLink:hover {
         font-size: 2rem;
         line-height: 39px;
         letter-spacing: -0.015em;
-        color: #7746ff;
+        color: var(--primary);
         margin-bottom: 13px;
         text-align: right;
     }
@@ -3662,7 +3675,7 @@ a.loginLink:hover {
         font-size: 2rem;
         line-height: 39px;
         letter-spacing: -0.015em;
-        color: #7746ff;
+        color: var(--primary);
         margin-bottom: 13px;
         text-align: left;
     }
@@ -3688,7 +3701,7 @@ a.loginLink:hover {
         font-size: 2rem;
         line-height: 39px;
         letter-spacing: -0.015em;
-        color: #7746ff;
+        color: var(--primary);
         margin: 130px 0 0 9px;
         text-align: right;
     }
@@ -3729,7 +3742,7 @@ a.loginLink:hover {
         font-size: 2rem;
         line-height: 36px;
         letter-spacing: -0.015em;
-        color: #ffffff;
+        color: var(--white);
         text-align: center;
     }
     .footerGridDivs {
@@ -3757,7 +3770,7 @@ a.loginLink:hover {
         width: 43.5vw;
     }
     .cusSupportDiv {
-        background: #7746ff;
+        background: var(--primary);
         box-shadow: 0px 9px 5px rgba(0, 0, 0, 0.25);
         border-radius: 0px 0px 0px 0px;
         /* margin-top: 20vh; */
@@ -3766,7 +3779,7 @@ a.loginLink:hover {
     }
     #sideNavIcon {
         font-size: 3.5rem;
-        color: #7746ff;
+        color: var(--primary);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 50%;
         width: 6vw;
@@ -3776,7 +3789,7 @@ a.loginLink:hover {
     .sideNavBrandLogo {
         font-size: 2.7rem;
         font-weight: 500;
-        color: #7746ff;
+        color: var(--primary);
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         margin-left: 35vw;
         font-family: "Montserrat", sans-serif;
@@ -3790,7 +3803,7 @@ a.loginLink:hover {
         width: 400px;
         font-weight: 600;
         font-size: 1.1rem;
-        color: #000000;
+        color: var(--black);
         font-family: "Poppins", sans-serif;
         text-align: left;
         margin-bottom: 4vh;
@@ -3832,7 +3845,7 @@ a.loginLink:hover {
     .ellipseLarge {
         width: 70px;
         height: 70px;
-        background: #6938f2;
+        background: var(--component);
         border-radius: 50%;
         position: absolute;
         right: 300px;
@@ -3841,7 +3854,7 @@ a.loginLink:hover {
     .ellipseSmall {
         width: 35px;
         height: 35px;
-        background: #6938f2;
+        background: var(--component);
         border-radius: 50%;
         position: absolute;
         right: 279px;
@@ -3885,7 +3898,7 @@ a.loginLink:hover {
     #otpEmailBtn {
         font-family: "Montserrat", sans-serif;
         text-transform: capitalize;
-        background: #7746ff;
+        background: var(--primary);
         border-radius: 10px;
         width: 90%;
         height: 6vh;
@@ -3899,7 +3912,7 @@ a.loginLink:hover {
     /* Client Settings Section */
     .settingsFormDiv {
         width: 100%;
-        background: #ffffff;
+        background: var(--white);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
@@ -3917,7 +3930,7 @@ a.loginLink:hover {
     }
 
     #setProEditIcon {
-        color: #ffffff;
+        color: var(--white);
         font-size: 1.3rem;
         margin: 0.3vh 0 0 0.1vw;
     }
@@ -3926,7 +3939,7 @@ a.loginLink:hover {
         width: 23px;
         height: 23px;
         border-radius: 50%;
-        background: #7746ff;
+        background: var(--primary);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         display: inline-block;
         position: relative;
@@ -3934,7 +3947,7 @@ a.loginLink:hover {
         right: 3vw;
     }
     #setFormBtn {
-        background: #7746ff;
+        background: var(--primary);
         border-radius: 6px;
         font-family: "Montserrat", sans-serif;
         text-transform: capitalize;
@@ -3979,7 +3992,7 @@ a.loginLink:hover {
         left: 0vw;
     }
     #clientCreatePortBtn {
-        background: #7746ff;
+        background: var(--primary);
         border-radius: 6px;
         font-family: "Montserrat", sans-serif;
         font-style: normal;
@@ -3987,7 +4000,7 @@ a.loginLink:hover {
         font-size: 0.938rem;
         line-height: 18px;
         letter-spacing: -0.015em;
-        color: #ffffff;
+        color: var(--white);
         margin: 0 0 11vh 18vw;
         width: 37vw;
     }
@@ -3997,12 +4010,12 @@ a.loginLink:hover {
         font-weight: 600;
         font-size: 1.125rem;
         text-align: center;
-        color: #7746ff;
+        color: var(--primary);
         margin: 0;
     }
     /* Client Support Modal */
     .clientModalSupportDiv {
-        background: #7746ff;
+        background: var(--primary);
         box-shadow: 0px 9px 5px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
         padding-top: 2vh;
@@ -4014,7 +4027,7 @@ a.loginLink:hover {
     }
     #sFName {
         height: 40px;
-        background: #ffffff;
+        background: var(--white);
         padding-left: 7px;
         width: 109%;
         /* margin-right: 7vw; */
@@ -4022,7 +4035,7 @@ a.loginLink:hover {
 
     #sLName {
         height: 40px;
-        background: #ffffff;
+        background: var(--white);
         padding-left: 7px;
         width: 109%;
         margin-left: 2.5vw;
@@ -4030,7 +4043,7 @@ a.loginLink:hover {
 
     #sEmail {
         height: 40px;
-        background: #ffffff;
+        background: var(--white);
         padding-left: 7px;
         width: 109%;
     }
@@ -4038,7 +4051,7 @@ a.loginLink:hover {
     #sTextarea1 {
         width: 110%;
         height: 13vh;
-        background: #ffffff;
+        background: var(--white);
         padding-left: 7px;
     }
 
@@ -4058,7 +4071,7 @@ a.loginLink:hover {
     a.navLinks {
         font-weight: 600;
         font-size: 1.3125rem;
-        color: #ffffff;
+        color: var(--white);
         letter-spacing: 0.5px;
         margin-left: 3vw;
     }
@@ -4073,8 +4086,8 @@ a.loginLink:hover {
         line-height: 33px;
         font-weight: 600;
         font-size: 1.25rem;
-        color: #7746ff;
-        background-color: #ffffff;
+        color: var(--primary);
+        background-color: var(--white);
         margin-left: 20px;
     }
     
@@ -4119,6 +4132,11 @@ a.loginLink:hover {
         position: relative;
         bottom: 3vh;
     }
+
+    /* Changed homepage "PREVIEW TEMPLATE" button color */
+    a.btn.circleDivBtn {
+        background-color: var(--primary);
+    }
 }
 
 /* Media Query on small device */
@@ -4126,7 +4144,7 @@ a.loginLink:hover {
     .circlDiv2 {
         width: 100vw;
         height: 95vh;
-        background-color: #7746ff;
+        background-color: var(--primary);
         /* background-color: transparent; */
         border-radius: 0%;
         /* border-top-left-radius: 0;
@@ -4176,7 +4194,7 @@ a.loginLink:hover {
     }
     #sideNavIcon {
         font-size: 3.5rem;
-        color: #7746ff;
+        color: var(--primary);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 50%;
         width: 13vw;
@@ -4185,7 +4203,7 @@ a.loginLink:hover {
     .sideNavBrandLogo {
         font-size: 2.7rem;
         font-weight: 500;
-        color: #7746ff;
+        color: var(--primary);
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         margin-left: 14vw;
         font-family: "Montserrat", sans-serif;
@@ -4193,7 +4211,7 @@ a.loginLink:hover {
     /* #navLinks {
         font-weight: 600;
         font-size: 1.3125rem;
-        color: #ffffff;
+        color: var(--white);
         letter-spacing: 0.5px;
         margin-left: 3vw;
     }
@@ -4202,7 +4220,7 @@ a.loginLink:hover {
         margin-top: 2vh;
     }
     #loginLink {
-        border: 1px solid #7746FF;
+        border: 1px solid var(--primary);
         border-radius: 6px;
         width: 130px;
         height: 40px;
@@ -4211,8 +4229,8 @@ a.loginLink:hover {
         line-height: 33px;
         font-weight: 600;
         font-size: 1.25rem;
-        color: #7746ff;
-        background-color: #ffffff;
+        color: var(--primary);
+        background-color: var(--white);
         margin-left: 20px;
     } */
     /* #sideNavImgDiv {
@@ -4230,7 +4248,7 @@ a.loginLink:hover {
         text-align: center;
         letter-spacing: -0.01em;
         line-height: 48px;
-        color: #ffffff;
+        color: var(--white);
         font-family: "Montserrat", sans-serif;
     }
     .portfolioTxt {
@@ -4244,7 +4262,7 @@ a.loginLink:hover {
         text-align: center;
         justify-content: center;
         letter-spacing: -0.015em;
-        color: #ffffff;
+        color: var(--white);
     }
     .moreThanLandTxt {
         width: 95%;
@@ -4280,7 +4298,7 @@ a.loginLink:hover {
         font-size: 2rem;
         line-height: 39px;
         letter-spacing: -0.015em;
-        color: #7746ff;
+        color: var(--primary);
         margin-top: 6vh;
         margin-bottom: 19px;
         text-align: left;
@@ -4307,7 +4325,7 @@ a.loginLink:hover {
         font-size: 2rem;
         line-height: 39px;
         letter-spacing: -0.015em;
-        color: #7746ff;
+        color: var(--primary);
         margin-bottom: 13px;
         text-align: right;
     }
@@ -4348,7 +4366,7 @@ a.loginLink:hover {
         font-size: 2rem;
         line-height: 39px;
         letter-spacing: -0.015em;
-        color: #7746ff;
+        color: var(--primary);
         margin-top: 3vh;
         margin-bottom: 13px;
         text-align: left;
@@ -4374,7 +4392,7 @@ a.loginLink:hover {
         font-size: 2rem;
         line-height: 39px;
         letter-spacing: -0.015em;
-        color: #7746ff;
+        color: var(--primary);
         margin-top: 5vh;
         margin-bottom: 13px;
         text-align: right;
@@ -4428,7 +4446,7 @@ a.loginLink:hover {
         margin: 12vh auto 3vh auto;
         font-size: 2.75rem;
         font-weight: 700;
-        color: #7746ff;
+        color: var(--primary);
         font-family: "Montserrat", sans-serif;
         text-align: center;
     }
@@ -4437,7 +4455,7 @@ a.loginLink:hover {
         width: 400px;
         font-weight: 600;
         font-size: 1rem;
-        color: #000000;
+        color: var(--black);
         font-family: "Poppins", sans-serif;
         text-align: center;
     }
@@ -4463,7 +4481,7 @@ a.loginLink:hover {
     .wlcNoteDiv {
         width: 400px;
         height: 600px;
-        background: #7746ff;
+        background: var(--primary);
         border-radius: 50px;
         padding-top: 1vh;
         margin-top: 6vh;
@@ -4481,7 +4499,7 @@ a.loginLink:hover {
         line-height: 24px;
         margin: 6vh 0 0 2vw;
         letter-spacing: -0.015em;
-        color: #ffffff;
+        color: var(--white);
     }
     .wlcNoteFooterTxt {
         font-family: "Montserrat";
@@ -4503,7 +4521,7 @@ a.loginLink:hover {
     .wlcNoteDiv {
         width: 400px;
         height: 600px;
-        background: #7746ff;
+        background: var(--primary);
         border-radius: 50px;
         padding-top: 1vh;
         margin-top: 6vh;
@@ -4521,7 +4539,7 @@ a.loginLink:hover {
         line-height: 24px;
         margin: 6vh 0 0 2vw;
         letter-spacing: -0.015em;
-        color: #ffffff;
+        color: var(--white);
     }
     .wlcNoteFooterTxt {
         font-family: "Montserrat";
@@ -4548,9 +4566,9 @@ a.loginLink:hover {
 
     /* Error Small Device */
     .domainNameSugBtn {
-        background: #7746ff;
+        background: var(--primary);
         border-radius: 6px;
-        color: white;
+        color: var(--white);
         font-family: "Montserrat", sans-serif;
         height: 4.8vh;
         width: 19vw;
@@ -4571,7 +4589,6 @@ a.loginLink:hover {
     }
     .tempPageTxt {
         font-family: "Poppins", sans-serif;
-        font-style: normal;
         font-weight: 600;
         font-size: 1rem;
         line-height: 24px;
@@ -4606,20 +4623,20 @@ a.loginLink:hover {
     .ellipseLargeSm {
         width: 50px;
         height: 50px;
-        background: #6938f2;
+        background: var(--component);
         border-radius: 50%;
     }
     .ellipseSmallSm {
         width: 25px;
         height: 25px;
-        background: #6938f2;
+        background: var(--component);
         border-radius: 50%;
         position: relative;
         top: 3vh;
         right: 2vw;
     }
     .portfolioDiv {
-        background: #7746ff;
+        background: var(--primary);
         box-shadow: 0px 9px 5px rgba(0, 0, 0, 0.25);
         /* margin-top: 17.5vh; */
         z-index: 100;
@@ -4627,14 +4644,13 @@ a.loginLink:hover {
         padding-bottom: 15vh;
     }
     .moreThanLandTitle {
-        font-style: normal;
         font-weight: 700;
         font-size: 1.5rem;
         line-height: 39px;
         align-items: center;
         text-align: center;
         letter-spacing: -0.015em;
-        color: #7746ff;
+        color: var(--primary);
         font-family: "Montserrat", sans-serif;
     }
     .moreThanLandInnerDiv {
@@ -4648,7 +4664,7 @@ a.loginLink:hover {
         font-size: 1.7rem;
         line-height: 39px;
         letter-spacing: -0.015em;
-        color: #7746ff;
+        color: var(--primary);
         margin-bottom: 13px;
     }
     .clientRevTxt,
@@ -4673,7 +4689,7 @@ a.loginLink:hover {
         margin: 10vh auto;
     }
     .cusSupportDiv {
-        background: #7746ff;
+        background: var(--primary);
         box-shadow: 0px 9px 5px rgba(0, 0, 0, 0.25);
         border-radius: 0px 0px 0px 0px;
         /* margin-top: 20vh; */
@@ -4687,7 +4703,7 @@ a.loginLink:hover {
         font-size: 1.4rem;
         line-height: 36px;
         letter-spacing: -0.015em;
-        color: #ffffff;
+        color: var(--white);
         text-align: center;
     }
 
@@ -4698,7 +4714,7 @@ a.loginLink:hover {
         font-weight: 500;
         font-size: 2.4rem;
         line-height: 40px;
-        color: #7746ff;
+        color: var(--primary);
         text-align: center;
     }
     .tempBtnDiv {
@@ -4752,7 +4768,7 @@ a.loginLink:hover {
     #otpEmailBtn {
         font-family: "Montserrat", sans-serif;
         text-transform: capitalize;
-        background: #7746ff;
+        background: var(--primary);
         border-radius: 10px;
         width: 90%;
         height: 6vh;
@@ -4766,7 +4782,7 @@ a.loginLink:hover {
     /* Client Settings Section */
     .settingsFormDiv {
         width: 100%;
-        background: #ffffff;
+        background: var(--white);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
     .setMainDiv {
@@ -4781,7 +4797,7 @@ a.loginLink:hover {
         color: rgba(0, 0, 0, 0.5);
     }
     #setProEditIcon {
-        color: #ffffff;
+        color: var(--white);
         font-size: 1.3rem;
         margin: 0.3vh 0 0 0.1vw;
     }
@@ -4838,7 +4854,7 @@ a.loginLink:hover {
         margin-top: 2.6vh;
     }
     .dashTimeDiv {
-        background: #7746ff;
+        background: var(--primary);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
         height: 12.25rem;
@@ -4852,7 +4868,7 @@ a.loginLink:hover {
         width: 100%;
     }
     #clientCreatePortBtn {
-        background: #7746ff;
+        background: var(--primary);
         border-radius: 6px;
         font-family: "Montserrat", sans-serif;
         font-style: normal;
@@ -4860,7 +4876,7 @@ a.loginLink:hover {
         font-size: 0.938rem;
         line-height: 18px;
         letter-spacing: -0.015em;
-        color: #ffffff;
+        color: var(--white);
         margin: 0 0 11vh 18vw;
         width: 50vw;
     }
@@ -4870,13 +4886,13 @@ a.loginLink:hover {
         font-weight: 600;
         font-size: 1.125rem;
         text-align: center;
-        color: #7746ff;
+        color: var(--primary);
         margin: 0;
     }
 
     /* Client Support Modal */
     .clientModalSupportDiv {
-        background: #7746ff;
+        background: var(--primary);
         box-shadow: 0px 9px 5px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
         padding-top: 2vh;
@@ -4888,28 +4904,28 @@ a.loginLink:hover {
     }
     #sFName {
         height: 40px;
-        background: #ffffff;
+        background: var(--white);
         padding-left: 7px;
         width: 109%;
         /* margin-right: 7vw; */
     }
     #sLName {
         height: 40px;
-        background: #ffffff;
+        background: var(--white);
         padding-left: 7px;
         width: 109%;
         margin-left: 4vw;
     }
     #sEmail {
         height: 40px;
-        background: #ffffff;
+        background: var(--white);
         padding-left: 7px;
         width: 109%;
     }
     #sTextarea1 {
         width: 111%;
         height: 13vh;
-        background: #ffffff;
+        background: var(--white);
         padding-left: 7px;
     }
     #modalSupportBtnForm {
@@ -4922,7 +4938,7 @@ a.loginLink:hover {
     .tempPageBtn {
         width: 198px;
         height: 40px;
-        background: #7746ff;
+        background: var(--primary);
         border-radius: 6px;
         font-family: "Montserrat", sans-serif;
         margin-left: 23vw;
@@ -4933,7 +4949,7 @@ a.loginLink:hover {
         /* width: 400px; */
         font-weight: 600;
         font-size: 1rem;
-        color: #000000;
+        color: var(--black);
         font-family: "Poppins", sans-serif;
         text-align: center;
         margin: 0 auto;
@@ -4994,7 +5010,7 @@ a.loginLink:hover {
     a.navLinks {
         font-weight: 600;
         font-size: 1.3125rem;
-        color: #FFFFFF;
+        color: var(--white);
         letter-spacing: 0.5px;
         margin-left: 3vw;
     }
@@ -5014,8 +5030,8 @@ a.loginLink:hover {
         line-height: 33px;
         font-weight: 600;
         font-size: 1.25rem;
-        color: #7746ff;
-        background-color: #ffffff;
+        color: var(--primary);
+        background-color: var(--white);
         margin-left: 20px;
     }
 }
