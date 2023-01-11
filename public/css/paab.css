@@ -1880,74 +1880,10 @@ p.websiteTemplateName {
     cursor: pointer;
 }
 
-/* Client Settings Section */
-.settingsFormDiv {
-    width: 40vw;
-    /* height: 86vh; */
-    background: var(--white);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-#settingsForm {
-    width: 80%;
-    margin: 0 auto;
-}
-.mySetTitle {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.25rem;
-    line-height: 30px;
-    color: var(--primary);
-    margin: 0 1vw 0 0;
-    position: relative;
-    bottom: 3vh;
-}
-.setMainDiv {
-    display: flex;
-    width: 70%;
-    margin: 10vh auto 0 auto;
-}
-.setProDiv {
-    background: #d9d9d9;
-    width: 74px;
-    height: 74px;
-    border-radius: 50%;
-    margin: auto;
-    display: inline-block;
-}
-#setProImg {
-    font-size: 3.5rem;
-    margin-left: 0.8vw;
-    margin-top: 0.9vh;
-    color: rgba(0, 0, 0, 0.5);
-}
 #setProImgContainDiv {
     display: flex;
 }
-.setProEditIconDiv {
-    height: 23px;
-    width: 23px;
-    display: inline-block;
-    position: relative;
-    top: 1.2vh;
-    right: 1.2vw;
-}
-#setProEditIcon {
-    color: var(--white);
-    font-size: 1.3rem;
-    margin: 0.3vh 0 0 0.1vw;
-}
-#setProMainDiv {
-    width: 20%;
-    margin: 0 auto 6vh auto;
-}
-#setFormBtn {
-    background: var(--primary);
-    border-radius: 6px;
-    font-family: "Montserrat", sans-serif;
-    text-transform: capitalize;
-    margin-top: 2vh;
-}
+
 /* Client Support Section */
 .supportBlueDiv {
     width: 95%;
@@ -3463,6 +3399,76 @@ a.btn.tempPageBtn {
     background: var(--primary);
 }
 
+/* 
+    Client & Admin Settings component. 
+    This stylings below has been changed and transfered to userSettings.css file
+    So Find this stylings above and remove them, it's also in the two media queries below.
+*/
+/* .setMainDiv {
+    display: flex;
+    width: 70%;
+    margin: 10vh auto 0 auto;
+} */
+/* .settingsFormDiv {
+    width: 40vw;
+    height: 86vh;
+    background: var(--white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} */
+/* #settingsForm {
+    width: 80%;
+    margin: 0 auto;
+} */
+/* #setProMainDiv {
+    width: 20%;
+    margin: 0 auto 6vh auto;
+} */
+/* .setProDiv {
+    background: #d9d9d9;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    margin: auto;
+    display: inline-block;
+} */
+/* #setProImg {
+    font-size: 3.5rem;
+    margin-left: 0.8vw;
+    margin-top: 0.9vh;
+    color: rgba(0, 0, 0, 0.5);
+} */
+/* .setProEditIconDiv {
+    height: 23px;
+    width: 23px;
+    display: inline-block;
+    position: relative;
+    top: 1.2vh;
+    right: 1.2vw;
+} */
+/* #setProEditIcon {
+    color: var(--white);
+    font-size: 1.3rem;
+    margin: 0.3vh 0 0 0.1vw;
+} */
+/* .mySetTitle {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 30px;
+    color: var(--primary);
+    margin: 0 1vw 0 0;
+    position: relative;
+    bottom: 3vh;
+} */
+/* #setFormBtn {
+    background: var(--primary);
+    border-radius: 6px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+    margin-top: 2vh;
+} */
+
 
 
 /* Media Query on Medium Device */
@@ -3909,51 +3915,7 @@ a.btn.tempPageBtn {
     #otpEmailDiv {
         margin-left: 4.5vw;
     }
-    /* Client Settings Section */
-    .settingsFormDiv {
-        width: 100%;
-        background: var(--white);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-
-    .setMainDiv {
-        display: block;
-        width: 99%;
-        margin: 9vh auto 0 auto;
-    }
-
-    #setProImg {
-        font-size: 4.5rem;
-        margin-left: 1vw;
-        margin-top: 0.9vh;
-        color: rgba(0, 0, 0, 0.5);
-    }
-
-    #setProEditIcon {
-        color: var(--white);
-        font-size: 1.3rem;
-        margin: 0.3vh 0 0 0.1vw;
-    }
-
-    .setProEditIconDiv {
-        width: 23px;
-        height: 23px;
-        border-radius: 50%;
-        background: var(--primary);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        display: inline-block;
-        position: relative;
-        top: 0vh;
-        right: 3vw;
-    }
-    #setFormBtn {
-        background: var(--primary);
-        border-radius: 6px;
-        font-family: "Montserrat", sans-serif;
-        text-transform: capitalize;
-        margin-top: 2vh;
-        margin-bottom: 4vh;
-    }
+    
     .shapeDeg {
         width: 38.86px;
         height: 80px;
@@ -4137,6 +4099,52 @@ a.btn.tempPageBtn {
     a.btn.circleDivBtn {
         background-color: var(--primary);
     }
+
+    /* 
+        Client & Admin Settings component. 
+        This stylings commented off below in this media query
+        Is not needed again, it has been moved to userSettings.css file. 
+    */
+    /* .setMainDiv {
+        display: block;
+        width: 99%;
+        margin: 9vh auto 0 auto;
+    } */
+    /* .settingsFormDiv {
+        width: 100%;
+        background: var(--white);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    } */
+    /* #setProImg {
+        font-size: 4.5rem;
+        margin-left: 1vw;
+        margin-top: 0.9vh;
+        color: rgba(0, 0, 0, 0.5);
+    } */
+    /* .setProEditIconDiv {
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        background: var(--primary);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        display: inline-block;
+        position: relative;
+        top: 0vh;
+        right: 3vw;
+    } */
+    /* #setProEditIcon {
+        color: var(--white);
+        font-size: 1.3rem;
+        margin: 0.3vh 0 0 0.1vw;
+    } */
+    /* #setFormBtn {
+        background: var(--primary);
+        border-radius: 6px;
+        font-family: "Montserrat", sans-serif;
+        text-transform: capitalize;
+        margin-top: 2vh;
+        margin-bottom: 4vh;
+    } */
 }
 
 /* Media Query on small device */
@@ -4779,39 +4787,6 @@ a.btn.tempPageBtn {
         margin-left: 3.5vw;
     }
 
-    /* Client Settings Section */
-    .settingsFormDiv {
-        width: 100%;
-        background: var(--white);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-    .setMainDiv {
-        display: block;
-        width: 99%;
-        margin: 4vh auto 0 auto;
-    }
-    #setProImg {
-        font-size: 4.5rem;
-        margin-left: 1vw;
-        margin-top: 0.9vh;
-        color: rgba(0, 0, 0, 0.5);
-    }
-    #setProEditIcon {
-        color: var(--white);
-        font-size: 1.3rem;
-        margin: 0.3vh 0 0 0.1vw;
-    }
-    .setProEditIconDiv {
-        /* width: 23px;
-        height: 23px;
-        border-radius: 50%;
-        background: #7746ff;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        display: inline-block; */
-        position: relative;
-        top: -8vh;
-        right: -9.5vw;
-    }
     .shapeDegDiv {
         display: flex;
         position: relative;
@@ -5034,4 +5009,42 @@ a.btn.tempPageBtn {
         background-color: var(--white);
         margin-left: 20px;
     }
+
+    /* 
+        Client & Admin Settings component. 
+        This stylings commented off below in this media query
+        Is not needed again, it has been moved to userSettings.css file. 
+    */
+    /* .setMainDiv {
+        display: block;
+        width: 99%;
+        margin: 4vh auto 0 auto;
+    } */
+    /* .settingsFormDiv {
+        width: 100%;
+        background: var(--white);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    } */
+    /* #setProImg {
+        font-size: 4.5rem;
+        margin-left: 1vw;
+        margin-top: 0.9vh;
+        color: rgba(0, 0, 0, 0.5);
+    } */
+    /* .setProEditIconDiv {
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        background: #7746ff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        display: inline-block;
+        position: relative;
+        top: -8vh;
+        right: -9.5vw;
+    } */
+    /* #setProEditIcon {
+        color: var(--white);
+        font-size: 1.3rem;
+        margin: 0.3vh 0 0 0.1vw;
+    } */
 }
