@@ -44,6 +44,12 @@ import AdminSingleMail from "./components/admin/SingleMail";
 import DashboardSAdmin from './components/super/Dashboard';
 import AdminComponent from './components/super/AdminsComponent';
 
+// Added remaining super admin links for it's component here
+import SadminTemplate from './components/super/Template';
+import SadminMail from "./components/super/MailComponent";
+import SadminSingleMail from "./components/super/SinglemailComponent";
+import SadminSettings from "./components/super/SettingsComponent";
+import SadminClient from "./components/super/ClientComponent";
 
 // Webiste
 import PhysicianWebsiteComponent from './components/templates/Physicians/MainTemplateComponent';
@@ -68,6 +74,14 @@ app.component('client-singlemail-component', ClientSingleMail);
 app.component("admin-component", AdminDashboard);
 app.component('admins-component', AdminComponent);
 app.component('sadmin-component', DashboardSAdmin);
+
+// Added remaining super admin links for it's component here
+app.component("sadmin-template-component", SadminTemplate);
+app.component("sadmin-mail-component", SadminMail);
+app.component("sadmin-singlemail-component", SadminSingleMail);
+app.component("sadmin-settings-component", SadminSettings);
+app.component("sadmin-client-component", SadminClient);
+
 app.component("admin-client-component", AdminClient);
 app.component("admin-template-component", AdminTemplate);
 app.component("admin-messages-component", AdminMail);

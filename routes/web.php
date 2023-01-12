@@ -140,4 +140,21 @@ Route::prefix('supre')->middleware(['auth', 'can:run_superAdmin_ops'])->group(fu
     Route::get('/admins', function() {
         return view('super.admins');
     });
+
+    // Added remaining super admin url here
+    Route::get('/template', function() {
+        return view('super.template');
+    });
+    Route::get('/mail', function() {
+        return view('super.mail');
+    });
+    Route::get('/singlemail', function() {
+        return view('super.singlemail');
+    });
+    Route::get('/settings', function() {
+        return view('super.settings');
+    });
+    Route::get('/clients', function() {
+        return view('super.client');
+    });
 });
