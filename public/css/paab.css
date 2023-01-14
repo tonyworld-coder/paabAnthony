@@ -655,7 +655,6 @@ body {
 }
 .copyWrite {
     font-family: "Montserrat", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 1rem;
     line-height: 24px;
@@ -1330,7 +1329,6 @@ a.active {
 
 .dashRightImgTitle {
     font-family: "Montserrat", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 3.125rem;
     /* line-height: 61px; */
@@ -1341,7 +1339,6 @@ a.active {
 
 .dashRightImgTxt {
     font-family: "Poppins", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 1rem;
     /* line-height: 24px; */
@@ -3345,17 +3342,6 @@ a.loginLink:hover {
     margin-right: 4.5vw;
 }
 
-/* Admin Dashboard page Img styling */
-#adminDashRightImgDiv {
-    background-image: url("../media/img/adminDashboardImg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 292px;
-    border-radius: 10px;
-}
-
 /* Help Icon */
 .helpIcon {
     cursor: pointer;
@@ -3468,6 +3454,29 @@ a.btn.tempPageBtn {
     text-transform: capitalize;
     margin-top: 2vh;
 } */
+
+/* ********************************************************************************************** */
+/* Changes on Admin and Super Admin Template */
+/* Admin Dashboard page Img styling */
+#adminDashRightImgDiv {
+    background-image: url("../media/img/adminDashboardImg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 292px;
+    border-radius: 10px;
+}
+/* Super Admin Dashboard page Img styling */
+#superAdminDashRightImgDiv {
+    background-image: url("../media/img/superAdminDashboardImg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 292px;
+    border-radius: 10px;
+}
 
 
 
@@ -5008,6 +5017,23 @@ a.btn.tempPageBtn {
         color: var(--primary);
         background-color: var(--white);
         margin-left: 20px;
+    }
+
+    /* ******************************************************************************************* */
+    /* Made some changes on the admin dashboard image writeup */
+    .dashRightImgTitle {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 3.125rem;
+        line-height: 50px;
+        color: var(--white);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin: 0 0 1vh 0;
+    }
+    .dashRightImgTxtDiv {
+        position: absolute;
+        top: 13vh;
+        left: 6vw;
     }
 
     /* 

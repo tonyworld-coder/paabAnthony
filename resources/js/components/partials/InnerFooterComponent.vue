@@ -1,6 +1,6 @@
 <template>
     <div class="copyWrite">
-        &copy; PaaB. 2022. We support your brand!
+        &copy; White Coat Domain. 2022. We support your brand!
     </div>
 </template>
 <script>

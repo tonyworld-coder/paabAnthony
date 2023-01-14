@@ -1,5 +1,93 @@
 <template>
     <div>
+        <!-- Template's Inputs help Modals -->
+        <!-- ------------------------------------------------------------------------------------- -->
+        
+        <!-- Add Title Help Modal Structure -->
+        <div id="addTitleModal" class="modal">
+            <div class="modal-content">
+                <p>
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat helpModalCloseBtn">Go Back</a>
+                </p>
+                <h5 class="helpModalTitle">What is Domain Name?</h5>
+                <p class="helpModalTxts">
+                    Nothing sets your personal brand apart faster than a unique address on the web. Your domain name is your website's
+                    equivalent of a physical address.
+                </p>
+                
+                <p class="helpModalTxts">
+                    It consists of a website name and a domain name extension. A memorable domain will strengthen your branding and help
+                    your audience find your website easily
+                </p>
+            </div>
+        </div>
+
+        <!-- Upload Template Thumbnail Help Modal Structure -->
+        <div id="uploadTempThumbModal" class="modal">
+            <div class="modal-content">
+                <p>
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat helpModalCloseBtn">Go Back</a>
+                </p>
+                <h5 class="helpModalTitle">What is Domain Name?</h5>
+                <p class="helpModalTxts">
+                    Nothing sets your personal brand apart faster than a unique address on the web. Your domain name is your website's
+                    equivalent of a physical address.
+                </p>
+                
+                <p class="helpModalTxts">
+                    It consists of a website name and a domain name extension. A memorable domain will strengthen your branding and help
+                    your audience find your website easily
+                </p>
+            </div>
+        </div>
+
+        <!-- Upload Template Thumbnail Help Modal Structure -->
+        <div id="uploadTempStyleModal" class="modal">
+            <div class="modal-content">
+                <p>
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat helpModalCloseBtn">Go Back</a>
+                </p>
+                <h5 class="helpModalTitle">What is Domain Name?</h5>
+                <p class="helpModalTxts">
+                    Nothing sets your personal brand apart faster than a unique address on the web. Your domain name is your website's
+                    equivalent of a physical address.
+                </p>
+                
+                <p class="helpModalTxts">
+                    It consists of a website name and a domain name extension. A memorable domain will strengthen your branding and help
+                    your audience find your website easily
+                </p>
+            </div>
+        </div>
+
+        <!-- Template Delete Modal Structure -->
+        <div id="tempDelModal" class="modal">
+            <div class="row logoutModalImageRow">
+                <img src="/media/img/warning.png" alt="Illustrating a warning that you will be logged out" id="errAltImg"
+                    class="logoutModalImage" />
+            </div>
+            <div class="row center-align">
+                <p><b>You sure you want to delete this template?</b></p>
+            </div>
+            
+            <div class="row center-align">
+                <button @click="logout" class="primary waves-effect waves-green btn-flat">
+                    Yes
+                </button>
+                <span class="gutter1"></span>
+                <button class="
+                    modal-close
+                    primaryBorder
+                    waves-effect waves-green
+                    btn-flat
+                ">
+                    No
+                </button>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------- -->
+        
+
         <!-- Sidenav for small devices -->
         <mobile-nav-component />
 
@@ -7,7 +95,483 @@
             <!-- Sidebar for large and medium devices -->
             <side-nav-component />
 
-            <!-- Center Bar Person Div -->
+            <div class="col s12 m10 l10">
+                <!-- Templates Div -->
+                <div v-if="!viewTemplates">
+                    <!-- Create Template black rectangular div -->
+                    <div class="tempSetBlackDiv">
+                        <div class="tempSetBlackInnerDiv">
+                            <div class="row tempSetBlackInnerDiv">
+                                <div class="col s12">
+                                    <p class="tempSetTitle">Create Template</p>
+                                </div>
+                                <div class="col s11">
+                                    <p class="tempSetTxt">
+                                        Lets start and automate your process so you can
+                                        reclaim time and focus on your goals.
+                                    </p>
+                                </div>
+                                <div class="col s1">
+                                    <i class="material-icons tempSetIcon right" @click="createTemp()">add_circle</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profession Carousel lists -->
+                    <div class="carousel carousel-slider center white">
+                        <div class="carousel-item" href="#one!">
+                            <div class="row tempSetCarouselInnerDiv">
+                                <!-- Center Bar Person Div -->
+                    
+                                <div class="col s6 m4 l2">
+                                    <div class="tempSetProMainDiv">
+                                        <div class="tempSetProDiv">
+                                            <span class="tempSetProSymbols">S</span>
+                                        </div>
+                                        <p class="tempSetProTitle">Surgeon</p>
+                                    </div>
+                                </div>
+                    
+                                <div class="col s6 m4 l2">
+                                    <div class="tempSetProMainDiv">
+                                        <div class="tempSetProDiv1">
+                                            <span class="tempSetProSymbols">D</span>
+                                        </div>
+                                        <p class="tempSetProTitle">Dentist</p>
+                                    </div>
+                                </div>
+                    
+                                <div class="col s6 m4 l2">
+                                    <div class="tempSetProMainDiv">
+                                        <div class="tempSetProDiv2">
+                                            <span class="tempSetProSymbols">G</span>
+                                        </div>
+                                        <p class="tempSetProTitle">gynecologist</p>
+                                    </div>
+                                </div>
+                    
+                                <div class="col s6 m4 l2">
+                                    <div class="tempSetProMainDiv">
+                                        <div class="tempSetProDiv3">
+                                            <span class="tempSetProSymbols">N</span>
+                                        </div>
+                                        <p class="tempSetProTitle">Neurologist</p>
+                                    </div>
+                                </div>
+                    
+                                <div class="col s6 m4 l2">
+                                    <div class="tempSetProMainDiv">
+                                        <div class="tempSetProDiv4">
+                                            <span class="tempSetProSymbols">R</span>
+                                        </div>
+                                        <p class="tempSetProTitle">Radiologist</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item white" href="#two!">
+                            <p><b>Second Panel</b></p>
+                            <p class="">This is your second panel</p>
+                        </div>
+                    </div>
+                    <div v-if="(template > 0)">
+                        <!-- Search Domain Section -->
+                        <div class="tempSetSearchInputMainDiv">
+                            <div>
+                                <form>
+                                    <div class="input-field">
+                                        <input placeholder="&#128269; Search by domain" id="adminClientSearchInput" type="text"
+                                            class="validate" v-model="search" />
+                                    </div>
+                                </form>
+                            </div>
+                    
+                            <div class="tempSetSearchInputControlDiv">
+                                <div>
+                                    <span class="tempSetSearchInputTxts">Filter</span>
+                                    <i class="material-icons tempSetSearchInputIcons">filter_list</i>
+                                </div>
+                    
+                                <div class="tempSetSearchInputIconsDiv">
+                                    <span class="tempSetSearchInputTxts">Sort</span>
+                                    <i class="material-icons tempSetSearchInputIcons">sort</i>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Template Section -->
+                        <div class="tempSetContainDiv">
+                    
+                            <!-- First Row -->
+                            <div class="row">
+                                <div class="col s12 m6 l4 tempSetMainRowDiv">
+                                    <div>
+                                        <img src="/media/img/aboutmyself.png" alt="tempSetImage.png">
+                                    </div>
+                    
+                                    <p class="tempSetMainTitle">
+                                        Planet Earth
+                                    </p>
+                    
+                                    <p class="tempSetMainTxt">
+                                        The Planet Earth template is a captivating design with minimalist appeal.
+                                    </p>
+                    
+                                    <div>
+                                        <a href="#" class="tempSetMainViewLink">View</a>
+                    
+                                        <!-- Template Delete Modal Trigger -->
+                                        <a href="#tempDelModal" class="btn right tempSetDelBtn modal-trigger">
+                                            Delete
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                    
+                                <div class="col s12 m6 l4 tempSetMainRowDiv">
+                                    <div>
+                                        <img src="/media/img/aboutmyself.png" alt="tempSetImage.png">
+                                    </div>
+                    
+                                    <p class="tempSetMainTitle">
+                                        Planet Earth
+                                    </p>
+                    
+                                    <p class="tempSetMainTxt">
+                                        The Planet Earth template is a captivating design with minimalist appeal.
+                                    </p>
+                    
+                                    <div>
+                                        <a href="#" class="tempSetMainViewLink">View</a>
+                    
+                                        <!-- Template Delete Modal Trigger -->
+                                        <a href="#tempDelModal" class="btn right tempSetDelBtn modal-trigger">
+                                            Delete
+                                        </a>
+                                    </div>
+                                </div>
+                    
+                                <div class="col s12 m6 l4 tempSetMainRowDiv">
+                                    <div>
+                                        <img src="/media/img/aboutmyself.png" alt="tempSetImage.png">
+                                    </div>
+                    
+                                    <p class="tempSetMainTitle">
+                                        Planet Earth
+                                    </p>
+                    
+                                    <p class="tempSetMainTxt">
+                                        The Planet Earth template is a captivating design with minimalist appeal.
+                                    </p>
+                    
+                                    <div>
+                                        <a href="#" class="tempSetMainViewLink">View</a>
+                    
+                                        <!-- Template Delete Modal Trigger -->
+                                        <a href="#tempDelModal" class="btn right tempSetDelBtn modal-trigger">
+                                            Delete
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                    
+                    
+                            <!-- Second Row -->
+                            <div class="row">
+                                <div class="col s12 m6 l4 tempSetMainRowDiv">
+                                    <div>
+                                        <img src="/media/img/aboutmyself.png" alt="tempSetImage.png">
+                                    </div>
+                    
+                                    <p class="tempSetMainTitle">
+                                        Planet Earth
+                                    </p>
+                    
+                                    <p class="tempSetMainTxt">
+                                        The Planet Earth template is a captivating design with minimalist appeal.
+                                    </p>
+                    
+                                    <div>
+                                        <a href="#" class="tempSetMainViewLink">View</a>
+                    
+                                        <!-- Template Delete Modal Trigger -->
+                                        <a href="#tempDelModal" class="btn right tempSetDelBtn modal-trigger">
+                                            Delete
+                                        </a>
+                                    </div>
+                    
+                                </div>
+                    
+                                <div class="col s12 m6 l4 tempSetMainRowDiv">
+                                    <div>
+                                        <img src="/media/img/aboutmyself.png" alt="tempSetImage.png">
+                                    </div>
+                    
+                                    <p class="tempSetMainTitle">
+                                        Planet Earth
+                                    </p>
+                    
+                                    <p class="tempSetMainTxt">
+                                        The Planet Earth template is a captivating design with minimalist appeal.
+                                    </p>
+                    
+                                    <div>
+                                        <a href="#" class="tempSetMainViewLink">View</a>
+                    
+                                        <!-- Template Delete Modal Trigger -->
+                                        <a href="#tempDelModal" class="btn right tempSetDelBtn modal-trigger">
+                                            Delete
+                                        </a>
+                                    </div>
+                                </div>
+                    
+                                <div class="col s12 m6 l4 tempSetMainRowDiv">
+                                    <div>
+                                        <img src="/media/img/aboutmyself.png" alt="tempSetImage.png">
+                                    </div>
+                    
+                                    <p class="tempSetMainTitle">
+                                        Planet Earth
+                                    </p>
+                    
+                                    <p class="tempSetMainTxt">
+                                        The Planet Earth template is a captivating design with minimalist appeal.
+                                    </p>
+                    
+                                    <div>
+                                        <a href="#" class="tempSetMainViewLink">View</a>
+                    
+                                        <!-- Template Delete Modal Trigger -->
+                                        <a href="#tempDelModal" class="btn right tempSetDelBtn modal-trigger">
+                                            Delete
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12">
+                                <p class="tempSetLoading">Loading...</p>
+                            </div>
+                            <!-- End of Row -->
+                        </div>
+                    </div>
+                    <div class="row" v-else>
+                        <p class="center-align noTempTxt">
+                            No templates found for profession
+                            <a href="#" class="noTempCreateTempLink" @click="createTemp()">Create template</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Template Add Title Section -->
+                <div v-if="!addTitle">
+                    <p href="#" class="addTitleBack" @click="addTitleBack()">
+                        <a href="#" class="black-text">Back</a> 
+                    </p>
+
+                    <!-- Add Title black rectangular div -->
+                    <div class="tempSetBlackDiv">
+                        <div class="tempSetBlackInnerDiv">
+                            <div class="row tempSetBlackInnerDiv">
+                                <div class="col s12">
+                                    <p class="tempSetTitle">Add Title</p>
+                                </div>
+                                <div class="col s11">
+                                    <p class="tempSetTxt">
+                                        Lets start and automate your process so you can
+                                        reclaim time and focus on your goals.
+                                    </p>
+                                </div>
+                                <div class="col s1">
+                                    <!-- Add Title Help Modal Trigger -->
+                                    <a class="modal-trigger" href="#addTitleModal">
+                                        <i class="material-icons tempSetIcon1 right">help</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="addTitleInputDiv">
+                        <form class="row">
+                            <div class="col s12">
+                                <input type="text" placeholder="Title" id="addTitleInput" />
+                            </div>
+                    
+                            <button type="button" class="col s2 offset-s5 btn" id="addTitleBtn" @click="addTitleNextBtn()">
+                                Next
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Template Upload Template Thumbnail Section -->
+                <div v-if="!uploadTempThumbnail">
+                    <p href="#" class="addTitleBack" @click="uploadTempThumbnailBack()">
+                        <a href="#" class="black-text">Back</a>
+                    </p>
+                
+                    <!-- Upload Template Thumbnail black rectangular div -->
+                    <div class="tempSetBlackDiv">
+                        <div class="tempSetBlackInnerDiv">
+                            <div class="row tempSetBlackInnerDiv">
+                                <div class="col s12">
+                                    <p class="tempSetTitle">Upload Template Thumbnail</p>
+                                </div>
+                                <div class="col s11">
+                                    <p class="tempSetTxt">
+                                        Explore from the creative world with our numerous customized 
+                                        website templates which will definitely set you apart to
+                                        crush those career goals
+                                    </p>
+                                </div>
+                                <div class="col s1">
+                                    <!-- Upload Template Thumbnail Help Modal Trigger -->
+                                    <a class="modal-trigger" href="#uploadTempThumbModal">
+                                        <i class="material-icons tempSetIcon1 right">help</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="addTitleInputDiv">
+                        <form class="row">
+                            <div class="col s12">
+                                <div class="file-field input-field">
+                                    <input type="file" ref="file" style="display: none"/>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text" id="uploadThumbnailInput" placeholder="Upload File" @click="$refs.file.click()" />
+                                        <button class="btn uploadTempThumpnailInputBtn" @click="$refs.file.click()">Select file</button>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <button type="button" class="col s2 offset-s5 btn" id="uploadThumbnailBtn" @click="uploadTempThumbnailNext()">
+                                Next
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Template Upload Template stylesheet Section -->
+                <div v-if="!uploadTempStylsheet">
+                    <p href="#" class="addTitleBack" @click="uploadTempStylsheetBack()">
+                        <a href="#" class="black-text">Back</a>
+                    </p>
+                
+                    <!-- Upload Template stylesheet black rectangular div -->
+                    <div class="tempSetBlackDiv">
+                        <div class="tempSetBlackInnerDiv">
+                            <div class="row tempSetBlackInnerDiv">
+                                <div class="col s12">
+                                    <p class="tempSetTitle">Upload Template stylesheet</p>
+                                </div>
+                                <div class="col s11">
+                                    <p class="tempSetTxt">
+                                        Lets start and automate your process so you can reclaim time 
+                                        and focus on your goals.
+                                    </p>
+                                </div>
+                                <div class="col s1">
+                                    <!-- Upload Template Stylesheet Help Modal Trigger -->
+                                    <a class="modal-trigger" href="#uploadTempStyleModal">
+                                        <i class="material-icons tempSetIcon1 right">help</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="addTitleInputDiv">
+                        <form class="row">
+                            <div class="file-field input-field">
+                                <input type="file" ref="file" style="display: none" />
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text" id="uploadTempStyle" placeholder="Upload File" @click="$refs.file.click()" />
+                                    <button class="btn uploadTempStyleInputBtn" @click="$refs.file.click()">Select file</button>
+                                </div>
+                            </div>
+                
+                            <button type="button" class="col s2 offset-s5 btn" id="uploadTempstyleBtn" @click="uploadTempStylsheetNext()">
+                                Save
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- InnerFooterComponent -->
+        <!-- <InnerFooterComponent /> -->
+    </div>
+</template>
+<script>
+import MobileNavComponent from '../partials/MobileNavComponent.vue';
+import SideNavComponent from "../partials/SideNavComponent.vue";
+// import InnerFooterComponent from '../partials/InnerFooterComponent.vue';
+export default {
+    components: {
+        MobileNavComponent,
+        SideNavComponent,
+        // InnerFooterComponent,
+    },
+    data() {
+        return {
+            template: 1,
+            viewTemplates: false,
+            addTitle: true,
+            uploadTempThumbnail: true,
+            uploadTempStylsheet: true,
+        };
+    },
+    mounted() {},
+    methods: {
+        createTemp() {
+            this.viewTemplates = true;
+            this.addTitle = false;
+        },
+        addTitleBack() {
+            this.viewTemplates = false;
+            this.addTitle = true;
+        },
+        addTitleNextBtn() {
+            this.addTitle = true;
+            this.uploadTempThumbnail = false;
+        },
+        uploadTempThumbnailBack() {
+            this.addTitle = false;
+            this.uploadTempThumbnail = true;
+        },
+        uploadTempStylsheetBack() {
+            this.uploadTempThumbnail = false;
+            this.uploadTempStylsheet = true;
+        },
+        uploadTempThumbnailNext() {
+            this.uploadTempThumbnail = true;
+            this.uploadTempStylsheet = false;
+        },
+        uploadTempStylsheetNext() {
+            this.uploadTempStylsheet = true;
+            this.viewTemplates = false;
+        },
+    },
+};
+</script>
+
+
+
+<!-- Old Template mock up code and design -->
+<!-- <template>
+    <div>
+        Sidenav for small devices
+        <mobile-nav-component />
+
+        <div class="row" id="dashRowDiv">
+            Sidebar for large and medium devices
+            <side-nav-component />
+
+            Center Bar Person Div
             <div class="col s12 m10 l10">
                 <div class="webWhiteDiv1" v-if="view == 0">
                     <a class="waves-effect waves-teal btn" @click="setView(1)"
@@ -41,10 +605,10 @@
                         </div>
                     </div>
 
-                    <!-- Client's Templates Section -->
+                    Client's Templates Section
                     <div class="adminTempContainInnerDiv">
                         <div id="clientTempPageRowDiv">
-                            <!-- First Row -->
+                            First Row
                             <div v-if="templates.length > 0" class="height">
                                 <div
                                     class="col s12 m6 l4 clientTempPageImgSmDv"
@@ -400,4 +964,4 @@
         width: 328px;
         height: 262px;
     }
-</style>
+</style> -->
