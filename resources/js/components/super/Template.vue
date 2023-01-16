@@ -187,7 +187,7 @@
                             <div>
                                 <form>
                                     <div class="input-field">
-                                        <input placeholder="&#128269; Search by domain" id="adminClientSearchInput"
+                                        <input placeholder="&#128269; Search by domain" id="tempSetSearchInput"
                                             type="text" class="validate" v-model="search" />
                                     </div>
                                 </form>

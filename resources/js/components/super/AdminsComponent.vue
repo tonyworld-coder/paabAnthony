@@ -1,7 +1,275 @@
 <template>
     <div>
+        <!-- Staff's Add and Delete Modals -->
+        <!-- ------------------------------------------------------------------------------------- -->
+       
+        <!-- Add Staff Modal Structure -->
+        <div id="addStaffModal" class="modal">
+            <form>
+                <div class="row">
+                    <div class="input-field col s12 m6 l6">
+                        <input type="text" id="staffLname" placeholder="Last Name" class="validate">
+                    </div>
+
+                    <div class="input-field col s12 m6 l6">
+                        <input type="text" id="staffFname" placeholder="First Name" class="validate">
+                    </div>
+
+                    <div class="input-field col s12 m6 l6">
+                        <input type="text" id="staffOtherName" placeholder="Other Name" class="validate">
+                    </div>
+                    
+                    <div class="input-field col s12 m6 l6">
+                        <input type="text" id="staffEmail" placeholder="Email" class="validate">
+                    </div>
+                </div>
+                
+                <div class="row center-align">
+                    <button class="staffCreateBtn btn-flat" @click="addStaff()">
+                        Create
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Delete Staff Modal Structure -->
+        <div id="deleteStaffModal" class="modal">
+            <div class="row logoutModalImageRow">
+                <img src="/media/img/warning.png" alt="Illustrating a warning that you will be logged out" id="errAltImg"
+                    class="logoutModalImage" />
+            </div>
+            <div class="row center-align">
+                <p class="staffDeleteModalTitle">
+                    You are about to delete this client
+                </p>
+            </div>
+        
+            <div class="row center-align">
+                <button class="confirmDeleteBtn btn-flat" @click="DeleteStaff()">
+                    Yes
+                </button>
+                <span class="gutter1"></span>
+                <button class="modal-close cancelDeleteBtn btn-flat">
+                    No
+                </button>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------- -->
+
+        <!-- Sidenav for small devices -->
         <mobile-nav-component />
-        <!-- Sidebar for large and medium devices -->
+
+        <div class="row" id="dashRowDiv">
+            <!-- Sidebar for large and medium devices -->
+            <side-nav-component />
+        
+            <div class="col s12 m10 l10">
+                <!-- Staff black rectangular div -->
+                <div class="staffBlackDiv">
+                    <div class="staffBlackInnerDiv">
+                        <div class="row staffBlackInnerDiv">
+                            <div class="col s12">
+                                <p class="staffTitle">Add Staff</p>
+                            </div>
+                            <div class="col s11">
+                                <p class="staffTxt">
+                                    Now is the time to create something exceptional with no limits.
+                                </p>
+                            </div>
+                            <div class="col s1">
+                                <!-- Add Staff Modal Trigger -->
+                                <a href="#addStaffModal" class="marginRight1 modal-trigger">
+                                    <i class="material-icons staffIcon right">add_circle</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Search Staff Section -->
+                <div class="staffSearchInputMainDiv">
+                    <div>
+                        <form>
+                            <div class="input-field">
+                                <input placeholder="&#128269; Search by domain" id="staffSearchInput" type="text"
+                                    class="validate" v-model="search" />
+                            </div>
+                        </form>
+                    </div>
+        
+                    <div class="staffSearchInputControlDiv">
+                        <div>
+                            <span class="staffSearchInputTxts">Filter</span>
+                            <i class="material-icons staffSearchInputIcons">filter_list</i>
+                        </div>
+        
+                        <div class="staffSearchInputIconsDiv">
+                            <span class="staffSearchInputTxts">Sort</span>
+                            <i class="material-icons staffSearchInputIcons">sort</i>
+                        </div>
+                    </div>
+                </div>
+            
+                <div v-if="(addStaff > 0)">
+                    <!-- View all Staff Table -->
+                    <table class="responsive-table">
+                        <tbody>
+                            <tr v-if="!staff">
+                                <td>
+                                    <div class="addStaffTableImgDiv"></div>
+                                </td>
+                                <td class="addStaffTableTxts">
+                                    Dr
+                                </td>
+                                <td class="addStaffTableTxts">
+                                    Akerele
+                                </td>
+                                <td class="addStaffTableTxts">
+                                    Adebayo
+                                </td>
+                                <td class="addStaffTableTxts">
+                                    Jubrll
+                                </td>
+                                <td class="addStaffTableTxts">
+                                    adebayo@gmail.com
+                                </td>
+                                <td class="right">
+                                    <a href="#!" class="marginRight1 btn addStaffEditBtn">
+                                        Edit
+                                    </a>
+                                    <!-- Delete Staff Modal Trigger -->
+                                    <a href="#deleteStaffModal" class="marginRight1 btn addStaffDeleteBtn modal-trigger">
+                                        Delete
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="addStaffTableImgDiv"></div>
+                                </td>
+                                <td class="addStaffTableTxts">
+                                    Dr
+                                </td>
+                                <td class="addStaffTableTxts">
+                                    Akerele
+                                </td>
+                                <td class="addStaffTableTxts">
+                                    Adebayo
+                                </td>
+                                <td class="addStaffTableTxts">
+                                    Jubrll
+                                </td>
+                                <td class="addStaffTableTxts">
+                                    adebayo@gmail.com
+                                </td>
+                                <td class="right">
+                                    <a href="#!" class="marginRight1 btn addStaffEditBtn">
+                                        Edit
+                                    </a>
+                                    <!-- Delete Staff Modal Trigger -->
+                                    <a href="#deleteStaffModal" class="marginRight1 btn addStaffDeleteBtn modal-trigger">
+                                        Delete
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="addStaffTableImgDiv"></div>
+                                </td>
+                                <td class="addStaffTableTxts">
+                                    Dr
+                                </td>
+                                <td class="addStaffTableTxts">
+                                    Akerele
+                                </td>
+                                <td class="addStaffTableTxts">
+                                    Adebayo
+                                </td>
+                                <td class="addStaffTableTxts">
+                                    Jubrll
+                                </td>
+                                <td class="addStaffTableTxts">
+                                    adebayo@gmail.com
+                                </td>
+                                <td class="right">
+                                    <a href="#!" class="marginRight1 btn addStaffEditBtn">
+                                        Edit
+                                    </a>
+                                    <!-- Delete Staff Modal Trigger -->
+                                    <a href="#deleteStaffModal" class="marginRight1 btn addStaffDeleteBtn modal-trigger">
+                                        Delete
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="addStaffTableImgDiv"></div>
+                                </td>
+                                <td class="addStaffTableTxts">
+                                    Dr
+                                </td>
+                                <td class="addStaffTableTxts">
+                                    Akerele
+                                </td>
+                                <td class="addStaffTableTxts">
+                                    Adebayo
+                                </td>
+                                <td class="addStaffTableTxts">
+                                    Jubrll
+                                </td>
+                                <td class="addStaffTableTxts">
+                                    adebayo@gmail.com
+                                </td>
+                                <td class="right">
+                                    <a href="#!" class="marginRight1 btn addStaffEditBtn">
+                                        Edit
+                                    </a>
+                                    <!-- Delete Staff Modal Trigger -->
+                                    <a href="#deleteStaffModal" class="marginRight1 btn addStaffDeleteBtn modal-trigger">
+                                        Delete
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="row" v-else>
+                    <p class="center-align noStaffTxt">
+                        No staff found
+                        <!-- Add Staff Modal Trigger -->
+                        <a href="#addStaffModal" class="noStaffCreateTempLink modal-trigger">Add staff</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</template>
+<script>
+import MobileNavComponent from '../partials/MobileNavComponent.vue';
+import SideNavComponent from "../partials/SideNavComponent.vue";
+export default {
+    components: {
+        MobileNavComponent,
+        SideNavComponent,
+    },
+    data() {
+        return {
+            addStaff: 1,
+        };
+    },
+    mounted() { },
+    methods: {},
+};
+</script>
+
+<!-- <template>
+    <div>
+        <mobile-nav-component />
+        Sidebar for large and medium devices
         <div class="row" id="dashRowDiv">
             <sidenav-component @user="getUser" />
 
@@ -56,9 +324,9 @@
                             </div>
                         </form>
                     </div>
-                    <!-- Template Stuff -->
+                    Template Stuff
                 </div>
-                <!-- <InnerFooterComponent /> -->
+                <InnerFooterComponent />
             </div>
         </div>
     </div>
@@ -130,4 +398,4 @@
     .btn:hover {
         background-color: #aa8ff5;
     }
-</style>
+</style> -->
