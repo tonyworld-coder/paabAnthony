@@ -114,7 +114,7 @@
                     <!-- View all Staff Table -->
                     <table class="responsive-table">
                         <tbody>
-                            <tr v-if="!staff">
+                            <tr>
                                 <td>
                                     <div class="addStaffTableImgDiv"></div>
                                 </td>

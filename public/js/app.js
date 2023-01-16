@@ -29094,114 +29094,18 @@ var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticV
 var _hoisted_16 = {
   key: 0
 };
-var _hoisted_17 = {
-  "class": "responsive-table"
-};
+var _hoisted_17 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<table class=\"responsive-table\"><tbody><tr><td><div class=\"addStaffTableImgDiv\"></div></td><td class=\"addStaffTableTxts\"> Dr </td><td class=\"addStaffTableTxts\"> Akerele </td><td class=\"addStaffTableTxts\"> Adebayo </td><td class=\"addStaffTableTxts\"> Jubrll </td><td class=\"addStaffTableTxts\"> adebayo@gmail.com </td><td class=\"right\"><a href=\"#!\" class=\"marginRight1 btn addStaffEditBtn\"> Edit </a><!-- Delete Staff Modal Trigger --><a href=\"#deleteStaffModal\" class=\"marginRight1 btn addStaffDeleteBtn modal-trigger\"> Delete </a></td></tr><tr><td><div class=\"addStaffTableImgDiv\"></div></td><td class=\"addStaffTableTxts\"> Dr </td><td class=\"addStaffTableTxts\"> Akerele </td><td class=\"addStaffTableTxts\"> Adebayo </td><td class=\"addStaffTableTxts\"> Jubrll </td><td class=\"addStaffTableTxts\"> adebayo@gmail.com </td><td class=\"right\"><a href=\"#!\" class=\"marginRight1 btn addStaffEditBtn\"> Edit </a><!-- Delete Staff Modal Trigger --><a href=\"#deleteStaffModal\" class=\"marginRight1 btn addStaffDeleteBtn modal-trigger\"> Delete </a></td></tr><tr><td><div class=\"addStaffTableImgDiv\"></div></td><td class=\"addStaffTableTxts\"> Dr </td><td class=\"addStaffTableTxts\"> Akerele </td><td class=\"addStaffTableTxts\"> Adebayo </td><td class=\"addStaffTableTxts\"> Jubrll </td><td class=\"addStaffTableTxts\"> adebayo@gmail.com </td><td class=\"right\"><a href=\"#!\" class=\"marginRight1 btn addStaffEditBtn\"> Edit </a><!-- Delete Staff Modal Trigger --><a href=\"#deleteStaffModal\" class=\"marginRight1 btn addStaffDeleteBtn modal-trigger\"> Delete </a></td></tr><tr><td><div class=\"addStaffTableImgDiv\"></div></td><td class=\"addStaffTableTxts\"> Dr </td><td class=\"addStaffTableTxts\"> Akerele </td><td class=\"addStaffTableTxts\"> Adebayo </td><td class=\"addStaffTableTxts\"> Jubrll </td><td class=\"addStaffTableTxts\"> adebayo@gmail.com </td><td class=\"right\"><a href=\"#!\" class=\"marginRight1 btn addStaffEditBtn\"> Edit </a><!-- Delete Staff Modal Trigger --><a href=\"#deleteStaffModal\" class=\"marginRight1 btn addStaffDeleteBtn modal-trigger\"> Delete </a></td></tr></tbody></table>", 1);
 var _hoisted_18 = {
-  key: 0
-};
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "addStaffTableImgDiv"
-})], -1 /* HOISTED */);
-var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "addStaffTableTxts"
-}, " Dr ", -1 /* HOISTED */);
-var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "addStaffTableTxts"
-}, " Akerele ", -1 /* HOISTED */);
-var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "addStaffTableTxts"
-}, " Adebayo ", -1 /* HOISTED */);
-var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "addStaffTableTxts"
-}, " Jubrll ", -1 /* HOISTED */);
-var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "addStaffTableTxts"
-}, " adebayo@gmail.com ", -1 /* HOISTED */);
-var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "right"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "#!",
-  "class": "marginRight1 btn addStaffEditBtn"
-}, " Edit "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Delete Staff Modal Trigger "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "#deleteStaffModal",
-  "class": "marginRight1 btn addStaffDeleteBtn modal-trigger"
-}, " Delete ")], -1 /* HOISTED */);
-var _hoisted_26 = [_hoisted_19, _hoisted_20, _hoisted_21, _hoisted_22, _hoisted_23, _hoisted_24, _hoisted_25];
-var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "addStaffTableImgDiv"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "addStaffTableTxts"
-}, " Dr "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "addStaffTableTxts"
-}, " Akerele "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "addStaffTableTxts"
-}, " Adebayo "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "addStaffTableTxts"
-}, " Jubrll "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "addStaffTableTxts"
-}, " adebayo@gmail.com "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "right"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "#!",
-  "class": "marginRight1 btn addStaffEditBtn"
-}, " Edit "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Delete Staff Modal Trigger "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "#deleteStaffModal",
-  "class": "marginRight1 btn addStaffDeleteBtn modal-trigger"
-}, " Delete ")])], -1 /* HOISTED */);
-var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "addStaffTableImgDiv"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "addStaffTableTxts"
-}, " Dr "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "addStaffTableTxts"
-}, " Akerele "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "addStaffTableTxts"
-}, " Adebayo "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "addStaffTableTxts"
-}, " Jubrll "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "addStaffTableTxts"
-}, " adebayo@gmail.com "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "right"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "#!",
-  "class": "marginRight1 btn addStaffEditBtn"
-}, " Edit "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Delete Staff Modal Trigger "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "#deleteStaffModal",
-  "class": "marginRight1 btn addStaffDeleteBtn modal-trigger"
-}, " Delete ")])], -1 /* HOISTED */);
-var _hoisted_29 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "addStaffTableImgDiv"
-})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "addStaffTableTxts"
-}, " Dr "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "addStaffTableTxts"
-}, " Akerele "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "addStaffTableTxts"
-}, " Adebayo "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "addStaffTableTxts"
-}, " Jubrll "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "addStaffTableTxts"
-}, " adebayo@gmail.com "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
-  "class": "right"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "#!",
-  "class": "marginRight1 btn addStaffEditBtn"
-}, " Edit "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Delete Staff Modal Trigger "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "#deleteStaffModal",
-  "class": "marginRight1 btn addStaffDeleteBtn modal-trigger"
-}, " Delete ")])], -1 /* HOISTED */);
-var _hoisted_30 = {
   key: 1,
   "class": "row"
 };
-var _hoisted_31 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "center-align noStaffTxt"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" No staff found "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Add Staff Modal Trigger "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   href: "#addStaffModal",
   "class": "noStaffCreateTempLink modal-trigger"
 }, "Add staff")], -1 /* HOISTED */);
-var _hoisted_32 = [_hoisted_31];
+var _hoisted_20 = [_hoisted_19];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_mobile_nav_component = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("mobile-nav-component");
   var _component_side_nav_component = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("side-nav-component");
@@ -29223,7 +29127,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "onUpdate:modelValue": _cache[2] || (_cache[2] = function ($event) {
       return _ctx.search = $event;
     })
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.search]])])])]), _hoisted_15]), $data.addStaff > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" View all Staff Table "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("table", _hoisted_17, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tbody", null, [!_ctx.staff ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("tr", _hoisted_18, _hoisted_26)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_27, _hoisted_28, _hoisted_29])])])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_30, _hoisted_32))])])]);
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.search]])])])]), _hoisted_15]), $data.addStaff > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" View all Staff Table "), _hoisted_17])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_18, _hoisted_20))])])]);
 }
 
 /***/ }),

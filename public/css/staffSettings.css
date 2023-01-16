@@ -269,4 +269,21 @@ a.marginRight1.btn.addStaffDeleteBtn.modal-trigger {
         font-size: 15px;
         color: var(--white);
     }
+    .confirmDeleteBtn {
+        width: 15vw;
+        border-radius: 6px;
+        background-color: #1E1E1E;
+        color: var(--white);
+        font-family: 'Montserrat', sans-serif;
+    }
+    .cancelDeleteBtn,
+    .cancelDeleteBtn:visited,
+    .cancelDeleteBtn:active,
+    .cancelDeleteBtn.btn-small {
+        width: 15vw;
+        border-radius: 6px;
+        background-color: var(--white);
+        color: var(--primary);
+        font-family: 'Montserrat', sans-serif;
+    }
 }
