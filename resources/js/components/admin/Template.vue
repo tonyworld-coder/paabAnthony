@@ -396,10 +396,10 @@
                     <div class="addTitleInputDiv">
                         <form class="row">
                             <div class="col s12">
-                                <input type="text" placeholder="Title" id="addTitleInput" />
+                                <input type="text" placeholder="Title" class="validate tempInput" />
                             </div>
                     
-                            <button type="button" class="col s2 offset-s5 btn" id="addTitleBtn" @click="addTitleNextBtn()">
+                            <button type="button" class="col s2 offset-s5 btn tempInputBtn" @click="addTitleNextBtn()">
                                 Next
                             </button>
                         </form>
@@ -442,13 +442,13 @@
                                 <div class="file-field input-field">
                                     <input type="file" ref="file" style="display: none"/>
                                     <div class="file-path-wrapper">
-                                        <input class="file-path validate" type="text" id="uploadThumbnailInput" placeholder="Upload File" @click="$refs.file.click()" />
-                                        <button class="btn uploadTempThumpnailInputBtn" @click="$refs.file.click()">Select file</button>
+                                        <input class="file-path validate uploadInput1" type="text" id="uploadThumbnailInput" placeholder="Upload File" @click="$refs.file.click()" />
+                                        <button class="btn tempUploadFileInputBtn" @click="$refs.file.click()">Select file</button>
                                     </div>
                                 </div>
                             </div>
                 
-                            <button type="button" class="col s2 offset-s5 btn" id="uploadThumbnailBtn" @click="uploadTempThumbnailNext()">
+                            <button type="button" class="col s2 offset-s5 btn tempInputBtn" @click="uploadTempThumbnailNext()">
                                 Next
                             </button>
                         </form>
@@ -489,12 +489,58 @@
                             <div class="file-field input-field">
                                 <input type="file" ref="file" style="display: none" />
                                 <div class="file-path-wrapper">
-                                    <input class="file-path validate" type="text" id="uploadTempStyle" placeholder="Upload File" @click="$refs.file.click()" />
-                                    <button class="btn uploadTempStyleInputBtn" @click="$refs.file.click()">Select file</button>
+                                    <input class="file-path validate uploadInput1" type="text" id="uploadTempStyle" placeholder="Upload File" @click="$refs.file.click()" />
+                                    <button class="btn tempUploadFileInputBtn" @click="$refs.file.click()">Select file</button>
                                 </div>
                             </div>
                 
-                            <button type="button" class="col s2 offset-s5 btn" id="uploadTempstyleBtn" @click="uploadTempStylsheetNext()">
+                            <button type="button" class="col s2 offset-s5 btn tempInputBtn" @click="uploadTempStylsheetNext()">
+                                Save
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Template Upload Template stylesheet Section -->
+                <div v-if="!uploadTempStylsheet">
+                    <p href="#" class="addTitleBack" @click="uploadTempStylsheetBack()">
+                        <a href="#" class="black-text">Back</a>
+                    </p>
+                
+                    <!-- Upload Template stylesheet black rectangular div -->
+                    <div class="tempSetBlackDiv">
+                        <div class="tempSetBlackInnerDiv">
+                            <div class="row tempSetBlackInnerDiv">
+                                <div class="col s12">
+                                    <p class="tempSetTitle">Upload Template stylesheet</p>
+                                </div>
+                                <div class="col s11">
+                                    <p class="tempSetTxt">
+                                        Lets start and automate your process so you can reclaim time 
+                                        and focus on your goals.
+                                    </p>
+                                </div>
+                                <div class="col s1">
+                                    <!-- Upload Template Stylesheet Help Modal Trigger -->
+                                    <a class="modal-trigger" href="#uploadTempStyleModal">
+                                        <i class="material-icons tempSetIcon1 right">help</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="addTitleInputDiv">
+                        <form class="row">
+                            <div class="file-field input-field">
+                                <input type="file" ref="file" style="display: none" />
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate uploadInput1" type="text" id="uploadTempStyle" placeholder="Upload File" @click="$refs.file.click()" />
+                                    <button class="btn tempUploadFileInputBtn" @click="$refs.file.click()">Select file</button>
+                                </div>
+                            </div>
+                
+                            <button type="button" class="col s2 offset-s5 btn tempInputBtn" @click="uploadTempStylsheetNext()">
                                 Save
                             </button>
                         </form>

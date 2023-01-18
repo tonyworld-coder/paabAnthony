@@ -50,6 +50,7 @@ import SadminMail from "./components/super/MailComponent";
 import SadminSingleMail from "./components/super/SinglemailComponent";
 import SadminSettings from "./components/super/SettingsComponent";
 import SadminClient from "./components/super/ClientComponent";
+import SadminRequest from "./components/super/RequestComponent";
 
 // Webiste
 import PhysicianWebsiteComponent from './components/templates/Physicians/MainTemplateComponent';
@@ -81,6 +82,7 @@ app.component("sadmin-mail-component", SadminMail);
 app.component("sadmin-singlemail-component", SadminSingleMail);
 app.component("sadmin-settings-component", SadminSettings);
 app.component("sadmin-client-component", SadminClient);
+app.component("sadmin-request-component", SadminRequest);
 
 app.component("admin-client-component", AdminClient);
 app.component("admin-template-component", AdminTemplate);

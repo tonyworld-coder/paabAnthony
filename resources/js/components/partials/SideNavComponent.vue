@@ -107,7 +107,7 @@
                         id: 4,
                         title: "Request",
                         icon: "notifications_none",
-                        url: "/admins",
+                        url: "/request",
                         role: "SuperAdmin",
                     },
                     {

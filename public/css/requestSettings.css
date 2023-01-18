@@ -1,0 +1,146 @@
+:root {
+    --primary: #46166B;
+    --secondary: #46166B;
+    --black: #000000;
+    --white: #ffffff;
+
+    --component: rgba(0, 0, 0, 0.5);
+}
+
+.requestBlackDiv {
+    width: 95%;
+    height: 196px;
+    background: var(--black);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 3vh auto 4vh auto;
+}
+.requestBlackInnerDiv {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 3vh;
+}
+.requestTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: var(--white);
+    margin: 0;
+}
+.requestTxt {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 1vh;
+}
+table {
+    width: 95%;
+    margin: 0 auto;
+}
+table thead tr {
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: space-around;
+}
+table tbody tr {
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: space-around;
+}
+table tbody tr td {
+    padding: 0.5vh 0;
+}
+.requestTh {
+    background: var(--primary);
+}
+/* table thead tr.requestTh th {
+    margin-left: 1vw;
+} */
+.requestTableTxts {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white);
+}
+.requestTableTxts1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+    line-height: 50px;
+}
+.noRequestTxt {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--black);
+    margin-top: 13vh;
+}
+.requestTableImgDiv {
+    width: 48px;
+    height: 48px;
+    background: #d9d9d9;
+    border-radius: 50px;
+}
+a.marginRight1.btn.requestViewBtn {
+    width: 113px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 35px;
+    position: relative;
+    top: 0.9vh;
+}
+
+/* Media Query on Medium Device */
+@media screen and (max-width: 992px) and (min-width: 640px) {
+    table thead tr.requestTh th {
+        margin-left: 1vw;
+        text-align: start;
+    }
+    a.marginRight1.btn.requestViewBtn {
+        width: 113px;
+        background: var(--primary);
+        color: var(--white);
+        border-radius: 6px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 35px;
+        position: relative;
+        top: 0;
+    }
+}
+
+/* Media Query on small device */
+@media screen and (max-width: 640px) {
+    table thead tr.requestTh th {
+        margin-left: 1vw;
+        text-align: start;
+    }
+    a.marginRight1.btn.requestViewBtn {
+        width: 113px;
+        background: var(--primary);
+        color: var(--white);
+        border-radius: 6px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 35px;
+        position: relative;
+        top: 0;
+    }
+}

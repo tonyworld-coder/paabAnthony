@@ -22526,7 +22526,7 @@ __webpack_require__.r(__webpack_exports__);
         id: 4,
         title: "Request",
         icon: "notifications_none",
-        url: "/admins",
+        url: "/request",
         role: "SuperAdmin"
       }, {
         id: 5,
@@ -22773,7 +22773,7 @@ __webpack_require__.r(__webpack_exports__);
         id: 4,
         title: "Request",
         icon: "notifications_none",
-        url: "/admins",
+        url: "/request",
         role: "SuperAdmin"
       }, {
         id: 5,
@@ -23615,6 +23615,37 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/super/RequestComponent.vue?vue&type=script&lang=js":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/super/RequestComponent.vue?vue&type=script&lang=js ***!
+  \****************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _partials_MobileNavComponent_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../partials/MobileNavComponent.vue */ "./resources/js/components/partials/MobileNavComponent.vue");
+/* harmony import */ var _partials_SideNavComponent_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../partials/SideNavComponent.vue */ "./resources/js/components/partials/SideNavComponent.vue");
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {
+    MobileNavComponent: _partials_MobileNavComponent_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+    SideNavComponent: _partials_SideNavComponent_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
+  data: function data() {
+    return {
+      request: 1
+    };
+  },
+  mounted: function mounted() {},
+  methods: {}
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/super/SettingsComponent.vue?vue&type=script&lang=js":
 /*!*****************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/super/SettingsComponent.vue?vue&type=script&lang=js ***!
@@ -23703,11 +23734,15 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      template: 1,
+      allTemplates: 1,
       viewTemplates: false,
       addTitle: true,
       uploadTempThumbnail: true,
-      uploadTempStylsheet: true
+      uploadTempStylsheet: true,
+      emailSetup: true,
+      domainNameSetup: true,
+      descriptionSetup: true,
+      tempCreateClientWeb: true
     };
   },
   mounted: function mounted() {},
@@ -23739,6 +23774,26 @@ __webpack_require__.r(__webpack_exports__);
     uploadTempStylsheetNext: function uploadTempStylsheetNext() {
       this.uploadTempStylsheet = true;
       this.viewTemplates = false;
+    },
+    tempSetup: function tempSetup() {
+      this.viewTemplates = true;
+      this.emailSetup = false;
+    },
+    emailSetupNext: function emailSetupNext() {
+      this.emailSetup = true;
+      this.domainNameSetup = false;
+    },
+    domainNameNext: function domainNameNext() {
+      this.domainNameSetup = true;
+      this.descriptionSetup = false;
+    },
+    descriptionNext: function descriptionNext() {
+      this.descriptionSetup = true;
+      this.tempCreateClientWeb = false;
+    },
+    tempCreateClientWebBack: function tempCreateClientWebBack() {
+      this.tempCreateClientWeb = true;
+      this.descriptionSetup = false;
     }
   }
 });
@@ -26648,7 +26703,7 @@ var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
   type: "text",
   placeholder: "Title",
-  id: "addTitleInput"
+  "class": "validate tempInput"
 })], -1 /* HOISTED */);
 var _hoisted_34 = {
   key: 2
@@ -26709,6 +26764,34 @@ var _hoisted_51 = {
 var _hoisted_52 = {
   "class": "file-path-wrapper"
 };
+var _hoisted_53 = {
+  key: 4
+};
+var _hoisted_54 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#",
+  "class": "black-text"
+}, "Back", -1 /* HOISTED */);
+var _hoisted_55 = [_hoisted_54];
+var _hoisted_56 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"tempSetBlackDiv\"><div class=\"tempSetBlackInnerDiv\"><div class=\"row tempSetBlackInnerDiv\"><div class=\"col s12\"><p class=\"tempSetTitle\">Upload Template stylesheet</p></div><div class=\"col s11\"><p class=\"tempSetTxt\"> Lets start and automate your process so you can reclaim time and focus on your goals. </p></div><div class=\"col s1\"><!-- Upload Template Stylesheet Help Modal Trigger --><a class=\"modal-trigger\" href=\"#uploadTempStyleModal\"><i class=\"material-icons tempSetIcon1 right\">help</i></a></div></div></div></div>", 1);
+var _hoisted_57 = {
+  "class": "addTitleInputDiv"
+};
+var _hoisted_58 = {
+  "class": "row"
+};
+var _hoisted_59 = {
+  "class": "file-field input-field"
+};
+var _hoisted_60 = {
+  type: "file",
+  ref: "file",
+  style: {
+    "display": "none"
+  }
+};
+var _hoisted_61 = {
+  "class": "file-path-wrapper"
+};
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_mobile_nav_component = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("mobile-nav-component");
   var _component_side_nav_component = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("side-nav-component");
@@ -26744,8 +26827,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   }, _hoisted_29), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Add Title black rectangular div "), _hoisted_30, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_31, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", _hoisted_32, [_hoisted_33, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     type: "button",
-    "class": "col s2 offset-s5 btn",
-    id: "addTitleBtn",
+    "class": "col s2 offset-s5 btn tempInputBtn",
     onClick: _cache[5] || (_cache[5] = function ($event) {
       return $options.addTitleNextBtn();
     })
@@ -26756,7 +26838,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $options.uploadTempThumbnailBack();
     })
   }, _hoisted_36), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Upload Template Thumbnail black rectangular div "), _hoisted_37, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_38, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", _hoisted_39, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_40, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_41, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", _hoisted_42, null, 512 /* NEED_PATCH */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_43, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-    "class": "file-path validate",
+    "class": "file-path validate uploadInput1",
     type: "text",
     id: "uploadThumbnailInput",
     placeholder: "Upload File",
@@ -26764,14 +26846,13 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return _ctx.$refs.file.click();
     })
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-    "class": "btn uploadTempThumpnailInputBtn",
+    "class": "btn tempUploadFileInputBtn",
     onClick: _cache[8] || (_cache[8] = function ($event) {
       return _ctx.$refs.file.click();
     })
   }, "Select file")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     type: "button",
-    "class": "col s2 offset-s5 btn",
-    id: "uploadThumbnailBtn",
+    "class": "col s2 offset-s5 btn tempInputBtn",
     onClick: _cache[9] || (_cache[9] = function ($event) {
       return $options.uploadTempThumbnailNext();
     })
@@ -26782,7 +26863,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $options.uploadTempStylsheetBack();
     })
   }, _hoisted_46), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Upload Template stylesheet black rectangular div "), _hoisted_47, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_48, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", _hoisted_49, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_50, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", _hoisted_51, null, 512 /* NEED_PATCH */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_52, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-    "class": "file-path validate",
+    "class": "file-path validate uploadInput1",
     type: "text",
     id: "uploadTempStyle",
     placeholder: "Upload File",
@@ -26790,15 +26871,39 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return _ctx.$refs.file.click();
     })
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-    "class": "btn uploadTempStyleInputBtn",
+    "class": "btn tempUploadFileInputBtn",
     onClick: _cache[12] || (_cache[12] = function ($event) {
       return _ctx.$refs.file.click();
     })
   }, "Select file")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     type: "button",
-    "class": "col s2 offset-s5 btn",
-    id: "uploadTempstyleBtn",
+    "class": "col s2 offset-s5 btn tempInputBtn",
     onClick: _cache[13] || (_cache[13] = function ($event) {
+      return $options.uploadTempStylsheetNext();
+    })
+  }, " Save ")])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Template Upload Template stylesheet Section "), !$data.uploadTempStylsheet ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_53, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    href: "#",
+    "class": "addTitleBack",
+    onClick: _cache[14] || (_cache[14] = function ($event) {
+      return $options.uploadTempStylsheetBack();
+    })
+  }, _hoisted_55), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Upload Template stylesheet black rectangular div "), _hoisted_56, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_57, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", _hoisted_58, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_59, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", _hoisted_60, null, 512 /* NEED_PATCH */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_61, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    "class": "file-path validate uploadInput1",
+    type: "text",
+    id: "uploadTempStyle",
+    placeholder: "Upload File",
+    onClick: _cache[15] || (_cache[15] = function ($event) {
+      return _ctx.$refs.file.click();
+    })
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    "class": "btn tempUploadFileInputBtn",
+    onClick: _cache[16] || (_cache[16] = function ($event) {
+      return _ctx.$refs.file.click();
+    })
+  }, "Select file")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    type: "button",
+    "class": "col s2 offset-s5 btn tempInputBtn",
+    onClick: _cache[17] || (_cache[17] = function ($event) {
       return $options.uploadTempStylsheetNext();
     })
   }, " Save ")])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" InnerFooterComponent "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <InnerFooterComponent /> ")]);
@@ -29593,6 +29698,44 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/super/RequestComponent.vue?vue&type=template&id=9b063b26":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/super/RequestComponent.vue?vue&type=template&id=9b063b26 ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "row",
+  id: "dashRowDiv"
+};
+var _hoisted_2 = {
+  "class": "col s12 m10 l10"
+};
+var _hoisted_3 = {
+  key: 0
+};
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"requestBlackDiv\"><div class=\"requestBlackInnerDiv\"><div class=\"row requestBlackInnerDiv\"><div class=\"col s12\"><p class=\"requestTitle\">Get access to request</p></div><div class=\"col s12\"><p class=\"requestTxt\"> Now is the time to create something exceptional with no limits. </p></div></div></div></div>", 1);
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<table class=\"responsive-table\"><thead><tr class=\"requestTh\"><th class=\"requestTableTxts\"> Staff </th><th class=\"requestTableTxts\"> Thumbnail </th><th class=\"requestTableTxts\"> Title </th><th class=\"requestTableTxts\"> Profession </th><th class=\"requestTableTxts\"> Request </th><th></th><th></th></tr></thead><tbody><tr><td class=\"requestTableTxts1\"> Adebayo A. </td><td class=\"requestTableTxts1\"><div class=\"requestTableImgDiv\"></div></td><td class=\"requestTableTxts1\"> SugeonX </td><td class=\"requestTableTxts1\"> Sugeon </td><td class=\"requestTableTxts1\"> Created </td><td class=\"right\"><a href=\"#!\" class=\"marginRight1 btn requestViewBtn\"> View </a></td></tr><tr><td class=\"requestTableTxts1\"> Adebayo A. </td><td class=\"requestTableTxts1\"><div class=\"requestTableImgDiv\"></div></td><td class=\"requestTableTxts1\"> SugeonX </td><td class=\"requestTableTxts1\"> Sugeon </td><td class=\"requestTableTxts1\"> Created </td><td class=\"right\"><a href=\"#!\" class=\"marginRight1 btn requestViewBtn\"> View </a></td></tr><tr><td class=\"requestTableTxts1\"> Adebayo A. </td><td class=\"requestTableTxts1\"><div class=\"requestTableImgDiv\"></div></td><td class=\"requestTableTxts1\"> SugeonX </td><td class=\"requestTableTxts1\"> Sugeon </td><td class=\"requestTableTxts1\"> Created </td><td class=\"right\"><a href=\"#!\" class=\"marginRight1 btn requestViewBtn\"> View </a></td></tr><tr><td class=\"requestTableTxts1\"> Adebayo A. </td><td class=\"requestTableTxts1\"><div class=\"requestTableImgDiv\"></div></td><td class=\"requestTableTxts1\"> SugeonX </td><td class=\"requestTableTxts1\"> Sugeon </td><td class=\"requestTableTxts1\"> Created </td><td class=\"right\"><a href=\"#!\" class=\"marginRight1 btn requestViewBtn\"> View </a></td></tr><tr><td class=\"requestTableTxts1\"> Adebayo A. </td><td class=\"requestTableTxts1\"><div class=\"requestTableImgDiv\"></div></td><td class=\"requestTableTxts1\"> SugeonX </td><td class=\"requestTableTxts1\"> Sugeon </td><td class=\"requestTableTxts1\"> Created </td><td class=\"right\"><a href=\"#!\" class=\"marginRight1 btn requestViewBtn\"> View </a></td></tr></tbody></table>", 1);
+var _hoisted_6 = {
+  key: 1
+};
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"requestBlackDiv\"><div class=\"requestBlackInnerDiv\"><div class=\"row requestBlackInnerDiv\"><div class=\"col s12\"><p class=\"requestTitle\">Manage request from your team</p></div><div class=\"col s12\"><p class=\"requestTxt\"> Now is the time to create something exceptional with no limits. </p></div></div></div></div>", 1);
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<table class=\"responsive-table\"><tbody><tr class=\"requestTh\"><th class=\"requestTableTxts\"> Staff </th><th class=\"requestTableTxts\"> Thumbnail </th><th class=\"requestTableTxts\"> Title </th><th class=\"requestTableTxts\"> Profession </th><th class=\"requestTableTxts\"> Request </th></tr></tbody></table><div><p class=\"center-align noRequestTxt\"> No active request yet. </p></div>", 2);
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_mobile_nav_component = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("mobile-nav-component");
+  var _component_side_nav_component = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("side-nav-component");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Sidenav for small devices "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_mobile_nav_component), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Sidebar for large and medium devices "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_side_nav_component), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [$data.request > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Black rectangular div "), _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" No request yet table section "), _hoisted_5])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Black rectangular div "), _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" No request yet table section "), _hoisted_8]))])])]);
+}
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/super/SettingsComponent.vue?vue&type=template&id=dd1b722a":
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/super/SettingsComponent.vue?vue&type=template&id=dd1b722a ***!
@@ -29679,7 +29822,9 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 })], -1 /* HOISTED */);
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "row center-align"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("b", null, "You sure you want to delete this template?")])], -1 /* HOISTED */);
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "tempDeleteModalTitle"
+}, "You sure you want to delete this template?")], -1 /* HOISTED */);
 var _hoisted_7 = {
   "class": "row center-align"
 };
@@ -29687,7 +29832,7 @@ var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "gutter1"
 }, null, -1 /* HOISTED */);
 var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-  "class": "modal-close primaryBorder waves-effect waves-green btn-flat"
+  "class": "cancelDeleteBtn modal-close btn-flat"
 }, " No ", -1 /* HOISTED */);
 var _hoisted_10 = {
   "class": "row",
@@ -29732,95 +29877,338 @@ var _hoisted_22 = {
   "class": "input-field"
 };
 var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"tempSetSearchInputControlDiv\"><div><span class=\"tempSetSearchInputTxts\">Filter</span><i class=\"material-icons tempSetSearchInputIcons\">filter_list</i></div><div class=\"tempSetSearchInputIconsDiv\"><span class=\"tempSetSearchInputTxts\">Sort</span><i class=\"material-icons tempSetSearchInputIcons\">sort</i></div></div>", 1);
-var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"tempSetContainDiv\"><!-- First Row --><div class=\"row\"><div class=\"col s12 m6 l4 tempSetMainRowDiv\"><div><img src=\"/media/img/aboutmyself.png\" alt=\"tempSetImage.png\"></div><p class=\"tempSetMainTitle\"> Planet Earth </p><p class=\"tempSetMainTxt\"> The Planet Earth template is a captivating design with minimalist appeal. </p><div><a href=\"#\" class=\"tempSetMainViewLink\">View</a><!-- Template Delete Modal Trigger --><a href=\"#tempDelModal\" class=\"btn right tempSetDelBtn modal-trigger\"> Delete </a></div></div><div class=\"col s12 m6 l4 tempSetMainRowDiv\"><div><img src=\"/media/img/aboutmyself.png\" alt=\"tempSetImage.png\"></div><p class=\"tempSetMainTitle\"> Planet Earth </p><p class=\"tempSetMainTxt\"> The Planet Earth template is a captivating design with minimalist appeal. </p><div><a href=\"#\" class=\"tempSetMainViewLink\">View</a><!-- Template Delete Modal Trigger --><a href=\"#tempDelModal\" class=\"btn right tempSetDelBtn modal-trigger\"> Delete </a></div></div><div class=\"col s12 m6 l4 tempSetMainRowDiv\"><div><img src=\"/media/img/aboutmyself.png\" alt=\"tempSetImage.png\"></div><p class=\"tempSetMainTitle\"> Planet Earth </p><p class=\"tempSetMainTxt\"> The Planet Earth template is a captivating design with minimalist appeal. </p><div><a href=\"#\" class=\"tempSetMainViewLink\">View</a><!-- Template Delete Modal Trigger --><a href=\"#tempDelModal\" class=\"btn right tempSetDelBtn modal-trigger\"> Delete </a></div></div></div><!-- Second Row --><div class=\"row\"><div class=\"col s12 m6 l4 tempSetMainRowDiv\"><div><img src=\"/media/img/aboutmyself.png\" alt=\"tempSetImage.png\"></div><p class=\"tempSetMainTitle\"> Planet Earth </p><p class=\"tempSetMainTxt\"> The Planet Earth template is a captivating design with minimalist appeal. </p><div><a href=\"#\" class=\"tempSetMainViewLink\">View</a><!-- Template Delete Modal Trigger --><a href=\"#tempDelModal\" class=\"btn right tempSetDelBtn modal-trigger\"> Delete </a></div></div><div class=\"col s12 m6 l4 tempSetMainRowDiv\"><div><img src=\"/media/img/aboutmyself.png\" alt=\"tempSetImage.png\"></div><p class=\"tempSetMainTitle\"> Planet Earth </p><p class=\"tempSetMainTxt\"> The Planet Earth template is a captivating design with minimalist appeal. </p><div><a href=\"#\" class=\"tempSetMainViewLink\">View</a><!-- Template Delete Modal Trigger --><a href=\"#tempDelModal\" class=\"btn right tempSetDelBtn modal-trigger\"> Delete </a></div></div><div class=\"col s12 m6 l4 tempSetMainRowDiv\"><div><img src=\"/media/img/aboutmyself.png\" alt=\"tempSetImage.png\"></div><p class=\"tempSetMainTitle\"> Planet Earth </p><p class=\"tempSetMainTxt\"> The Planet Earth template is a captivating design with minimalist appeal. </p><div><a href=\"#\" class=\"tempSetMainViewLink\">View</a><!-- Template Delete Modal Trigger --><a href=\"#tempDelModal\" class=\"btn right tempSetDelBtn modal-trigger\"> Delete </a></div></div></div><div class=\"col s12\"><p class=\"tempSetLoading\">Loading...</p></div><!-- End of Row --></div>", 1);
+var _hoisted_24 = {
+  "class": "tempSetContainDiv"
+};
 var _hoisted_25 = {
-  key: 1,
   "class": "row"
 };
 var _hoisted_26 = {
-  "class": "center-align noTempTxt"
+  "class": "col s12 m6 l4 tempCardContainDiv"
 };
 var _hoisted_27 = {
+  "class": "card"
+};
+var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "card-image"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  src: "/media/img/aboutmyself1.png"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "card-title"
+}, "Card Title")], -1 /* HOISTED */);
+var _hoisted_29 = {
+  "class": "card-action"
+};
+var _hoisted_30 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#",
+  "class": "tempSetMainViewLink"
+}, "Preview", -1 /* HOISTED */);
+var _hoisted_31 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#tempDelModal",
+  "class": "btn tempSetDelBtn modal-trigger"
+}, " Delete ", -1 /* HOISTED */);
+var _hoisted_32 = {
+  "class": "col s12 m6 l4 tempCardContainDiv"
+};
+var _hoisted_33 = {
+  "class": "card"
+};
+var _hoisted_34 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "card-image"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  src: "/media/img/aboutmyself1.png"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "card-title"
+}, "Card Title")], -1 /* HOISTED */);
+var _hoisted_35 = {
+  "class": "card-action"
+};
+var _hoisted_36 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#",
+  "class": "tempSetMainViewLink"
+}, "Preview", -1 /* HOISTED */);
+var _hoisted_37 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#tempDelModal",
+  "class": "btn tempSetDelBtn modal-trigger"
+}, " Delete ", -1 /* HOISTED */);
+var _hoisted_38 = {
+  "class": "col s12 m6 l4 tempCardContainDiv"
+};
+var _hoisted_39 = {
+  "class": "card"
+};
+var _hoisted_40 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "card-image"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  src: "/media/img/aboutmyself1.png"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "card-title"
+}, "Card Title")], -1 /* HOISTED */);
+var _hoisted_41 = {
+  "class": "card-action"
+};
+var _hoisted_42 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#",
+  "class": "tempSetMainViewLink"
+}, "Preview", -1 /* HOISTED */);
+var _hoisted_43 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#tempDelModal",
+  "class": "btn tempSetDelBtn modal-trigger"
+}, " Delete ", -1 /* HOISTED */);
+var _hoisted_44 = {
+  "class": "col s12 m6 l4 tempCardContainDiv"
+};
+var _hoisted_45 = {
+  "class": "card"
+};
+var _hoisted_46 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "card-image"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  src: "/media/img/aboutmyself1.png"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "card-title"
+}, "Card Title")], -1 /* HOISTED */);
+var _hoisted_47 = {
+  "class": "card-action"
+};
+var _hoisted_48 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#",
+  "class": "tempSetMainViewLink"
+}, "Preview", -1 /* HOISTED */);
+var _hoisted_49 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#tempDelModal",
+  "class": "btn tempSetDelBtn modal-trigger"
+}, " Delete ", -1 /* HOISTED */);
+var _hoisted_50 = {
+  "class": "col s12 m6 l4 tempCardContainDiv"
+};
+var _hoisted_51 = {
+  "class": "card"
+};
+var _hoisted_52 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "card-image"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  src: "/media/img/aboutmyself1.png"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "card-title"
+}, "Card Title")], -1 /* HOISTED */);
+var _hoisted_53 = {
+  "class": "card-action"
+};
+var _hoisted_54 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#",
+  "class": "tempSetMainViewLink"
+}, "Preview", -1 /* HOISTED */);
+var _hoisted_55 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#tempDelModal",
+  "class": "btn tempSetDelBtn modal-trigger"
+}, " Delete ", -1 /* HOISTED */);
+var _hoisted_56 = {
+  "class": "col s12 m6 l4 tempCardContainDiv"
+};
+var _hoisted_57 = {
+  "class": "card"
+};
+var _hoisted_58 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "card-image"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  src: "/media/img/aboutmyself1.png"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "card-title"
+}, "Card Title")], -1 /* HOISTED */);
+var _hoisted_59 = {
+  "class": "card-action"
+};
+var _hoisted_60 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#",
+  "class": "tempSetMainViewLink"
+}, "Preview", -1 /* HOISTED */);
+var _hoisted_61 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#tempDelModal",
+  "class": "btn tempSetDelBtn modal-trigger"
+}, " Delete ", -1 /* HOISTED */);
+var _hoisted_62 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "col s12"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "tempSetLoading"
+}, "Loading...")], -1 /* HOISTED */);
+var _hoisted_63 = {
+  key: 1,
+  "class": "row"
+};
+var _hoisted_64 = {
+  "class": "center-align noTempTxt"
+};
+var _hoisted_65 = {
   key: 1
 };
-var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+var _hoisted_66 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   href: "#",
   "class": "black-text"
 }, "Back", -1 /* HOISTED */);
-var _hoisted_29 = [_hoisted_28];
-var _hoisted_30 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"tempSetBlackDiv\"><div class=\"tempSetBlackInnerDiv\"><div class=\"row tempSetBlackInnerDiv\"><div class=\"col s12\"><p class=\"tempSetTitle\">Add Title</p></div><div class=\"col s11\"><p class=\"tempSetTxt\"> Lets start and automate your process so you can reclaim time and focus on your goals. </p></div><div class=\"col s1\"><!-- Add Title Help Modal Trigger --><a class=\"modal-trigger\" href=\"#addTitleModal\"><i class=\"material-icons tempSetIcon1 right\">help</i></a></div></div></div></div>", 1);
-var _hoisted_31 = {
+var _hoisted_67 = [_hoisted_66];
+var _hoisted_68 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"tempSetBlackDiv\"><div class=\"tempSetBlackInnerDiv\"><div class=\"row tempSetBlackInnerDiv\"><div class=\"col s12\"><p class=\"tempSetTitle\">Add Title</p></div><div class=\"col s11\"><p class=\"tempSetTxt\"> Lets start and automate your process so you can reclaim time and focus on your goals. </p></div><div class=\"col s1\"><!-- Add Title Help Modal Trigger --><a class=\"modal-trigger\" href=\"#addTitleModal\"><i class=\"material-icons tempSetIcon1 right\">help</i></a></div></div></div></div>", 1);
+var _hoisted_69 = {
   "class": "addTitleInputDiv"
 };
-var _hoisted_32 = {
+var _hoisted_70 = {
   "class": "row"
 };
-var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_71 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "col s12"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
   type: "text",
   placeholder: "Title",
-  id: "addTitleInput"
+  "class": "validate tempInput"
 })], -1 /* HOISTED */);
-var _hoisted_34 = {
+var _hoisted_72 = {
   key: 2
 };
-var _hoisted_35 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+var _hoisted_73 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   href: "#",
   "class": "black-text"
 }, "Back", -1 /* HOISTED */);
-var _hoisted_36 = [_hoisted_35];
-var _hoisted_37 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"tempSetBlackDiv\"><div class=\"tempSetBlackInnerDiv\"><div class=\"row tempSetBlackInnerDiv\"><div class=\"col s12\"><p class=\"tempSetTitle\">Upload Template Thumbnail</p></div><div class=\"col s11\"><p class=\"tempSetTxt\"> Explore from the creative world with our numerous customized website templates which will definitely set you apart to crush those career goals </p></div><div class=\"col s1\"><!-- Upload Template Thumbnail Help Modal Trigger --><a class=\"modal-trigger\" href=\"#uploadTempThumbModal\"><i class=\"material-icons tempSetIcon1 right\">help</i></a></div></div></div></div>", 1);
-var _hoisted_38 = {
+var _hoisted_74 = [_hoisted_73];
+var _hoisted_75 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"tempSetBlackDiv\"><div class=\"tempSetBlackInnerDiv\"><div class=\"row tempSetBlackInnerDiv\"><div class=\"col s12\"><p class=\"tempSetTitle\">Upload Template Thumbnail</p></div><div class=\"col s11\"><p class=\"tempSetTxt\"> Explore from the creative world with our numerous customized website templates which will definitely set you apart to crush those career goals </p></div><div class=\"col s1\"><!-- Upload Template Thumbnail Help Modal Trigger --><a class=\"modal-trigger\" href=\"#uploadTempThumbModal\"><i class=\"material-icons tempSetIcon1 right\">help</i></a></div></div></div></div>", 1);
+var _hoisted_76 = {
   "class": "addTitleInputDiv"
 };
-var _hoisted_39 = {
+var _hoisted_77 = {
   "class": "row"
 };
-var _hoisted_40 = {
+var _hoisted_78 = {
   "class": "col s12"
 };
-var _hoisted_41 = {
+var _hoisted_79 = {
   "class": "file-field input-field"
 };
-var _hoisted_42 = {
+var _hoisted_80 = {
   type: "file",
   ref: "file",
   style: {
     "display": "none"
   }
 };
-var _hoisted_43 = {
+var _hoisted_81 = {
   "class": "file-path-wrapper"
 };
-var _hoisted_44 = {
+var _hoisted_82 = {
   key: 3
 };
-var _hoisted_45 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+var _hoisted_83 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   href: "#",
   "class": "black-text"
 }, "Back", -1 /* HOISTED */);
-var _hoisted_46 = [_hoisted_45];
-var _hoisted_47 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"tempSetBlackDiv\"><div class=\"tempSetBlackInnerDiv\"><div class=\"row tempSetBlackInnerDiv\"><div class=\"col s12\"><p class=\"tempSetTitle\">Upload Template stylesheet</p></div><div class=\"col s11\"><p class=\"tempSetTxt\"> Lets start and automate your process so you can reclaim time and focus on your goals. </p></div><div class=\"col s1\"><!-- Upload Template Stylesheet Help Modal Trigger --><a class=\"modal-trigger\" href=\"#uploadTempStyleModal\"><i class=\"material-icons tempSetIcon1 right\">help</i></a></div></div></div></div>", 1);
-var _hoisted_48 = {
+var _hoisted_84 = [_hoisted_83];
+var _hoisted_85 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"tempSetBlackDiv\"><div class=\"tempSetBlackInnerDiv\"><div class=\"row tempSetBlackInnerDiv\"><div class=\"col s12\"><p class=\"tempSetTitle\">Upload Template stylesheet</p></div><div class=\"col s11\"><p class=\"tempSetTxt\"> Lets start and automate your process so you can reclaim time and focus on your goals. </p></div><div class=\"col s1\"><!-- Upload Template Stylesheet Help Modal Trigger --><a class=\"modal-trigger\" href=\"#uploadTempStyleModal\"><i class=\"material-icons tempSetIcon1 right\">help</i></a></div></div></div></div>", 1);
+var _hoisted_86 = {
   "class": "addTitleInputDiv"
 };
-var _hoisted_49 = {
+var _hoisted_87 = {
   "class": "row"
 };
-var _hoisted_50 = {
+var _hoisted_88 = {
   "class": "file-field input-field"
 };
-var _hoisted_51 = {
+var _hoisted_89 = {
   type: "file",
   ref: "file",
   style: {
     "display": "none"
   }
 };
-var _hoisted_52 = {
+var _hoisted_90 = {
   "class": "file-path-wrapper"
 };
+var _hoisted_91 = {
+  key: 4
+};
+var _hoisted_92 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"tempSetBlackDiv\"><div class=\"tempSetBlackInnerDiv\"><div class=\"row tempSetBlackInnerDiv\"><div class=\"col s12\"><p class=\"tempSetTitle\">Setup Email</p></div><div class=\"col s12\"><p class=\"tempSetTxt\"> Giving your website a good title make it easier for customer to find your page. </p></div></div></div></div>", 1);
+var _hoisted_93 = {
+  "class": "addTitleInputDiv"
+};
+var _hoisted_94 = {
+  "class": "row"
+};
+var _hoisted_95 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "col s12"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  type: "text",
+  placeholder: "Email",
+  "class": "validate tempInput"
+})], -1 /* HOISTED */);
+var _hoisted_96 = {
+  key: 5
+};
+var _hoisted_97 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"tempSetBlackDiv\"><div class=\"tempSetBlackInnerDiv\"><div class=\"row tempSetBlackInnerDiv\"><div class=\"col s12\"><p class=\"tempSetTitle\">Setup Website Name</p></div><div class=\"col s12\"><p class=\"tempSetTxt\"> Giving your website a good title make it easier for customer to find your page. </p></div></div></div></div>", 1);
+var _hoisted_98 = {
+  "class": "addTitleInputDiv"
+};
+var _hoisted_99 = {
+  "class": "row"
+};
+var _hoisted_100 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "col s12"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  type: "text",
+  placeholder: "Domain",
+  "class": "validate tempInput"
+})], -1 /* HOISTED */);
+var _hoisted_101 = {
+  key: 6
+};
+var _hoisted_102 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"tempSetBlackDiv\"><div class=\"tempSetBlackInnerDiv\"><div class=\"row tempSetBlackInnerDiv\"><div class=\"col s12\"><p class=\"tempSetTitle\">Setup Website description</p></div><div class=\"col s12\"><p class=\"tempSetTxt\"> Giving your website a good title make it easier for customer to find your page. </p></div></div></div></div>", 1);
+var _hoisted_103 = {
+  "class": "addTitleInputDiv"
+};
+var _hoisted_104 = {
+  "class": "row"
+};
+var _hoisted_105 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "col s12"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  type: "text",
+  placeholder: "Description",
+  "class": "validate tempInput"
+})], -1 /* HOISTED */);
+var _hoisted_106 = {
+  key: 7
+};
+var _hoisted_107 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "#",
+  "class": "black-text"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "material-icons arrowBack"
+}, "arrow_back"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Back ")], -1 /* HOISTED */);
+var _hoisted_108 = [_hoisted_107];
+var _hoisted_109 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"tempSetBlackDiv\"><div class=\"tempSetBlackInnerDiv\"><div class=\"row tempSetBlackInnerDiv\"><div class=\"col s12\"><p class=\"tempSetTitle\">Create Clients Website</p></div><div class=\"col s11\"><p class=\"tempSetTxt\"> Now is the time to create something exceptional with no limits. </p></div><div class=\"col s1\"><!-- Upload Template Stylesheet Help Modal Trigger --><a class=\"modal-trigger\" href=\"#uploadTempStyleModal\"><i class=\"material-icons tempSetIcon1 right\">add_circle</i></a></div></div></div></div>", 1);
+var _hoisted_110 = {
+  "class": "tempCreateClientWhiteDiv"
+};
+var _hoisted_111 = {
+  "class": "tempCreateClientWhiteDiv1"
+};
+var _hoisted_112 = {
+  "class": "row tempCreateClientWhiteDiv2"
+};
+var _hoisted_113 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col s3 m2 l2 tempCreateClientWhiteProMgLftDiv\"><div><div class=\"tempCreateClientWhiteProDiv\"><i class=\"material-icons tempProIcon\">person</i></div><p class=\"tempCreateClientWhiteProName\">escoba</p></div></div><div class=\"col s5 s5 l6 offset-s1\"><p class=\"tempCreateClientWhiteTitle\">Description</p><p class=\"tempCreateClientWhiteTxt\"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text </p></div>", 2);
+var _hoisted_115 = {
+  "class": "col s1 m2 l3 offset-s1 offset-m1 mg_top"
+};
+var _hoisted_116 = {
+  href: "/client/editwebsitemodal"
+};
+var _hoisted_117 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "/client/configurewebsite"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "material-icons right tempCreateClientOperatorIcon"
+}, "settings")], -1 /* HOISTED */);
+var _hoisted_118 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "/templates/templateone"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "material-icons right tempCreateClientOperatorIcon"
+}, "visibility")], -1 /* HOISTED */);
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_mobile_nav_component = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("mobile-nav-component");
   var _component_side_nav_component = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("side-nav-component");
@@ -29828,92 +30216,151 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClick: _cache[0] || (_cache[0] = function () {
       return _ctx.logout && _ctx.logout.apply(_ctx, arguments);
     }),
-    "class": "primary waves-effect waves-green btn-flat"
+    "class": "confirmDeleteBtn btn-flat"
   }, " Yes "), _hoisted_8, _hoisted_9])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ------------------------------------------------------------------------------------- "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Sidenav for small devices "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_mobile_nav_component), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Sidebar for large and medium devices "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_side_nav_component), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Templates Div "), !$data.viewTemplates ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Create Template black rectangular div "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [_hoisted_16, _hoisted_17, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "material-icons tempSetIcon right",
     onClick: _cache[1] || (_cache[1] = function ($event) {
       return $options.createTemp();
     })
-  }, "add_circle")])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Profession Carousel lists "), _hoisted_19, $data.template > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Search Domain Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  }, "add_circle")])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Profession Carousel lists "), _hoisted_19, $data.allTemplates > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Search Domain Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     placeholder: "🔍 Search by domain",
-    id: "tempSetSearchInput",
     type: "text",
-    "class": "validate",
+    "class": "validate tempSetSearchInput",
     "onUpdate:modelValue": _cache[2] || (_cache[2] = function ($event) {
       return _ctx.search = $event;
     })
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.search]])])])]), _hoisted_23]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Template Section "), _hoisted_24])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_26, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" No templates found for profession "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.search]])])])]), _hoisted_23]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Template Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" First Row "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_26, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_27, [_hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"card-content\">\r\n                                            <p>I am a very simple card. I am good at containing small bits of information.\r\n                                                I am convenient because I require little markup to use effectively.</p>\r\n                                        </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_29, [_hoisted_30, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    href: "#",
+    "class": "tempSetMainViewLink right",
+    onClick: _cache[3] || (_cache[3] = function ($event) {
+      return $options.tempSetup();
+    })
+  }, "Select")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Template Delete Modal Trigger "), _hoisted_31]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_32, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_33, [_hoisted_34, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"card-content\">\r\n                                            <p>I am a very simple card. I am good at containing small bits of information.\r\n                                                I am convenient because I require little markup to use effectively.</p>\r\n                                        </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_35, [_hoisted_36, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    href: "#",
+    "class": "tempSetMainViewLink right",
+    onClick: _cache[4] || (_cache[4] = function ($event) {
+      return $options.tempSetup();
+    })
+  }, "Select")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Template Delete Modal Trigger "), _hoisted_37]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_38, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_39, [_hoisted_40, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"card-content\">\r\n                                            <p>I am a very simple card. I am good at containing small bits of information.\r\n                                                I am convenient because I require little markup to use effectively.</p>\r\n                                        </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_41, [_hoisted_42, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    href: "#",
+    "class": "tempSetMainViewLink right",
+    onClick: _cache[5] || (_cache[5] = function ($event) {
+      return $options.tempSetup();
+    })
+  }, "Select")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Template Delete Modal Trigger "), _hoisted_43]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Second Row "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_44, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_45, [_hoisted_46, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"card-content\">\r\n                                            <p>I am a very simple card. I am good at containing small bits of information.\r\n                                                I am convenient because I require little markup to use effectively.</p>\r\n                                        </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_47, [_hoisted_48, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    href: "#",
+    "class": "tempSetMainViewLink right",
+    onClick: _cache[6] || (_cache[6] = function ($event) {
+      return $options.tempSetup();
+    })
+  }, "Select")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Template Delete Modal Trigger "), _hoisted_49]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_50, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_51, [_hoisted_52, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"card-content\">\r\n                                            <p>I am a very simple card. I am good at containing small bits of information.\r\n                                                I am convenient because I require little markup to use effectively.</p>\r\n                                        </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_53, [_hoisted_54, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    href: "#",
+    "class": "tempSetMainViewLink right",
+    onClick: _cache[7] || (_cache[7] = function ($event) {
+      return $options.tempSetup();
+    })
+  }, "Select")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Template Delete Modal Trigger "), _hoisted_55]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_56, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_57, [_hoisted_58, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"card-content\">\r\n                                            <p>I am a very simple card. I am good at containing small bits of information.\r\n                                                I am convenient because I require little markup to use effectively.</p>\r\n                                        </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_59, [_hoisted_60, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    href: "#",
+    "class": "tempSetMainViewLink right",
+    onClick: _cache[8] || (_cache[8] = function ($event) {
+      return $options.tempSetup();
+    })
+  }, "Select")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Template Delete Modal Trigger "), _hoisted_61])]), _hoisted_62, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End of Row ")])])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_63, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_64, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" No templates found for profession "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     href: "#",
     "class": "noTempCreateTempLink",
-    onClick: _cache[3] || (_cache[3] = function ($event) {
+    onClick: _cache[9] || (_cache[9] = function ($event) {
       return $options.createTemp();
     })
-  }, "Create template")])]))])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Template Add Title Section "), !$data.addTitle ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_27, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  }, "Create template")])]))])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Template Add Title Section "), !$data.addTitle ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_65, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
     href: "#",
     "class": "addTitleBack",
-    onClick: _cache[4] || (_cache[4] = function ($event) {
+    onClick: _cache[10] || (_cache[10] = function ($event) {
       return $options.addTitleBack();
     })
-  }, _hoisted_29), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Add Title black rectangular div "), _hoisted_30, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_31, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", _hoisted_32, [_hoisted_33, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, _hoisted_67), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Add Title black rectangular div "), _hoisted_68, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_69, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", _hoisted_70, [_hoisted_71, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     type: "button",
-    "class": "col s2 offset-s5 btn",
-    id: "addTitleBtn",
-    onClick: _cache[5] || (_cache[5] = function ($event) {
+    "class": "col s2 offset-s5 btn tempInputBtn",
+    onClick: _cache[11] || (_cache[11] = function ($event) {
       return $options.addTitleNextBtn();
     })
-  }, " Next ")])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Template Upload Template Thumbnail Section "), !$data.uploadTempThumbnail ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_34, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  }, " Next ")])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Template Upload Template Thumbnail Section "), !$data.uploadTempThumbnail ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_72, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
     href: "#",
     "class": "addTitleBack",
-    onClick: _cache[6] || (_cache[6] = function ($event) {
+    onClick: _cache[12] || (_cache[12] = function ($event) {
       return $options.uploadTempThumbnailBack();
     })
-  }, _hoisted_36), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Upload Template Thumbnail black rectangular div "), _hoisted_37, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_38, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", _hoisted_39, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_40, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_41, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", _hoisted_42, null, 512 /* NEED_PATCH */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_43, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-    "class": "file-path validate",
+  }, _hoisted_74), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Upload Template Thumbnail black rectangular div "), _hoisted_75, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_76, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", _hoisted_77, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_78, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_79, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", _hoisted_80, null, 512 /* NEED_PATCH */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_81, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    "class": "file-path validate uploadInput1",
     type: "text",
-    id: "uploadThumbnailInput",
     placeholder: "Upload File",
-    onClick: _cache[7] || (_cache[7] = function ($event) {
+    onClick: _cache[13] || (_cache[13] = function ($event) {
       return _ctx.$refs.file.click();
     })
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-    "class": "btn uploadTempThumpnailInputBtn",
-    onClick: _cache[8] || (_cache[8] = function ($event) {
+    "class": "btn tempUploadFileInputBtn",
+    onClick: _cache[14] || (_cache[14] = function ($event) {
       return _ctx.$refs.file.click();
     })
   }, "Select file")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     type: "button",
-    "class": "col s2 offset-s5 btn",
-    id: "uploadThumbnailBtn",
-    onClick: _cache[9] || (_cache[9] = function ($event) {
+    "class": "col s2 offset-s5 btn tempInputBtn",
+    onClick: _cache[15] || (_cache[15] = function ($event) {
       return $options.uploadTempThumbnailNext();
     })
-  }, " Next ")])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Template Upload Template stylesheet Section "), !$data.uploadTempStylsheet ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_44, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  }, " Next ")])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Template Upload Template stylesheet Section "), !$data.uploadTempStylsheet ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_82, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
     href: "#",
     "class": "addTitleBack",
-    onClick: _cache[10] || (_cache[10] = function ($event) {
+    onClick: _cache[16] || (_cache[16] = function ($event) {
       return $options.uploadTempStylsheetBack();
     })
-  }, _hoisted_46), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Upload Template stylesheet black rectangular div "), _hoisted_47, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_48, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", _hoisted_49, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_50, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", _hoisted_51, null, 512 /* NEED_PATCH */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_52, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-    "class": "file-path validate",
+  }, _hoisted_84), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Upload Template stylesheet black rectangular div "), _hoisted_85, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_86, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", _hoisted_87, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_88, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", _hoisted_89, null, 512 /* NEED_PATCH */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_90, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    "class": "file-path validate uploadInput1",
     type: "text",
-    id: "uploadTempStyle",
     placeholder: "Upload File",
-    onClick: _cache[11] || (_cache[11] = function ($event) {
+    onClick: _cache[17] || (_cache[17] = function ($event) {
       return _ctx.$refs.file.click();
     })
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-    "class": "btn uploadTempStyleInputBtn",
-    onClick: _cache[12] || (_cache[12] = function ($event) {
+    "class": "btn tempUploadFileInputBtn",
+    onClick: _cache[18] || (_cache[18] = function ($event) {
       return _ctx.$refs.file.click();
     })
   }, "Select file")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     type: "button",
-    "class": "col s2 offset-s5 btn",
-    id: "uploadTempstyleBtn",
-    onClick: _cache[13] || (_cache[13] = function ($event) {
+    "class": "col s2 offset-s5 btn tempInputBtn",
+    onClick: _cache[19] || (_cache[19] = function ($event) {
       return $options.uploadTempStylsheetNext();
     })
-  }, " Save ")])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" InnerFooterComponent "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <InnerFooterComponent /> ")]);
+  }, " Save ")])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Template Email Setup Section "), !$data.emailSetup ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_91, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Email Setup black rectangular div "), _hoisted_92, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_93, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", _hoisted_94, [_hoisted_95, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    type: "button",
+    "class": "col s2 offset-s5 btn tempInputBtn",
+    onClick: _cache[20] || (_cache[20] = function ($event) {
+      return $options.emailSetupNext();
+    })
+  }, " Next ")])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Template Domain Name Setup Section "), !$data.domainNameSetup ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_96, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Email Setup black rectangular div "), _hoisted_97, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_98, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", _hoisted_99, [_hoisted_100, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    type: "button",
+    "class": "col s2 offset-s5 btn tempInputBtn",
+    onClick: _cache[21] || (_cache[21] = function ($event) {
+      return $options.domainNameNext();
+    })
+  }, " Next ")])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Template Description Setup Section "), !$data.descriptionSetup ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_101, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Email Setup black rectangular div "), _hoisted_102, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_103, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", _hoisted_104, [_hoisted_105, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    type: "button",
+    "class": "col s2 offset-s5 btn tempInputBtn",
+    onClick: _cache[22] || (_cache[22] = function ($event) {
+      return $options.descriptionNext();
+    })
+  }, " Next ")])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Template Create Client Website Section "), !$data.tempCreateClientWeb ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_106, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+    href: "#",
+    "class": "addTitleBack",
+    onClick: _cache[23] || (_cache[23] = function ($event) {
+      return $options.tempCreateClientWebBack();
+    })
+  }, _hoisted_108), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Upload Template stylesheet black rectangular div "), _hoisted_109, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_110, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_111, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_112, [_hoisted_113, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_115, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_116, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+    "class": "material-icons right tempCreateClientOperatorIcon",
+    onClick: _cache[24] || (_cache[24] = function ($event) {
+      return _ctx.editMe(_ctx.template);
+    })
+  }, "open_in_new")]), _hoisted_117, _hoisted_118])])])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])]);
 }
 
 /***/ }),
@@ -32699,8 +33146,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_super_SinglemailComponent__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/super/SinglemailComponent */ "./resources/js/components/super/SinglemailComponent.vue");
 /* harmony import */ var _components_super_SettingsComponent__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/super/SettingsComponent */ "./resources/js/components/super/SettingsComponent.vue");
 /* harmony import */ var _components_super_ClientComponent__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/super/ClientComponent */ "./resources/js/components/super/ClientComponent.vue");
-/* harmony import */ var _components_templates_Physicians_MainTemplateComponent__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/templates/Physicians/MainTemplateComponent */ "./resources/js/components/templates/Physicians/MainTemplateComponent.vue");
-/* harmony import */ var _components_templates_Physicians_Settings_SettingsComponent__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/templates/Physicians/Settings/SettingsComponent */ "./resources/js/components/templates/Physicians/Settings/SettingsComponent.vue");
+/* harmony import */ var _components_super_RequestComponent__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./components/super/RequestComponent */ "./resources/js/components/super/RequestComponent.vue");
+/* harmony import */ var _components_templates_Physicians_MainTemplateComponent__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/templates/Physicians/MainTemplateComponent */ "./resources/js/components/templates/Physicians/MainTemplateComponent.vue");
+/* harmony import */ var _components_templates_Physicians_Settings_SettingsComponent__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/templates/Physicians/Settings/SettingsComponent */ "./resources/js/components/templates/Physicians/Settings/SettingsComponent.vue");
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -32752,6 +33200,7 @@ var app = (0,vue__WEBPACK_IMPORTED_MODULE_1__.createApp)({});
 
 
 
+
 // Webiste
 
 
@@ -32778,13 +33227,14 @@ app.component("sadmin-mail-component", _components_super_MailComponent__WEBPACK_
 app.component("sadmin-singlemail-component", _components_super_SinglemailComponent__WEBPACK_IMPORTED_MODULE_24__["default"]);
 app.component("sadmin-settings-component", _components_super_SettingsComponent__WEBPACK_IMPORTED_MODULE_25__["default"]);
 app.component("sadmin-client-component", _components_super_ClientComponent__WEBPACK_IMPORTED_MODULE_26__["default"]);
+app.component("sadmin-request-component", _components_super_RequestComponent__WEBPACK_IMPORTED_MODULE_27__["default"]);
 app.component("admin-client-component", _components_admin_Client__WEBPACK_IMPORTED_MODULE_15__["default"]);
 app.component("admin-template-component", _components_admin_Template__WEBPACK_IMPORTED_MODULE_16__["default"]);
 app.component("admin-messages-component", _components_admin_Mail__WEBPACK_IMPORTED_MODULE_17__["default"]);
 app.component("admin-settings-component", _components_admin_Settings__WEBPACK_IMPORTED_MODULE_18__["default"]);
 app.component("admin-singlemail-component", _components_admin_SingleMail__WEBPACK_IMPORTED_MODULE_19__["default"]);
-app.component('physician-website-component', _components_templates_Physicians_MainTemplateComponent__WEBPACK_IMPORTED_MODULE_27__["default"]);
-app.component('physician-website-settings', _components_templates_Physicians_Settings_SettingsComponent__WEBPACK_IMPORTED_MODULE_28__["default"]);
+app.component('physician-website-component', _components_templates_Physicians_MainTemplateComponent__WEBPACK_IMPORTED_MODULE_28__["default"]);
+app.component('physician-website-settings', _components_templates_Physicians_Settings_SettingsComponent__WEBPACK_IMPORTED_MODULE_29__["default"]);
 
 /**
  * The following block of code may be used to automatically register your
@@ -88023,6 +88473,34 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./resources/js/components/super/RequestComponent.vue":
+/*!************************************************************!*\
+  !*** ./resources/js/components/super/RequestComponent.vue ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _RequestComponent_vue_vue_type_template_id_9b063b26__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./RequestComponent.vue?vue&type=template&id=9b063b26 */ "./resources/js/components/super/RequestComponent.vue?vue&type=template&id=9b063b26");
+/* harmony import */ var _RequestComponent_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RequestComponent.vue?vue&type=script&lang=js */ "./resources/js/components/super/RequestComponent.vue?vue&type=script&lang=js");
+/* harmony import */ var C_laragon_www_paabAnthony_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+const __exports__ = /*#__PURE__*/(0,C_laragon_www_paabAnthony_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_RequestComponent_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_RequestComponent_vue_vue_type_template_id_9b063b26__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/super/RequestComponent.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
 /***/ "./resources/js/components/super/SettingsComponent.vue":
 /*!*************************************************************!*\
   !*** ./resources/js/components/super/SettingsComponent.vue ***!
@@ -89207,6 +89685,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/super/RequestComponent.vue?vue&type=script&lang=js":
+/*!************************************************************************************!*\
+  !*** ./resources/js/components/super/RequestComponent.vue?vue&type=script&lang=js ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_RequestComponent_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_RequestComponent_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./RequestComponent.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/super/RequestComponent.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/components/super/SettingsComponent.vue?vue&type=script&lang=js":
 /*!*************************************************************************************!*\
   !*** ./resources/js/components/super/SettingsComponent.vue?vue&type=script&lang=js ***!
@@ -90115,6 +90609,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_MailComponent_vue_vue_type_template_id_73b0b257__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_MailComponent_vue_vue_type_template_id_73b0b257__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./MailComponent.vue?vue&type=template&id=73b0b257 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/super/MailComponent.vue?vue&type=template&id=73b0b257");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/super/RequestComponent.vue?vue&type=template&id=9b063b26":
+/*!******************************************************************************************!*\
+  !*** ./resources/js/components/super/RequestComponent.vue?vue&type=template&id=9b063b26 ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_RequestComponent_vue_vue_type_template_id_9b063b26__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_RequestComponent_vue_vue_type_template_id_9b063b26__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./RequestComponent.vue?vue&type=template&id=9b063b26 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/super/RequestComponent.vue?vue&type=template&id=9b063b26");
 
 
 /***/ }),

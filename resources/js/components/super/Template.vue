@@ -73,20 +73,15 @@
                     id="errAltImg" class="logoutModalImage" />
             </div>
             <div class="row center-align">
-                <p><b>You sure you want to delete this template?</b></p>
+                <p class="tempDeleteModalTitle">You sure you want to delete this template?</p>
             </div>
 
             <div class="row center-align">
-                <button @click="logout" class="primary waves-effect waves-green btn-flat">
+                <button @click="logout" class="confirmDeleteBtn btn-flat">
                     Yes
                 </button>
                 <span class="gutter1"></span>
-                <button class="
-                    modal-close
-                    primaryBorder
-                    waves-effect waves-green
-                    btn-flat
-                ">
+                <button class="cancelDeleteBtn modal-close btn-flat">
                     No
                 </button>
             </div>
@@ -181,14 +176,15 @@
                             <p class="">This is your second panel</p>
                         </div>
                     </div>
-                    <div v-if="(template > 0)">
+
+                    <div v-if="(allTemplates > 0)">
                         <!-- Search Domain Section -->
                         <div class="tempSetSearchInputMainDiv">
                             <div>
                                 <form>
                                     <div class="input-field">
-                                        <input placeholder="&#128269; Search by domain" id="tempSetSearchInput"
-                                            type="text" class="validate" v-model="search" />
+                                        <input placeholder="&#128269; Search by domain"
+                                            type="text" class="validate tempSetSearchInput" v-model="search" />
                                     </div>
                                 </form>
                             </div>
@@ -209,151 +205,140 @@
                         <!-- Template Section -->
                         <div class="tempSetContainDiv">
 
-                            <!-- First Row -->
                             <div class="row">
-                                <div class="col s12 m6 l4 tempSetMainRowDiv">
-                                    <div>
-                                        <img src="/media/img/aboutmyself.png" alt="tempSetImage.png">
+                                <!-- First Row -->
+                                <div class="col s12 m6 l4 tempCardContainDiv">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="/media/img/aboutmyself1.png">
+                                            <span class="card-title">Card Title</span>
+                                        </div>
+                                        <!-- <div class="card-content">
+                                            <p>I am a very simple card. I am good at containing small bits of information.
+                                                I am convenient because I require little markup to use effectively.</p>
+                                        </div> -->
+                                        <div class="card-action">
+                                            <a href="#" class="tempSetMainViewLink">Preview</a>
+
+                                            <a href="#" class="tempSetMainViewLink right" @click="tempSetup()">Select</a>
+                                        </div>
                                     </div>
-
-                                    <p class="tempSetMainTitle">
-                                        Planet Earth
-                                    </p>
-
-                                    <p class="tempSetMainTxt">
-                                        The Planet Earth template is a captivating design with minimalist appeal.
-                                    </p>
-
-                                    <div>
-                                        <a href="#" class="tempSetMainViewLink">View</a>
-
-                                        <!-- Template Delete Modal Trigger -->
-                                        <a href="#tempDelModal" class="btn right tempSetDelBtn modal-trigger">
-                                            Delete
-                                        </a>
-                                    </div>
-
+                                    <!-- Template Delete Modal Trigger -->
+                                    <a href="#tempDelModal" class="btn tempSetDelBtn modal-trigger">
+                                        Delete
+                                    </a>
                                 </div>
 
-                                <div class="col s12 m6 l4 tempSetMainRowDiv">
-                                    <div>
-                                        <img src="/media/img/aboutmyself.png" alt="tempSetImage.png">
+                                <div class="col s12 m6 l4 tempCardContainDiv">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="/media/img/aboutmyself1.png">
+                                            <span class="card-title">Card Title</span>
+                                        </div>
+                                        <!-- <div class="card-content">
+                                            <p>I am a very simple card. I am good at containing small bits of information.
+                                                I am convenient because I require little markup to use effectively.</p>
+                                        </div> -->
+                                        <div class="card-action">
+                                            <a href="#" class="tempSetMainViewLink">Preview</a>
+                                
+                                            <a href="#" class="tempSetMainViewLink right" @click="tempSetup()">Select</a>
+                                        </div>
                                     </div>
-
-                                    <p class="tempSetMainTitle">
-                                        Planet Earth
-                                    </p>
-
-                                    <p class="tempSetMainTxt">
-                                        The Planet Earth template is a captivating design with minimalist appeal.
-                                    </p>
-
-                                    <div>
-                                        <a href="#" class="tempSetMainViewLink">View</a>
-
-                                        <!-- Template Delete Modal Trigger -->
-                                        <a href="#tempDelModal" class="btn right tempSetDelBtn modal-trigger">
-                                            Delete
-                                        </a>
-                                    </div>
+                                    <!-- Template Delete Modal Trigger -->
+                                    <a href="#tempDelModal" class="btn tempSetDelBtn modal-trigger">
+                                        Delete
+                                    </a>
                                 </div>
 
-                                <div class="col s12 m6 l4 tempSetMainRowDiv">
-                                    <div>
-                                        <img src="/media/img/aboutmyself.png" alt="tempSetImage.png">
+                                <div class="col s12 m6 l4 tempCardContainDiv">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="/media/img/aboutmyself1.png">
+                                            <span class="card-title">Card Title</span>
+                                        </div>
+                                        <!-- <div class="card-content">
+                                            <p>I am a very simple card. I am good at containing small bits of information.
+                                                I am convenient because I require little markup to use effectively.</p>
+                                        </div> -->
+                                        <div class="card-action">
+                                            <a href="#" class="tempSetMainViewLink">Preview</a>
+                                
+                                            <a href="#" class="tempSetMainViewLink right" @click="tempSetup()">Select</a>
+                                        </div>
                                     </div>
-
-                                    <p class="tempSetMainTitle">
-                                        Planet Earth
-                                    </p>
-
-                                    <p class="tempSetMainTxt">
-                                        The Planet Earth template is a captivating design with minimalist appeal.
-                                    </p>
-
-                                    <div>
-                                        <a href="#" class="tempSetMainViewLink">View</a>
-
-                                        <!-- Template Delete Modal Trigger -->
-                                        <a href="#tempDelModal" class="btn right tempSetDelBtn modal-trigger">
-                                            Delete
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <!-- Second Row -->
-                            <div class="row">
-                                <div class="col s12 m6 l4 tempSetMainRowDiv">
-                                    <div>
-                                        <img src="/media/img/aboutmyself.png" alt="tempSetImage.png">
-                                    </div>
-
-                                    <p class="tempSetMainTitle">
-                                        Planet Earth
-                                    </p>
-
-                                    <p class="tempSetMainTxt">
-                                        The Planet Earth template is a captivating design with minimalist appeal.
-                                    </p>
-
-                                    <div>
-                                        <a href="#" class="tempSetMainViewLink">View</a>
-
-                                        <!-- Template Delete Modal Trigger -->
-                                        <a href="#tempDelModal" class="btn right tempSetDelBtn modal-trigger">
-                                            Delete
-                                        </a>
-                                    </div>
-
+                                    <!-- Template Delete Modal Trigger -->
+                                    <a href="#tempDelModal" class="btn tempSetDelBtn modal-trigger">
+                                        Delete
+                                    </a>
                                 </div>
 
-                                <div class="col s12 m6 l4 tempSetMainRowDiv">
-                                    <div>
-                                        <img src="/media/img/aboutmyself.png" alt="tempSetImage.png">
+
+                                <!-- Second Row -->
+                                <div class="col s12 m6 l4 tempCardContainDiv">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="/media/img/aboutmyself1.png">
+                                            <span class="card-title">Card Title</span>
+                                        </div>
+                                        <!-- <div class="card-content">
+                                            <p>I am a very simple card. I am good at containing small bits of information.
+                                                I am convenient because I require little markup to use effectively.</p>
+                                        </div> -->
+                                        <div class="card-action">
+                                            <a href="#" class="tempSetMainViewLink">Preview</a>
+                                
+                                            <a href="#" class="tempSetMainViewLink right" @click="tempSetup()">Select</a>
+                                        </div>
                                     </div>
-
-                                    <p class="tempSetMainTitle">
-                                        Planet Earth
-                                    </p>
-
-                                    <p class="tempSetMainTxt">
-                                        The Planet Earth template is a captivating design with minimalist appeal.
-                                    </p>
-
-                                    <div>
-                                        <a href="#" class="tempSetMainViewLink">View</a>
-
-                                        <!-- Template Delete Modal Trigger -->
-                                        <a href="#tempDelModal" class="btn right tempSetDelBtn modal-trigger">
-                                            Delete
-                                        </a>
-                                    </div>
+                                    <!-- Template Delete Modal Trigger -->
+                                    <a href="#tempDelModal" class="btn tempSetDelBtn modal-trigger">
+                                        Delete
+                                    </a>
                                 </div>
 
-                                <div class="col s12 m6 l4 tempSetMainRowDiv">
-                                    <div>
-                                        <img src="/media/img/aboutmyself.png" alt="tempSetImage.png">
+                                <div class="col s12 m6 l4 tempCardContainDiv">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="/media/img/aboutmyself1.png">
+                                            <span class="card-title">Card Title</span>
+                                        </div>
+                                        <!-- <div class="card-content">
+                                            <p>I am a very simple card. I am good at containing small bits of information.
+                                                I am convenient because I require little markup to use effectively.</p>
+                                        </div> -->
+                                        <div class="card-action">
+                                            <a href="#" class="tempSetMainViewLink">Preview</a>
+                                
+                                            <a href="#" class="tempSetMainViewLink right" @click="tempSetup()">Select</a>
+                                        </div>
                                     </div>
+                                    <!-- Template Delete Modal Trigger -->
+                                    <a href="#tempDelModal" class="btn tempSetDelBtn modal-trigger">
+                                        Delete
+                                    </a>
+                                </div>
 
-                                    <p class="tempSetMainTitle">
-                                        Planet Earth
-                                    </p>
-
-                                    <p class="tempSetMainTxt">
-                                        The Planet Earth template is a captivating design with minimalist appeal.
-                                    </p>
-
-                                    <div>
-                                        <a href="#" class="tempSetMainViewLink">View</a>
-
-                                        <!-- Template Delete Modal Trigger -->
-                                        <a href="#tempDelModal" class="btn right tempSetDelBtn modal-trigger">
-                                            Delete
-                                        </a>
+                                <div class="col s12 m6 l4 tempCardContainDiv">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="/media/img/aboutmyself1.png">
+                                            <span class="card-title">Card Title</span>
+                                        </div>
+                                        <!-- <div class="card-content">
+                                            <p>I am a very simple card. I am good at containing small bits of information.
+                                                I am convenient because I require little markup to use effectively.</p>
+                                        </div> -->
+                                        <div class="card-action">
+                                            <a href="#" class="tempSetMainViewLink">Preview</a>
+                                
+                                            <a href="#" class="tempSetMainViewLink right" @click="tempSetup()">Select</a>
+                                        </div>
                                     </div>
+                                    <!-- Template Delete Modal Trigger -->
+                                    <a href="#tempDelModal" class="btn tempSetDelBtn modal-trigger">
+                                        Delete
+                                    </a>
                                 </div>
                             </div>
                             <div class="col s12">
@@ -402,10 +387,10 @@
                     <div class="addTitleInputDiv">
                         <form class="row">
                             <div class="col s12">
-                                <input type="text" placeholder="Title" id="addTitleInput" />
+                                <input type="text" placeholder="Title" class="validate tempInput" />
                             </div>
 
-                            <button type="button" class="col s2 offset-s5 btn" id="addTitleBtn"
+                            <button type="button" class="col s2 offset-s5 btn tempInputBtn"
                                 @click="addTitleNextBtn()">
                                 Next
                             </button>
@@ -449,15 +434,15 @@
                                 <div class="file-field input-field">
                                     <input type="file" ref="file" style="display: none" />
                                     <div class="file-path-wrapper">
-                                        <input class="file-path validate" type="text" id="uploadThumbnailInput"
+                                        <input class="file-path validate uploadInput1" type="text"
                                             placeholder="Upload File" @click="$refs.file.click()" />
-                                        <button class="btn uploadTempThumpnailInputBtn"
+                                        <button class="btn tempUploadFileInputBtn"
                                             @click="$refs.file.click()">Select file</button>
                                     </div>
                                 </div>
                             </div>
 
-                            <button type="button" class="col s2 offset-s5 btn" id="uploadThumbnailBtn"
+                            <button type="button" class="col s2 offset-s5 btn tempInputBtn"
                                 @click="uploadTempThumbnailNext()">
                                 Next
                             </button>
@@ -499,24 +484,194 @@
                             <div class="file-field input-field">
                                 <input type="file" ref="file" style="display: none" />
                                 <div class="file-path-wrapper">
-                                    <input class="file-path validate" type="text" id="uploadTempStyle"
+                                    <input class="file-path validate uploadInput1" type="text"
                                         placeholder="Upload File" @click="$refs.file.click()" />
-                                    <button class="btn uploadTempStyleInputBtn" @click="$refs.file.click()">Select
+                                    <button class="btn tempUploadFileInputBtn" @click="$refs.file.click()">Select
                                         file</button>
                                 </div>
                             </div>
 
-                            <button type="button" class="col s2 offset-s5 btn" id="uploadTempstyleBtn"
+                            <button type="button" class="col s2 offset-s5 btn tempInputBtn"
                                 @click="uploadTempStylsheetNext()">
                                 Save
                             </button>
                         </form>
                     </div>
                 </div>
+
+                <!-- Template Email Setup Section -->
+                <div v-if="!emailSetup">
+                
+                    <!-- Email Setup black rectangular div -->
+                    <div class="tempSetBlackDiv">
+                        <div class="tempSetBlackInnerDiv">
+                            <div class="row tempSetBlackInnerDiv">
+                                <div class="col s12">
+                                    <p class="tempSetTitle">Setup Email</p>
+                                </div>
+                                <div class="col s12">
+                                    <p class="tempSetTxt">
+                                        Giving your website a good title make it easier 
+                                        for customer to find your page.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="addTitleInputDiv">
+                        <form class="row">
+                            <div class="col s12">
+                                <input type="text" placeholder="Email" class="validate tempInput" />
+                            </div>
+                
+                            <button type="button" class="col s2 offset-s5 btn tempInputBtn" @click="emailSetupNext()">
+                                Next
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Template Domain Name Setup Section -->
+                <div v-if="!domainNameSetup">
+                
+                    <!-- Email Setup black rectangular div -->
+                    <div class="tempSetBlackDiv">
+                        <div class="tempSetBlackInnerDiv">
+                            <div class="row tempSetBlackInnerDiv">
+                                <div class="col s12">
+                                    <p class="tempSetTitle">Setup Website Name</p>
+                                </div>
+                                <div class="col s12">
+                                    <p class="tempSetTxt">
+                                        Giving your website a good title make it easier
+                                        for customer to find your page.
+                
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="addTitleInputDiv">
+                        <form class="row">
+                            <div class="col s12">
+                                <input type="text" placeholder="Domain" class="validate tempInput" />
+                            </div>
+                
+                            <button type="button" class="col s2 offset-s5 btn tempInputBtn" @click="domainNameNext()">
+                                Next
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Template Description Setup Section -->
+                <div v-if="!descriptionSetup">
+                
+                    <!-- Email Setup black rectangular div -->
+                    <div class="tempSetBlackDiv">
+                        <div class="tempSetBlackInnerDiv">
+                            <div class="row tempSetBlackInnerDiv">
+                                <div class="col s12">
+                                    <p class="tempSetTitle">Setup Website description</p>
+                                </div>
+                                <div class="col s12">
+                                    <p class="tempSetTxt">
+                                        Giving your website a good title make it easier
+                                        for customer to find your page.
+                
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="addTitleInputDiv">
+                        <form class="row">
+                            <div class="col s12">
+                                <input type="text" placeholder="Description" class="validate tempInput" />
+                            </div>
+                
+                            <button type="button" class="col s2 offset-s5 btn tempInputBtn" @click="descriptionNext()">
+                                Next
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Template Create Client Website Section -->
+                <div v-if="!tempCreateClientWeb">
+                    <p href="#" class="addTitleBack" @click="tempCreateClientWebBack()">
+                        <a href="#" class="black-text">
+                            <i class="material-icons arrowBack">arrow_back</i>
+                            Back
+                        </a>
+                    </p>
+                
+                    <!-- Upload Template stylesheet black rectangular div -->
+                    <div class="tempSetBlackDiv">
+                        <div class="tempSetBlackInnerDiv">
+                            <div class="row tempSetBlackInnerDiv">
+                                <div class="col s12">
+                                    <p class="tempSetTitle">Create Clients Website</p>
+                                </div>
+                                <div class="col s11">
+                                    <p class="tempSetTxt">
+                                        Now is the time to create something exceptional with no limits.
+                                    </p>
+                                </div>
+                                <div class="col s1">
+                                    <!-- Upload Template Stylesheet Help Modal Trigger -->
+                                    <a class="modal-trigger" href="#uploadTempStyleModal">
+                                        <i class="material-icons tempSetIcon1 right">add_circle</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="tempCreateClientWhiteDiv">
+                        <div class="tempCreateClientWhiteDiv1">
+                            <div class="row tempCreateClientWhiteDiv2">
+                                <div class="col s3 m2 l2 tempCreateClientWhiteProMgLftDiv">
+                                    <div>
+                                        <div class="tempCreateClientWhiteProDiv">
+                                            <i class="material-icons tempProIcon">person</i>
+                                        </div>
+                                        <p class="tempCreateClientWhiteProName">escoba</p>
+                                    </div>
+                                </div>
+                    
+                                <div class="col s5 s5 l6 offset-s1">
+                                    <p class="tempCreateClientWhiteTitle">Description</p>
+                                    <p class="tempCreateClientWhiteTxt">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text
+                                    </p>
+                                </div>
+                    
+                                <div class="col s1 m2 l3 offset-s1 offset-m1 mg_top">
+                                    <a href="/client/editwebsitemodal">
+                                        <i class="material-icons right tempCreateClientOperatorIcon" @click="editMe(template)">open_in_new</i>
+                                    </a>
+                    
+                                    <a href="/client/configurewebsite">
+                                        <i class="material-icons right tempCreateClientOperatorIcon">settings</i>
+                                    </a>
+                    
+                                    <a href="/templates/templateone">
+                                        <i class="material-icons right tempCreateClientOperatorIcon">visibility</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- InnerFooterComponent -->
-        <!-- <InnerFooterComponent /> -->
+        
     </div>
 </template>
 <script>
@@ -531,14 +686,18 @@ export default {
     },
     data() {
         return {
-            template: 1,
+            allTemplates: 1,
             viewTemplates: false,
             addTitle: true,
             uploadTempThumbnail: true,
             uploadTempStylsheet: true,
+            emailSetup: true,
+            domainNameSetup: true,
+            descriptionSetup: true,
+            tempCreateClientWeb: true,
         };
     },
-    mounted() { },
+    mounted() {},
     methods: {
         createTemp() {
             this.viewTemplates = true;
@@ -567,6 +726,26 @@ export default {
         uploadTempStylsheetNext() {
             this.uploadTempStylsheet = true;
             this.viewTemplates = false;
+        },
+        tempSetup() {
+            this.viewTemplates = true;
+            this.emailSetup = false;
+        },
+        emailSetupNext() {
+            this.emailSetup = true;
+            this.domainNameSetup = false;
+        },
+        domainNameNext() {
+            this.domainNameSetup = true;
+            this.descriptionSetup = false;
+        },
+        descriptionNext() {
+            this.descriptionSetup = true;
+            this.tempCreateClientWeb = false;
+        },
+        tempCreateClientWebBack() {
+            this.tempCreateClientWeb = true;
+            this.descriptionSetup = false;
         },
     },
 };

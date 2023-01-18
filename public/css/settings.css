@@ -131,11 +131,11 @@ i.material-icons.tempSetIcon1 {
 .carousel .indicators .indicator-item.active {
     background-color: rgb(155, 155, 155);
 }
-a.btn.right.tempSetDelBtn {
-    width: 5vw;
-    height: 3vh;
+a.btn.tempSetDelBtn {
+    width: 6vw;
+    height: 4vh;
     text-transform: capitalize;
-    line-height: 23px;
+    line-height: 33px;
     background: #D44141;
     margin-right: 4.2vw;
     font-family: 'Montserrat', sans-serif;
@@ -160,13 +160,13 @@ a.btn.right.tempSetDelBtn {
     letter-spacing: -0.015em;
     color: #000000;
 }
-.tempSetMainViewLink {
+a.tempSetMainViewLink {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 17px;
     line-height: 21px;
     text-decoration: underline;
-    color: var(--primary);
+    color: var(--primary) !important;
 }
 .tempSetMainRowDiv {
     margin-bottom: 8vh;
@@ -184,7 +184,7 @@ a.btn.right.tempSetDelBtn {
     width: 96%;
     margin: 5vh auto;
 }
-#tempSetSearchInput {
+input.validate.tempSetSearchInput {
     box-sizing: border-box;
     width: 266px;
     height: 41px;
@@ -225,7 +225,7 @@ a.btn.right.tempSetDelBtn {
     width: 80%;
     margin: 13vh auto 0 auto;
 }
-#addTitleInput {
+input.validate.tempInput {
     background: rgba(70, 22, 107, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 100px;
@@ -236,7 +236,7 @@ a.btn.right.tempSetDelBtn {
     font-weight: 500;
     font-size: 15px;
 }
-#uploadThumbnailInput, #uploadTempStyle {
+input.file-path.validate.uploadInput1 {
     width: 93%;
     background: rgba(70, 22, 107, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -249,17 +249,14 @@ a.btn.right.tempSetDelBtn {
     font-size: 15px;
     cursor: pointer;
 }
-#addTitleInput::placeholder, 
-#uploadThumbnailInput::placeholder,
-#uploadTempStyle::placeholder {
+input.validate.tempInput::placeholder, 
+input.file-path.validate.uploadInput1::placeholder {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 15px;
     color: var(--black);
 }
-#addTitleBtn,
-#uploadThumbnailBtn,
-#uploadTempstyleBtn {
+button.col.s2.offset-s5.btn.tempInputBtn.tempInputBtn {
     background: var(--primary);
     border-radius: 6px;
     margin-top: 3.5vh;
@@ -267,8 +264,7 @@ a.btn.right.tempSetDelBtn {
     /* width: 7vw; */
     font-family: 'Montserrat', sans-serif;
 }
-button.btn.uploadTempThumpnailInputBtn,
-button.btn.uploadTempStyleInputBtn {
+button.btn.tempUploadFileInputBtn {
     position: absolute;
     top: 1.2vh;
     right: 2vw;
@@ -287,4 +283,248 @@ button.btn.uploadTempStyleInputBtn {
     border: 1px solid var(--black);
     border-radius: 10px;
     padding: 0 0.7vw;
+}
+.tempCardContainDiv {
+    margin-bottom: 8vh;
+}
+#tempDelModal {
+    width: 40%;
+    border-radius: 20px;
+    background: var(--primary);
+}
+.tempDeleteModalTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: var(--white);
+}
+.confirmDeleteBtn {
+    width: 6.5vw;
+    border-radius: 6px;
+    background-color: #1E1E1E;
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+}
+.confirmDeleteBtn {
+    width: 6.5vw;
+    border-radius: 6px;
+    background-color: #1E1E1E;
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.confirmDeleteBtn:hover,
+.confirmDeleteBtn:active {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+.cancelDeleteBtn,
+.cancelDeleteBtn:visited,
+.cancelDeleteBtn:active,
+.cancelDeleteBtn.btn-small {
+    width: 6.5vw;
+    border-radius: 6px;
+    background-color: var(--white);
+    color: var(--primary);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cancelDeleteBtn:hover {
+    background-color: #1E1E1E;
+    color: var(--white);
+}
+
+i.material-icons.arrowBack {
+    position: relative;
+    top: 0.9vh;
+}
+
+.tempCreateClientWhiteDiv {
+    height: 196px;
+    border-radius: 10px;
+}
+.tempCreateClientWhiteDiv1 {
+    padding-top: 5vh;
+}
+.tempCreateClientWhiteDiv2 {
+    border-bottom: 1px solid rgba(119, 70, 255, 0.3);
+    margin: 0;
+}
+.col.s3.m2.l2.tempCreateClientWhiteProMgLftDiv {
+    margin-left: 2vw;
+}
+.tempCreateClientWhiteProDiv {
+    width: 60px;
+    height: 60px;
+    background: #D9D9D9;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+i.material-icons.tempProIcon {
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    left: 0.5vw;
+}
+.tempCreateClientWhiteProName {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.125rem;
+    color: var(--primary);
+    margin: 1vh 0 0 0;
+}
+.tempCreateClientWhiteTitle {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.25rem;
+    color: var(--primary);
+    margin: 0;
+}
+.tempCreateClientWhiteTxt {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1rem;
+    color: rgb(30, 30, 30);
+}
+.tempCreateClientOperatorIcon {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+.mg_top {
+    margin-top: 4vh;
+}
+
+
+/* Media Query on Medium Device */
+@media screen and (max-width: 992px) and (min-width: 640px) {
+    a.btn.tempSetDelBtn {
+        width: 12vw;
+        height: 4vh;
+        text-transform: capitalize;
+        line-height: 33px;
+        background: #D44141;
+        margin-right: 4.2vw;
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 6px;
+    }
+    .carousel.carousel-slider {
+        width: 80vw;
+        height: 24vh;
+        border: none;
+        border-radius: 0;
+        margin-top: 3vh;
+    }
+    button.col.s2.offset-s5.btn.tempInputBtn.tempInputBtn {
+        background: var(--primary);
+        border-radius: 6px;
+        margin-top: 3.5vh;
+        height: 5vh;
+        width: 15vw;
+        font-family: 'Montserrat', sans-serif;
+    }
+    button.btn.tempUploadFileInputBtn {
+        position: absolute;
+        top: 1.2vh;
+        right: 3.5vw;
+        background: #1E1E1E;
+        border-radius: 6px;
+        font-family: 'Montserrat', sans-serif;
+        max-height: 4.5vh;
+        width: 16vw;
+        line-height: 0.1px;
+        text-transform: none;
+    }
+    #tempDelModal {
+        width: 60%;
+        border-radius: 20px;
+        background: var(--primary);
+    }
+}
+
+/* Media Query on small device */
+@media screen and (max-width: 640px) {
+    a.btn.tempSetDelBtn {
+        width: 23vw;
+        height: 4vh;
+        text-transform: capitalize;
+        line-height: 33px;
+        background: #D44141;
+        margin-right: 4.2vw;
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 6px;
+    }
+    .carousel.carousel-slider {
+        width: 90vw;
+        height: 24vh;
+        border: none;
+        border-radius: 0;
+        margin-top: 3vh;
+    }
+    .tempSetCarouselInnerDiv {
+        display: flex;
+        overflow: auto;
+        justify-content: start;
+    }
+    button.col.s2.offset-s5.btn.tempInputBtn.tempInputBtn {
+        background: var(--primary);
+        border-radius: 6px;
+        margin-top: 3.5vh;
+        height: 5vh;
+        width: 30vw;
+        font-family: 'Montserrat', sans-serif;
+    }
+    button.btn.tempUploadFileInputBtn {
+        position: absolute;
+        top: 1.2vh;
+        right: 5vw;
+        background: #1E1E1E;
+        border-radius: 6px;
+        font-family: 'Montserrat', sans-serif;
+        max-height: 4.5vh;
+        width: 25vw;
+        line-height: 0.1px;
+        text-transform: none;
+    }
+    .tempSetBlackInnerDiv {
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 1vh;
+    }
+    .confirmDeleteBtn {
+        width: 15vw;
+        border-radius: 6px;
+        background-color: #1E1E1E;
+        color: var(--white);
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .cancelDeleteBtn,
+    .cancelDeleteBtn:visited,
+    .cancelDeleteBtn:active,
+    .cancelDeleteBtn.btn-small {
+        width: 15vw;
+        border-radius: 6px;
+        background-color: var(--white);
+        color: var(--primary);
+        font-family: 'Montserrat', sans-serif;
+    }
+    #addTitleModal {
+        width: 99%;
+    }
+    #uploadTempThumbModal {
+        width: 99%;
+    }
+    #uploadTempStyleModal {
+        width: 99%;
+    }
+    #tempDelModal {
+        width: 99%;
+        border-radius: 20px;
+        background: var(--primary);
+    }
 }

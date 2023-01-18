@@ -157,4 +157,7 @@ Route::prefix('supre')->middleware(['auth', 'can:run_superAdmin_ops'])->group(fu
     Route::get('/clients', function() {
         return view('super.client');
     });
+    Route::get('/request', function() {
+        return view('super.request');
+    });
 });
