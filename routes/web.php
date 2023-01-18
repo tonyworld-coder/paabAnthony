@@ -161,3 +161,9 @@ Route::prefix('supre')->middleware(['auth', 'can:run_superAdmin_ops'])->group(fu
         return view('super.request');
     });
 });
+
+
+// Template 
+Route::get('/templates/templatePhysic', function() {
+    return view('templates.templatePhysic');
+});

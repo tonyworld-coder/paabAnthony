@@ -56,6 +56,9 @@ import SadminRequest from "./components/super/RequestComponent";
 import PhysicianWebsiteComponent from './components/templates/Physicians/MainTemplateComponent';
 import SettingsComponent from './components/templates/Physicians/Settings/SettingsComponent';
 
+// Template
+import TemplatePhysic from "./components/templates/TemplatePhysic";
+
 app.component('home-component', HomeComponent);
 app.component('login-component', LoginComponent);
 // app.component('otp-component', OtpComponent);
@@ -92,6 +95,8 @@ app.component("admin-singlemail-component", AdminSingleMail);
 
 app.component('physician-website-component', PhysicianWebsiteComponent);
 app.component('physician-website-settings', SettingsComponent);
+
+app.component("template-physic-component", TemplatePhysic);
 
 
 /**
