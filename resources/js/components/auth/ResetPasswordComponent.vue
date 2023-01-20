@@ -3,7 +3,9 @@
         <div class="row authContainDiv" v-if="verifiedEmail == 1">
             <div class="col s12 m12 l6 welcomeContainer hide-on-med-and-down">
                 <div class="wlcNoteDiv">
-                    <a href="/" class="wlcNoteLogo">PaaB</a>
+                    <a href="/" class="wlcNoteLogo">
+                        <img src="/media/img/whiteCoatDomain1.png" alt="whiteCoatDomain.png" class="authLogo">
+                    </a>
                     <p class="wlcNoteTitle">
                         Start your journey <br />with us...
                     </p>
@@ -24,7 +26,9 @@
         <div class="row authContainDiv" v-if="verifiedEmail == 2">
             <div class="col s12 m12 l6 otpContainer hide-on-med-and-down">
                 <div class="wlcNoteDiv">
-                    <a href="/" class="wlcNoteLogo">PaaB</a>
+                    <a href="/" class="wlcNoteLogo">
+                        <img src="/media/img/whiteCoatDomain1.png" alt="whiteCoatDomain.png" class="authLogo">
+                    </a>
                     <p class="wlcNoteTitle">
                         Start your journey <br />with us...
                     </p>
@@ -46,7 +50,9 @@
         <div class="row authContainDiv" v-if="verifiedEmail == 3">
             <div class="col s12 m12 l6 regContainer hide-on-med-and-down">
                 <div class="wlcNoteDiv">
-                    <a href="/" class="wlcNoteLogo">PaaB</a>
+                    <a href="/" class="wlcNoteLogo">
+                        <img src="/media/img/whiteCoatDomain1.png" alt="whiteCoatDomain.png" class="authLogo">
+                    </a>
                     <p class="wlcNoteTitle">
                         Start your journey <br />with us...
                     </p>

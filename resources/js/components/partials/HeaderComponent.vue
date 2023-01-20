@@ -5,7 +5,10 @@
             <nav v-bind:class="scrollPosition >= 5 ? 'altNav' : 'navbar'" class="hide-on-med-and-down">
                 <div class="nav-wrapper navbarWrap">
                     <a href="/" v-bind:class="scrollPosition >= 5 ? 'altBrandLogo' : 'brandLogo'"
-                        class="hide-on-med-and-down">PaaB</a>
+                        class="hide-on-med-and-down">
+                            <img v-bind:src="scrollPosition >= 5 ? '/media/img/whiteCoatDomain.png' : '/media/img/whiteCoatDomain1.png'" 
+                            alt="whiteCoatDomain.png" v-bind:class="scrollPosition >= 5 ? 'primaryLogo' : 'whiteLogo'">
+                    </a>
                     <ul id="nav-mobile" class="section table-of-contents right hide-on-med-and-down">
                         <li><a href="#product" class="navLinks">Product</a></li>
                         <li><a href="#features" class="navLinks">Features</a></li>
@@ -22,7 +25,9 @@
                     <i class="material-icons sideNavIcon" id="sideNavIcon">menu</i>
                 </a>
 
-                <a href="/" class="sideNavBrandLogo">PaaB</a>
+                <a href="/" class="sideNavBrandLogo">
+                    <img src="/media/img/whiteCoatDomainMobile.png" alt="whiteCoatDomain.png" class="sidenavLogo">
+                </a>
 
                 <ul id="slide-out" class="sidenav">
                     <!-- <li> -->
@@ -48,7 +53,10 @@
             <!-- Navbar -->
             <nav v-bind:class="scrollPosition >= 5 ? 'altNav' : 'navbar'" class="hide-on-med-and-down">
                 <div class="nav-wrapper navbarWrap">
-                    <a href="/" class="brand-logo" id="tempLogo">PaaB</a>
+                    <a href="/" class="brand-logo" id="tempLogo">
+                        <img src="/media/img/whiteCoatDomain.png" alt="whiteCoatDomain.png"
+                            v-bind:class="scrollPosition >= 5 ? 'tempNavLogo' : 'tempMainLogo'">
+                    </a>
 
                     <ul id="nav-mobile" class="section right table-of-contents hide-on-med-and-down">
                         <li>
@@ -69,7 +77,9 @@
                     <i class="material-icons sideNavIcon" id="sideNavIcon">menu</i>
                 </a>
 
-                <a href="/" class="sideNavBrandLogo">PaaB</a>
+                <a href="/" class="sideNavBrandLogo">
+                    <img src="/media/img/whiteCoatDomainMobile.png" alt="whiteCoatDomain.png" class="sidenavTempLogo">
+                </a>
 
                 <ul id="slide-out" class="sidenav">
                     <!-- <li> -->

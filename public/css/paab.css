@@ -3480,6 +3480,31 @@ a.btn.tempPageBtn {
     border-radius: 10px;
 }
 
+/* ********************************************************************************************** */
+/* HeaderComponent Logo Styling for HomepageComponent*/
+
+img.primaryLogo {
+    width: 5.2%;
+}
+
+img.whiteLogo {
+    width: 10%;
+}
+
+/* HeaderComponent Logo Styling for TemplateComponent*/
+img.tempNavLogo {
+    width: 40%;
+}
+
+img.tempMainLogo {
+    width: 50%;
+}
+
+/* Auth Logo Styling */
+img.authLogo {
+    width: 20%;
+}
+
 
 
 /* Media Query on Medium Device */
@@ -4156,6 +4181,17 @@ a.btn.tempPageBtn {
         margin-top: 2vh;
         margin-bottom: 4vh;
     } */
+
+    /* ******************************************************************************************* */
+    /* HeaderComponent Logo for HomeComponent on medium device  */
+    .sidenavLogo {
+        width: 7.5vw;
+    }
+
+    /* HeaderComponent Logo for TemplateComponent on medium device */
+    img.sidenavTempLogo {
+        width: 7.5%;
+    }
 }
 
 /* Media Query on small device */
@@ -4219,14 +4255,14 @@ a.btn.tempPageBtn {
         width: 13vw;
         height: 6.5vh;
     }
-    .sideNavBrandLogo {
+    /* .sideNavBrandLogo {
         font-size: 2.7rem;
         font-weight: 500;
         color: var(--primary);
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         margin-left: 14vw;
         font-family: "Montserrat", sans-serif;
-    }
+    } */
     /* #navLinks {
         font-weight: 600;
         font-size: 1.3125rem;
@@ -5075,4 +5111,24 @@ a.btn.tempPageBtn {
         font-size: 1.3rem;
         margin: 0.3vh 0 0 0.1vw;
     } */
+
+    /* ******************************************************************************************** */
+    /* HeaderComponent Logo for HomeComponent on small device  */
+    .sidenavLogo {
+        width: 12.5vw;
+    }
+
+    .sideNavBrandLogo {
+        font-size: 2.7rem;
+        font-weight: 500;
+        color: var(--primary);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-left: 24vw;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    /* HeaderComponent Logo for TemplateComponent on small device */
+    img.sidenavTempLogo {
+        width: 12.5%;
+    }
 }
