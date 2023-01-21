@@ -166,33 +166,6 @@ body {
     padding-top: 0;
     padding-bottom: 0;
 }
-/* #navLinks {
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: #7746ff;
-    font-family: "Montserrat", sans-serif;
-}
-#navLinks:hover {
-    background-color: white;
-    border-bottom: 4px solid rgba(125, 81, 245, 0.5);
-}
-#loginLink {
-    border: 1px solid #7746ff;
-    border-radius: 6px;
-    width: 130px;
-    height: 40px;
-    margin-top: 12px;
-    text-align: center;
-    line-height: 33px;
-    font-weight: 600;
-    font-size: 1rem;
-    color: #7746ff;
-    font-family: "Montserrat", sans-serif;
-}
-#loginLink:hover {
-    background: #7746ff;
-    color: #ffffff;
-} */
 #banner {
     background-image: url("../media/img/bannerCircle.png");
     height: 100vh;
@@ -601,7 +574,6 @@ body {
 .rm_mg {
     margin: 0;
 }
-
 #reistrationForm .row {
     margin-bottom: 0;
 }
@@ -787,13 +759,11 @@ p.wlcNoteFooterTxt {
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.8);
 }
-
 .loginSignUpInnerDiv {
     display: flex;
     margin-top: 3vh;
     justify-content: center;
 }
-
 .loginSignUpTxt {
     margin-right: 0.5vw;
     font-family: "Montserrat", sans-serif;
@@ -803,7 +773,6 @@ p.wlcNoteFooterTxt {
     letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.5);
 }
-
 .loginSignUpLink {
     font-style: normal;
     font-weight: 500;
@@ -979,7 +948,6 @@ p.wlcNoteFooterTxt {
     width: 15%;
     margin: auto;
 }
-
 #errArlCancelIcon,
 #errArlCancelIcon1,
 #errArlCancelIcon2,
@@ -994,7 +962,6 @@ p.wlcNoteFooterTxt {
     font-family: "Montserrat", sans-serif;
     height: 6vh;
 }
-
 .brandUsedAltBoxTxt {
     font-family: "Poppins";
     font-style: normal;
@@ -1005,7 +972,6 @@ p.wlcNoteFooterTxt {
     text-align: center;
     margin-top: 4vh;
 }
-
 .insertOtpTxt {
     font-family: "Poppins";
     font-style: normal;
@@ -1027,11 +993,6 @@ p.wlcNoteFooterTxt {
     margin-right: 1vw;
     border-radius: 10px;
 }
-
-/* Templates Section */
-/* #tempNavUl {
-    margin: 0 0 0 33vw;
-} */
 .marginLeft-25 {
     margin-left: 25vw;
 }
@@ -1164,19 +1125,16 @@ a.active {
     cursor: pointer;
     display: none;
 }
-
 #fixedArrowUpIcon {
     color: var(--primary);
     font-size: 2rem;
 }
-
 .fixedArrowUpIconInnerDiv {
     margin-left: 0.2vw;
     margin-top: 1.6vh;
     position: relative;
     bottom: 1.2vh;
 }
-
 .fixedArrowUpCircleDiv {
     width: 0.5vw;
     height: 1vh;
@@ -1190,7 +1148,6 @@ a.active {
 .getStartLoginSignUpInnerDiv {
     display: flex;
 }
-
 .getStartBtn {
     font-family: "Montserrat", sans-serif;
     text-transform: capitalize;
@@ -1215,7 +1172,6 @@ a.active {
     justify-content: center;
     align-items: center;
 }
-
 .spinner-layer {
     border-color: var(--white) !important;
 }
@@ -1256,21 +1212,17 @@ a.active {
     position: fixed;
     width: 16.7%;
 }
-
 .dashRightDiv {
     margin: 1.3vh auto 0 auto;
     width: 98.5%;
 }
-
 #dashLeftColBar {
     padding: 0;
 }
-
 #dashRowDiv {
     height: 100vh;
     margin: 0;
 }
-
 .proImgDiv {
     background: #d9d9d9;
     width: 74px;
@@ -1278,38 +1230,32 @@ a.active {
     border-radius: 50%;
     margin: auto;
 }
-
 #proImg {
     font-size: 4rem;
     margin-left: 0.5vw;
     margin-top: 0.2vh;
     color: rgba(0, 0, 0, 0.5);
 }
-
 .dashLeftBarInnerDiv {
     /* width: 12%; */
     margin: 5vh auto 0 auto;
 }
-
 .dashLeftBarIcons {
     font-size: 2rem;
     color: #d9d9d9;
     margin-left: 7.5vw;
 }
-
 .dashLeftBarTitle {
     margin: 0 0 4vh 0;
     color: #d9d9d9;
     font-family: "Poppins", sans-serif;
     text-align: center;
 }
-
 .dashActive {
     color: rgba(0, 0, 0, 0.5);
     font-size: 2rem;
     margin-left: 7.5vw;
 }
-
 #dashRightImgDiv {
     background-image: url("../media/img/rocket.png");
     background-repeat: no-repeat;
@@ -1319,14 +1265,12 @@ a.active {
     height: 292px;
     border-radius: 10px;
 }
-
 .dashRightImgInnerDiv {
     width: 100%;
     height: 292px;
     border-radius: 10px;
     background-color: rgba(30, 30, 30, 0.5);
 }
-
 .dashRightImgTitle {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
@@ -1336,7 +1280,6 @@ a.active {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin: 0;
 }
-
 .dashRightImgTxt {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -1346,20 +1289,17 @@ a.active {
     margin: 0;
     width: 87%;
 }
-
 .dashRightImgTxtDiv {
     position: absolute;
     top: 13vh;
     left: 22vw;
 }
-
 .dashWlcNoteDiv {
     background: #1e1e1e;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     height: 12.25rem;
 }
-
 .dashWlcNoteTitle {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -1368,7 +1308,6 @@ a.active {
     color: var(--primary);
     margin: 2vh 0 0 0;
 }
-
 .dashWlcNoteTitle1 {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -1376,7 +1315,6 @@ a.active {
     font-size: 1.1rem;
     color: var(--white);
 }
-
 .dashWlcNoteTxt {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -1386,13 +1324,11 @@ a.active {
     width: 63%;
     margin: 0;
 }
-
 .dashWlcNoteInnerDiv {
     position: relative;
     top: 4vh;
     left: 2vw;
 }
-
 .dashTimeDiv {
     background: var(--primary);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1401,7 +1337,6 @@ a.active {
     margin-top: 2vh;
     width: 97%;
 }
-
 .dashTimeDate {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -1411,7 +1346,6 @@ a.active {
     color: #ffffff;
     margin: 1vh 0 0 0;
 }
-
 .dashTime {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -1423,24 +1357,20 @@ a.active {
     position: relative;
     bottom: 2vh;
 }
-
 .dashTimePeriod {
     font-size: 1.5rem;
 }
-
 .dashTimeInnerDiv {
     position: relative;
     top: 4vh;
     left: 2vw;
 }
-
 .shapeDegDiv {
     display: flex;
     position: relative;
     top: 7vh;
     left: 1.5vw;
 }
-
 .shapeDeg {
     width: 38.86px;
     height: 119.94px;
@@ -1449,7 +1379,6 @@ a.active {
     transform: rotate(-28.69deg);
     margin-right: 1vw;
 }
-
 .shapeDeg1 {
     width: 40.25px;
     height: 124.23px;
@@ -1461,7 +1390,6 @@ a.active {
     bottom: 1vh;
     right: 0.3vw;
 }
-
 .shapeDeg2 {
     width: 40.25px;
     height: 124.23px;
@@ -1473,13 +1401,11 @@ a.active {
     bottom: 2vh;
     right: 0.6vw;
 }
-
 .cardHeader {
     background: var(--primary);
     box-shadow: 0px 4px 4px rgba(119, 70, 255, 0.3);
     border-radius: 10px 10px 0px 0px;
 }
-
 .cardContent {
     background: #1e1e1e;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1488,7 +1414,6 @@ a.active {
     border-top-right-radius: 0;
     padding: 3vh 1vw;
 }
-
 .cardTitle {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -1498,33 +1423,28 @@ a.active {
     padding: 5px 0 5px 30px;
     margin: 0;
 }
-
 #dashWlcNoteRowDiv,
 #myWebDiv,
 #myMailDiv {
     margin-bottom: 0;
 }
-
 .cardImgDiv {
     width: 60px;
     height: 60px;
     background: #d9d9d9;
     border-radius: 50%;
 }
-
 #cardImg {
     font-size: 3rem;
     margin-left: 0.5vw;
     margin-top: 0.5vh;
     color: rgba(0, 0, 0, 0.5);
 }
-
 .cardImgMainDiv {
     display: flex;
     position: relative;
     margin: 1rem 0 0 2rem;
 }
-
 .cardProName,
 .domainname {
     color: var(--primary);
@@ -1532,7 +1452,6 @@ a.active {
     font-style: normal;
     font-weight: 500;
 }
-
 .cardProName {
     /* font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -1545,7 +1464,6 @@ a.active {
 .cardProName {
     font-size: 1rem;
 }
-
 #cardViewLink {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -1558,19 +1476,16 @@ a.active {
     top: 4vh;
     /* border-bottom: #D9D9D9; */
 }
-
 .cardLine {
     /* border-color: #6938F2; */
     border: 0.1px solid rgba(119, 70, 255, 0.3);
 }
-
 #dashAddIconBtn {
     color: var(--primary);
     position: relative;
     left: 0.7vw;
     cursor: pointer;
 }
-
 .dashTimeAgo {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -1580,7 +1495,6 @@ a.active {
     color: var(--white);
     margin-left: 2vw;
 }
-
 .mailCardTxt {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -1594,16 +1508,13 @@ a.active {
     position: relative;
     bottom: 2vh;
 }
-
 #myWebRmMgRow {
     margin-bottom: 0;
 }
-
 #dashSidenavIconBtn {
     font-size: 3rem;
     color: var(--primary);
 }
-
 .userTempMainDiv {
     display: flex;
     overflow: auto;
@@ -1620,7 +1531,6 @@ a.active {
 .selectedUserTempDiv {
     background-color: #694eb4;    
 }
-
 .userTempTitle {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -1630,24 +1540,16 @@ a.active {
     color: var(--primary);
     margin: 0;
 }
-
 .clientCreatePortBtn {
     width: 10em;
     background-color: var(--primary);
 }
-
 .clientCreatePortBtnDiv {
     margin-top: 1em;
 }
-
-
-
 .selectedUserTempDiv .userTempTitle {
     color: var(--white);
 }
-
-
-
 .tempImgDiv {
     width: 60px;
     height: 60px;
@@ -2801,7 +2703,6 @@ textarea::placeholder {
     bottom: 1vh;
     left: 3vw;
 }
-
 #tempPreviewContainDiv {
     margin-top: 12vh;
 }
@@ -2817,7 +2718,6 @@ textarea::placeholder {
     height: 100%;
     object-fit: fill;
 }
-
 .clientTempContainInnerDiv {
     width: 85%;
     margin: 17vh auto 0 auto;
@@ -2825,7 +2725,6 @@ textarea::placeholder {
 #clientTempPageRowDiv {
     padding-top: 2vh;
 }
-
 #sFName {
     height: 40px;
     background: var(--white);
@@ -2833,7 +2732,6 @@ textarea::placeholder {
     width: 109%;
     /* margin-right: 7vw; */
 }
-
 #sLName {
     height: 40px;
     background: var(--white);
@@ -2841,21 +2739,18 @@ textarea::placeholder {
     width: 109%;
     margin-left: 1.1vw;
 }
-
 #sEmail {
     height: 40px;
     background: var(--white);
     padding-left: 7px;
     width: 109%;
 }
-
 #sTextarea1 {
     width: 111%;
     height: 13vh;
     background: var(--white);
     padding-left: 7px;
 }
-
 #modalSupportBtnForm {
     width: 111%;
     background: #1e1e1e;
@@ -2865,7 +2760,6 @@ textarea::placeholder {
 .genTitleClear {
     color: rgb(241, 139, 139);
 }
-
 .icon-button__badge {
     width: 10px;
     height: 10px;
@@ -2876,7 +2770,6 @@ textarea::placeholder {
     align-items: center;
     border-radius: 50%;
 }
-
 .editBtnLinkNum {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -3060,7 +2953,6 @@ textarea::placeholder {
     width: 463px;
     height: 40px;
 }
-
 .loader {
     position: fixed;
     left: 0px;
@@ -3071,18 +2963,13 @@ textarea::placeholder {
     background: url("//upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Phi_fenomeni.gif/50px-Phi_fenomeni.gif")
         50% 50% no-repeat rgb(249, 249, 249);
 }
-
 #contactInput,
 #contactInput1,
 #contactInput2 {
     font-family: "Montserrat", sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 15px;
-    line-height: 24px;
-    letter-spacing: -0.015em;
     color: rgba(0, 0, 0, 0.5);
-
     border: 1px solid var(--primary);
     border-radius: 10px;
     padding-left: 1vw;
@@ -3101,16 +2988,13 @@ textarea::placeholder {
 }
 .achieveProgBarYear {
     font-family: "Montserrat", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 17px;
     color: var(--primary);
     position: relative;
     left: 0.5vw;
     bottom: 0.4vh;
 }
-
 .editWebSidenavDiv {
     width: 23.5vw;
     /* height: 40vh;  */
@@ -3119,7 +3003,6 @@ textarea::placeholder {
     position: absolute;
     top: 14.8vh;
 }
-
 .editWebSidenavDomainNameDiv {
     text-align: center;
     margin-top: 1vh;
@@ -3138,21 +3021,18 @@ textarea::placeholder {
 .logoutModalImage {
     width: 15vw;
 }
-
 table.adminAddClientTable tbody tr.adminAddClientTr {
     border: 1px solid var(--primary);
     border-radius: 10px;
     margin-bottom: 2vh;
     padding-bottom: 2vh;
 }
-
 .adminAddClientImgDiv {
     width: 25px;
     height: 25px;
     background: #d9d9d9;
     border-radius: 10px;
 }
-
 .adminAddClientViewBtn {
     background: var(--primary);
     border-radius: 6px;
@@ -3160,7 +3040,6 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
     width: 7vw;
     height: 4.5vh;
 }
-
 .adminAddClientDelBtn {
     background: #d44141;
     border-radius: 6px;
@@ -3169,7 +3048,6 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
     height: 4.5vh;
     margin-left: 1vw;
 }
-
 .addminAddClientTxts {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -3177,7 +3055,6 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
     line-height: 24px;
     color: rgba(0, 0, 0, 0.5);
 }
-
 .adminClientPaginationNum {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -3185,31 +3062,25 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
     line-height: 21px;
     color: rgba(0, 0, 0, 0.5);
 }
-
 .adminClientPaginationLeftIcon {
     margin-left: 1.5vw;
     margin-right: 1vw;
     cursor: pointer;
 }
-
 .adminClientPaginationRightIcon {
     color: var(--black);
     cursor: pointer;
 }
-
 .adminClientPaginationInnerControlDiv {
     display: flex;
 }
-
 .adminClientSearchInputMainDiv {
     display: flex;
 }
-
 .adminClientSearchInputControlDiv {
     display: flex;
     margin: 1.5vh 1vw 0 auto;
 }
-
 #adminClientSearchInput {
     box-sizing: border-box;
     width: 266px;
@@ -3218,7 +3089,6 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
     border-radius: 10px;
     padding: 0 0.7vw;
 }
-
 #adminClientSearchInput::placeholder {
     font-family: "Poppins", sans-serif;
     font-size: 0.9rem;
@@ -3226,7 +3096,6 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
     line-height: 24px;
     color: rgba(26, 25, 25, 0.8);
 }
-
 .adminClientSearchInputTxts {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -3234,12 +3103,10 @@ table.adminAddClientTable tbody tr.adminAddClientTr {
     line-height: 21px;
     color: var(--black);
 }
-
 .adminClientSearchInputIcons {
     position: relative;
     top: 1vh;
 }
-
 /* Changed homepage "PREVIEW TEMPLATE" button color */
 .adminClientSearchInputIconsDiv {
     margin-left: 1vw;
@@ -3255,7 +3122,6 @@ a.navLinks {
     color: var(--primary);
     font-family: "Montserrat", sans-serif;
 }
-
 a.navLinks:hover {
     background-color: white;
     border-bottom: 4px solid rgba(125, 81, 245, 0.5);
@@ -3264,7 +3130,6 @@ a.navLinks:hover {
     border-left: none;
     margin: 0 0.96vw;
 }
-
 a.navLinks.active {
     padding: 0;
     border-left: none;
@@ -3287,13 +3152,11 @@ a.loginLink {
     color: var(--primary);
     font-family: "Montserrat", sans-serif;
 }
-
 a.loginLink:hover {
     background: var(--primary);
     color: var(--white);
     border-left: var(--primary);
 }
-
 .chatImage {
     position: relative;
     bottom: 40px;
@@ -3387,76 +3250,6 @@ a.btn.tempPageBtn {
     background: var(--primary);
 }
 
-/* 
-    Client & Admin Settings component. 
-    This stylings below has been changed and transfered to userSettings.css file
-    So Find this stylings above and remove them, it's also in the two media queries below.
-*/
-/* .setMainDiv {
-    display: flex;
-    width: 70%;
-    margin: 10vh auto 0 auto;
-} */
-/* .settingsFormDiv {
-    width: 40vw;
-    height: 86vh;
-    background: var(--white);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-} */
-/* #settingsForm {
-    width: 80%;
-    margin: 0 auto;
-} */
-/* #setProMainDiv {
-    width: 20%;
-    margin: 0 auto 6vh auto;
-} */
-/* .setProDiv {
-    background: #d9d9d9;
-    width: 74px;
-    height: 74px;
-    border-radius: 50%;
-    margin: auto;
-    display: inline-block;
-} */
-/* #setProImg {
-    font-size: 3.5rem;
-    margin-left: 0.8vw;
-    margin-top: 0.9vh;
-    color: rgba(0, 0, 0, 0.5);
-} */
-/* .setProEditIconDiv {
-    height: 23px;
-    width: 23px;
-    display: inline-block;
-    position: relative;
-    top: 1.2vh;
-    right: 1.2vw;
-} */
-/* #setProEditIcon {
-    color: var(--white);
-    font-size: 1.3rem;
-    margin: 0.3vh 0 0 0.1vw;
-} */
-/* .mySetTitle {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.25rem;
-    line-height: 30px;
-    color: var(--primary);
-    margin: 0 1vw 0 0;
-    position: relative;
-    bottom: 3vh;
-} */
-/* #setFormBtn {
-    background: var(--primary);
-    border-radius: 6px;
-    font-family: "Montserrat", sans-serif;
-    text-transform: capitalize;
-    margin-top: 2vh;
-} */
-
 /* ********************************************************************************************** */
 /* Changes on Admin and Super Admin Template */
 /* Admin Dashboard page Img styling */
@@ -3479,6 +3272,7 @@ a.btn.tempPageBtn {
     height: 292px;
     border-radius: 10px;
 }
+
 
 /* ********************************************************************************************** */
 /* HeaderComponent Logo Styling for HomepageComponent*/
@@ -3523,60 +3317,24 @@ img.authLogo {
         left: 0;
         z-index: 0;
     }
-
     #sideNav {
         z-index: 100;
     }
-    /* #sideNavImgDiv {
-        height: 25vh;
-    } */
-    /* #sideNavLinkMgTp {
-        margin-top: 27vh;
-        margin-top: 2vh;
-    }
-    #navLinks {
-        font-weight: 600;
-        font-size: 1.3125rem;
-        color: #ffffff;
-        letter-spacing: 0.5px;
-        margin-left: 3vw;
-    }
-    #loginLink {
-        border: 1px solid var(--primary);
-        border-radius: 6px;
-        width: 130px;
-        height: 40px;
-        margin-top: 12px;
-        text-align: center;
-        line-height: 33px;
-        font-weight: 600;
-        font-size: 1.25rem;
-        color: var(--primary);
-        background-color: var(--white);
-        margin-left: 20px;
-    } */
     .circlDiv1 {
         width: 0vw;
         height: 0vh;
         border: none;
         border-radius: 0;
-        /* border-top-left-radius: 0;
-        border-bottom-left-radius: 0; */
-        /* border-left: none; */
         position: absolute;
         top: 0;
         left: 0;
         z-index: 0;
     }
-
     .circlDiv {
         width: 0vw;
         height: 0vh;
         border: none;
         border-radius: 0;
-        /* border-top-left-radius: 0;
-        border-bottom-left-radius: 0; */
-        /* border-left: none; */
         position: absolute;
         left: 0;
         top: 0;
@@ -4136,52 +3894,6 @@ img.authLogo {
         background-color: var(--primary);
     }
 
-    /* 
-        Client & Admin Settings component. 
-        This stylings commented off below in this media query
-        Is not needed again, it has been moved to userSettings.css file. 
-    */
-    /* .setMainDiv {
-        display: block;
-        width: 99%;
-        margin: 9vh auto 0 auto;
-    } */
-    /* .settingsFormDiv {
-        width: 100%;
-        background: var(--white);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    } */
-    /* #setProImg {
-        font-size: 4.5rem;
-        margin-left: 1vw;
-        margin-top: 0.9vh;
-        color: rgba(0, 0, 0, 0.5);
-    } */
-    /* .setProEditIconDiv {
-        width: 23px;
-        height: 23px;
-        border-radius: 50%;
-        background: var(--primary);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        display: inline-block;
-        position: relative;
-        top: 0vh;
-        right: 3vw;
-    } */
-    /* #setProEditIcon {
-        color: var(--white);
-        font-size: 1.3rem;
-        margin: 0.3vh 0 0 0.1vw;
-    } */
-    /* #setFormBtn {
-        background: var(--primary);
-        border-radius: 6px;
-        font-family: "Montserrat", sans-serif;
-        text-transform: capitalize;
-        margin-top: 2vh;
-        margin-bottom: 4vh;
-    } */
-
     /* ******************************************************************************************* */
     /* HeaderComponent Logo for HomeComponent on medium device  */
     .sidenavLogo {
@@ -4255,42 +3967,6 @@ img.authLogo {
         width: 13vw;
         height: 6.5vh;
     }
-    /* .sideNavBrandLogo {
-        font-size: 2.7rem;
-        font-weight: 500;
-        color: var(--primary);
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        margin-left: 14vw;
-        font-family: "Montserrat", sans-serif;
-    } */
-    /* #navLinks {
-        font-weight: 600;
-        font-size: 1.3125rem;
-        color: var(--white);
-        letter-spacing: 0.5px;
-        margin-left: 3vw;
-    }
-    #sideNavLinkMgTp {
-        margin-top: 27vh;
-        margin-top: 2vh;
-    }
-    #loginLink {
-        border: 1px solid var(--primary);
-        border-radius: 6px;
-        width: 130px;
-        height: 40px;
-        margin-top: 12px;
-        text-align: center;
-        line-height: 33px;
-        font-weight: 600;
-        font-size: 1.25rem;
-        color: var(--primary);
-        background-color: var(--white);
-        margin-left: 20px;
-    } */
-    /* #sideNavImgDiv {
-        height: 25vh;
-    } */
     .portraitImgContainDiv {
         margin-right: 2vw;
     }
@@ -4528,11 +4204,6 @@ img.authLogo {
         width: 50%;
         margin: 4vh auto 0 auto;
     }
-
-    /* .authContainDiv {
-        width: 100%;
-        margin: 0;
-    } */
     .wlcNoteDiv {
         width: 400px;
         height: 600px;
@@ -4833,7 +4504,6 @@ img.authLogo {
     #otpEmailDiv {
         margin-left: 3.5vw;
     }
-
     .shapeDegDiv {
         display: flex;
         position: relative;
@@ -4848,7 +4518,6 @@ img.authLogo {
         transform: rotate(-28.69deg);
         margin-right: 2vw;
     }
-
     .shapeDeg1 {
         width: 40.25px;
         height: 124.23px;
@@ -4860,7 +4529,6 @@ img.authLogo {
         bottom: 1vh;
         right: 0.3vw;
     }
-
     .shapeDeg2 {
         width: 40.25px;
         height: 124.23px;
@@ -4977,7 +4645,6 @@ img.authLogo {
         margin: 0 auto;
     }
 
-
     /* New changes Starts here */
     /* Changed "chatImage" from id -> class */
     .chatImage {
@@ -5022,13 +4689,6 @@ img.authLogo {
         position: relative;
         bottom: 3vh;
     }
-
-    /* Commented off this line of code, It's not needed again. */
-    /* .careImg {
-        height: 50vh;
-        width: 93vw;
-    } */
-
     a.navLinks {
         font-weight: 600;
         font-size: 1.3125rem;
@@ -5036,12 +4696,10 @@ img.authLogo {
         letter-spacing: 0.5px;
         margin-left: 3vw;
     }
-
     .sideNavLinkMgTp {
         /* margin-top: 27vh; */
         margin-top: 2vh;
     }
-
     a.loginLink {
         /* border: 1px solid #7746FF; */
         border-radius: 6px;
@@ -5074,50 +4732,11 @@ img.authLogo {
         left: 6vw;
     }
 
-    /* 
-        Client & Admin Settings component. 
-        This stylings commented off below in this media query
-        Is not needed again, it has been moved to userSettings.css file. 
-    */
-    /* .setMainDiv {
-        display: block;
-        width: 99%;
-        margin: 4vh auto 0 auto;
-    } */
-    /* .settingsFormDiv {
-        width: 100%;
-        background: var(--white);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    } */
-    /* #setProImg {
-        font-size: 4.5rem;
-        margin-left: 1vw;
-        margin-top: 0.9vh;
-        color: rgba(0, 0, 0, 0.5);
-    } */
-    /* .setProEditIconDiv {
-        width: 23px;
-        height: 23px;
-        border-radius: 50%;
-        background: #7746ff;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        display: inline-block;
-        position: relative;
-        top: -8vh;
-        right: -9.5vw;
-    } */
-    /* #setProEditIcon {
-        color: var(--white);
-        font-size: 1.3rem;
-        margin: 0.3vh 0 0 0.1vw;
-    } */
-
     /* ******************************************************************************************** */
     /* HeaderComponent Logo for HomeComponent on small device  */
     .sidenavLogo {
         width: 12.5vw;
     }
-
     .sideNavBrandLogo {
         font-size: 2.7rem;
         font-weight: 500;
