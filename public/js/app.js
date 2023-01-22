@@ -31039,7 +31039,7 @@ __webpack_require__.r(__webpack_exports__);
 var _hoisted_1 = {
   "class": "row authContainDiv"
 };
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col s12 m12 l6 loginContainer\"><div class=\"wlcNoteDiv\"><p class=\"wlcNoteLogo\">PaaB</p><p class=\"wlcNoteTitle\">WELCOME BACK CHIEF!</p><p class=\"wlcNoteTxt\"> It is a long established fact that a reader will be distracted by the readable content. </p><p class=\"wlcNoteFooterTxt\"> © Photo, Inc. 2019. We love our users! </p></div></div>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col s12 m12 l6 loginContainer\"><div class=\"wlcNoteDiv\"><p class=\"wlcNoteLogo\"><img src=\"/media/img/whiteCoatDomain1.png\" alt=\"whiteCoatDomain.png\" class=\"authLogo\"></p><p class=\"wlcNoteTitle\">WELCOME BACK CHIEF!</p><p class=\"wlcNoteTxt\"> The World is still listening , it is time to tell your brand story with our professional , powerful and easy to use portfolio builder for your career. </p><p class=\"wlcNoteFooterTxt\"> © Photo, Inc. 2019. We love our users! </p></div></div>", 1);
 var _hoisted_3 = {
   "class": "col s12 m12 l6 loginContainer"
 };
